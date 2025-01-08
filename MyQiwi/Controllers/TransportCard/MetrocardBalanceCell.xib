@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gcD-lN-gm8" customClass="MetrocardBalanceCell" customModule="MyQiwi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pyh-Yn-Lod">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3aM-qr-f82">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="68"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="R$19,99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38A-XN-IGW">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atualizado em 28/01 as 15h00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5D-Ae-duf">
+                                <rect key="frame" x="0.0" y="23.5" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5555555555" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omY-LO-HDr">
+                                <rect key="frame" x="0.0" y="46.5" width="335" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Tcb-Um-g3H"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3aM-qr-f82" firstAttribute="leading" secondItem="pyh-Yn-Lod" secondAttribute="leading" id="R1A-Aj-ZfZ"/>
+                    <constraint firstAttribute="bottom" secondItem="3aM-qr-f82" secondAttribute="bottom" id="Wjg-TY-OE8"/>
+                    <constraint firstItem="3aM-qr-f82" firstAttribute="top" secondItem="pyh-Yn-Lod" secondAttribute="top" id="eRu-3f-Jtm"/>
+                    <constraint firstAttribute="trailing" secondItem="3aM-qr-f82" secondAttribute="trailing" id="qdA-Hw-JRp"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="335" height="68"/>
+            <connections>
+                <outlet property="lbDate" destination="n5D-Ae-duf" id="b1t-ge-jIi"/>
+                <outlet property="lbSerie" destination="omY-LO-HDr" id="0al-lK-JFP"/>
+                <outlet property="lbValue" destination="38A-XN-IGW" id="hnX-tx-5ZG"/>
+            </connections>
+            <point key="canvasLocation" x="302.17391304347831" y="56.919642857142854"/>
+        </collectionViewCell>
+    </objects>
+</document>

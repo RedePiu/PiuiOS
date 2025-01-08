@@ -1,0 +1,1770 @@
+/*
+  Localizable.strings
+  MyQiwi
+
+  Created by Douglas Garcia on 13/04/2018.
+  Copyright © 2018 Qiwi. All rights reserved.
+*/
+
+"app_name" = "PIU Brasil";
+
+//***************** GENERIC WORDS *****************
+
+"alert" = "Atenção";
+"yes" = "Sim";
+"no" = "Não";
+"yes_low_case" = "sim";
+"no_low_case" = "não";
+"ok" = "Ok";
+"accept" = "Aceitar";
+"close" = "Fechar";
+"processing" = "Processando…";
+"please_wait" = "Por favor aguarde…";
+"loading" = "Carregando…";
+"done" = "Concluído!";
+"notification" = "Notificação";
+"expand" = "expandir";
+"hide" = "ocultar";
+"continue_label" = "continuar";
+"back" = "voltar";
+"cancel" = "cancelar";
+"help" = "ajuda";
+"finish" = "finalizar";
+"agree" = "concordar";
+"add" = "adicionar";
+"plus_add" = "+ adicionar";
+"edit" = "editar";
+"save" = "salvar";
+"or" = "ou";
+"confirm" = "confirmar";
+"hour" = "hora";
+"hours" = "hora(s)";
+"minute" = "minuto";
+"minutes" = "minuto(s)";
+"search" = "pesquisar";
+"understand" = "entendi";
+"see_receipt" = "ver recibo";
+"receipt" = "Comprovante";
+"see" = "ver";
+"see_more" = "ver mais";
+"see_less" = "ver menos";
+"register" = "cadastrar";
+"dont_show_again" = "Não mostrar mais";
+"share" = "Compartilhar";
+"ok_got_it" = "Ok, Entendi! :)";
+"share_text" = "Ei, encontrei este app e acho que você vai gostar! Da para recarregar celular, pagar contas e mais um montão de coisas! Baixa ai app.piu.com.br";
+"app_need_restart" = "O App Precisa ser reiniciado.";
+
+//GENERIC SENTENCES
+
+"alert_confirm_remove" = "Tem certeza que deseja remover este item?";
+"error_some_error_occourred" = "Algo deu errado, tente novamente.";
+"password_content_description" = "Sua senha";
+"development_mode" = "Modo de desenvolvimento";
+"invalid_input" = "Digite os dados corretamente para continuar!";
+
+//Main navigation bar
+
+"main_nav_home" = "Inicio";
+"main_nav_shopping" = "Compras";
+"main_nav_extract" = "Conta PIU";
+"main_nav_attendance" = "Atendimento";
+"main_nav_more" = "Mais";
+
+//Menus
+"more_menu_change_picture" = "editar minha foto";
+"more_menu_change_pass" = "trocar minha SENHA DE ACESSO";
+"more_menu_change_piu_pass" = "trocar minha SENHA DA CONTA PIU";
+"more_menu_terms" = "termos e codições de uso";
+"more_menu_rate" = "avaliar o aplicativo";
+
+"more_menu_qtoken" = "QToken";
+"more_menu_student_form" = "cadastrar ou verificar formulário de estudante";
+"more_menu_add_piu_credit" = "adicionar créditos na conta PIU";
+"more_menu_pay_debts" = "quitar dívidas";
+"more_menu_commi" = "comissionamento";
+"more_menu_credit_card" = "adicionar cartão de crédito";
+"more_menu_adesao" = "adesão digital";
+
+//ALERTS
+
+"alert_close_charge_sequence" = "Gostaria realmente de sair?";
+"alert_close_edit_credit_card" = "Gostaria realmente de voltar para a tela de forma de pagamento?";
+"alert_camera_not_available" = "Câmera não esta disponivel para este dispositivo";
+"alert_permission_denied" = "Permissão para abrir câmera foi negada. Abra as configurações do app para permitir o acesso a câmera.";
+"alert_error_open_camera" = "Houve um erro inexperado ao inicializar câmera";
+
+// DOCUMENT STATUS
+"document_alert_not_sent" = "Atualize seu cadastro confirmando a sua identidade :) Clique aqui";
+"document_alert_analysing" = "Estamos analisando seus documentos, te avisaremos quando tudo estiver certo. Clique aqui para atualizar :D";
+"document_alert_deny" = "Seus documentos foram recusados! Clique para ver mais detalhes.";
+"document_alert_done" = "Seus documentos foram aprovados! Se você enviou um cartão de crédito, agora você já pode utiliza-lo! :)";
+
+// Document list screen
+"docs_my_docs_title" = "Documentos pendentes ou recusados";
+"docs_my_credit_cards_title" = "Meus Cartões de Crédito";
+"docs_send_doc" = "enviar documento";
+"docs_send_credit_card" = "enviar novo cartão";
+"docs_no_cards_sent" = "Você ainda não enviou nenhum cartão de crédito! Toque no botão abaixo para enviar um agora ;)";
+
+"docs_intro_title" = "Siga os passos a seguir para utilização de cartão de crédito!";
+"docs_intro_subtitle1" = "Vamos precisar comprovar sua identidade através de um documento com foto";
+"docs_intro_subtitle2" = "Adicione um cartão de crédito para utiliza-lo nas suas próximas compras";
+"docs_intro_safe" = "*Validação de segurança. Nenhum dado será divulgado.";
+
+"docs_selection_title" = "Escolha um dos documentos abaixo para nos enviar";
+"docs_front_and_verse" = "Frente e Verso";
+"docs_front" = "Frente";
+"docs_verse" = "Verso";
+"docs_unique" = "Único";
+"docs_remove" = "REMOVER";
+"docs_make_sure_clear_doc" = "Certifique-se que a foto esteja nítida";
+"docs_cnh" = "Enviar CNH";
+"docs_unique_pic" = "Foto única";
+"docs_rne" = "Enviar RNE";
+"docs_rg" = "RG";
+"docs_rg_w_cpf" = "RG com CPF";
+"docs_rg_wo_cpf" = "RG sem CPF";
+"docs_need_cpf_too" = "Como seu RG não possui CPF, pedimos que também envie seu cartão CPF";
+"docs_need_take_picture" = "Tire as fotos do(s) documento(s) para continuar";
+"docs_error_sent" = "Erro ao enviar documentos. Tente novamente.";
+
+"docs_send_a_doc" = "Enviar {doc}";
+"docs_sent_success" = "Enviado com sucesso!";
+"docs_sent_success_desc" = "Agora precisamos dos dados do seu cartão de crédito para analisarmos :)";
+"docs_sent_failed" = "Ops! Algo deu errado!";
+"docs_sent_failed_desc" = "Tivemos um problema ao enviar seus documentos, por favor, tente novamente!";
+"docs_send_card" = "enviar cartão de crédito";
+"docs_send_try_again" = "tentar novamente";
+
+"docs_video_intro" = "Quase lá!
+Para sua segurança, grave um vídeo de até 10 segundos dizendo “Oi, eu sou {user_name} e quero usar meu cartão na PIU”.";
+
+"docs_video_success" = "Seu vídeo foi gravado com sucesso.
+Clique em continuar para enviar ou grave novamente.";
+"docs_video_fail" = "Não foi possível capturar o vídeo.
+Por favor, tente novamente.";
+"docs_video_send_button" = "enviar";
+"docs_video_cancel_button" = "cancelar";
+
+// Ddocument status popup
+"docs_status_checking" = "Estamos Analisando…";
+"docs_status_denied" = "Documentos Recusados!";
+"docs_status_approved" = "Documentos Aprovados!";
+"docs_status_sample_checking" = "Em análise…";
+"docs_status_sample_denied" = "Recusado";
+"docs_status_sample_approved" = "Aprovado";
+"docs_status_denied_desc" = "Seu(s) documento(s) ou cartão(es){number} foram recusados! Confira o motivo abaixo e tente reenvia-los!";
+"docs_status_approved_desc" = "Seu(s) documento(s) ou cartão(es) foram Aprovados! Você já pode usar seu cartão de crédito final {number} para comprar! :)";
+
+"docs_keep_shopping" = "continuar comprando";
+"docs_send_again" = "enviar novamente";
+"docs_dont_show" = "não exibir novamente!";
+
+//Toolbar
+
+"toolbar_mnu_transparent" = "Transparent";
+"toolbar_mnu_edit" = "editar";
+"toolbar_mnu_remove" = "excluir";
+"toolbar_mnu_search" = "pesquisar";
+"toolbar_mnu_filter" = "filtro";
+
+//Push notification
+
+"push_default_message" = "Temos novidades para você. Clique para conferir.";
+
+//Net
+
+"net_error_generic_error" = "Erro inesperado durante a requisição. Por favor, tente novamente.";
+"net_error_no_network_error" = "Falha ao conectar com o servidor. Verifique sua conexão.";
+"net_error_baptism_failed" = "Falha ao configurar dispositivo com o servidor. Tente novamente.";
+"net_error_tel" = "Se o problema persistir, ligue: (11) 4003–2989 / Whatsapp: (11) 97648–7787.";
+
+//Home
+
+"home_choose_what_want_to_do" = "SIMPLIFICANDO";
+"home_other_available_services" = "Outros serviços disponíveis";
+"home_others_not_available" = "Serviço não encontrado.";
+"home_promo_code" = "Adicionar Código\nPromocional";
+
+//PROMO CODE
+"promo_code_title" = "Código Promocional";
+"promo_code_placeholder" = "Código Promocional";
+"promo_code_invalid" = "Código inválido ou expirado.";
+"promo_code_input_invalid" = "Digite o código corretamente.";
+
+//No content
+
+"no_content" = "Não encontramos nenhum resultado :(";
+
+//No network
+
+"no_network_title" = "Sem conexão";
+"no_network_desc" = "Estamos aguardando a conexão para retomar nossos serviços… Caso deseje ativar os serviços de zona azul ou falar com a nossa equipe, ligue: (11) 4003–2989 / WhatsApp: (11) 97648–7787.";
+
+//Bank coming soon
+
+"bank_coming_soon_tootlbar_title" = "Em breve na PIU";
+"bank_coming_soon_title" = "Mais bancos estarão disponíveis em breve!";
+"bank_coming_soon_desc" = "Estamos trabalhando para adicionar mais opções de bancos para transferência! Por favor, utilize um dos bancos atuais para concluir sua operação :)";
+
+//Coming soon
+
+"content_soon_toolbar_title" = "Em breve na PIU";
+"content_soon_title" = "Estamos trabalhando nisso!";
+"content_soon_desc" = "Este e muitos outros serviços estarão disponíveis em breve!";
+
+// Coming soon
+"not_available_toolbar_title" = "Serviço não disponível";
+
+//Log out popup
+
+"logout_title" = "Sessão encerrada";
+"logout_desc" = "Entre em uma conta para comprar e recarregar dezenas de produtos!";
+"logout_button" = "reiniciar";
+
+// Credit card registration popup
+
+"creditcard_popup_title" = "Cadastrar um cartão de crédito";
+"creditcard_popup_desc" = "Caso ainda não tenha feito, será necessário enviar um documento com foto no final do processo para comprovar sua identidade!";
+
+//POPUP ADESAO
+
+"popup_adesao_title" = "Ei, que tal aderir aos recebidos digitais?";
+"popup_adesao_desc" = "Com a adesão digital você consegue guardar os recibos de todas as transações realizadas na rede piu aqui no app. Mais fácil de administrar e você ainda economiza papel :)";
+"popup_adesao_continue_bt" = "Aderir agora!";
+"popup_adesao_remind_later_bt" = "Me lembre mais tarde!";
+"popup_adesao_stop_show_bt" = "Não, obrigado.";
+
+"popup_adesao_success_title" = "Oba! Sua solicitação foi concluída!";
+"popup_adesao_success_desc" = "Você aderiu aos recibos digitais da PIU! Todos seus recebidos aparecerão na lista de recibos na aba pedidos do menu principal!";
+
+//Payment limit list
+
+//"payment_limit_title" = "Limite atingido";
+//"payment_limit_desc" = "Alguns tipos de pagamentos possuem limites de compras. Caso o valor ultrapasse o limite, selecione outra forma de pagamento disponível.";
+//"payment_limit_unlimited" = "Não disponível";
+
+"payment_limit_title" = "Limite para {payment_type} atingido";
+"payment_limit_desc" = "O valor {value} ultrapassou o limite máximo de {max_value}";
+"payment_limit_unlimited" = "Não disponível";
+"payment_limit_type_credit_card" = "cartão de crédito";
+"payment_limit_type_qiwi_balance" = "créditos conta PIU";
+"payment_limit_type_pix" = "PIX";
+"payment_limit_type_bank_transfer" = "transferência bancária";
+"payment_limit_can_not_use" = "Para este valor não estará disponível pagamentos com ";
+
+//QIWI ACCOUNT STATEMENT
+"qiwi_statement_choose_an_option" = "Escolha uma opção";
+"qiwi_statement_last_day" = "Últimas 24h";
+"qiwi_statement_last_7_days" = "Últimos 7 dias";
+"qiwi_statement_last_15_days" = "Últimos 15 dias";
+"qiwi_statement_last_30_days" = "Últimos 30 dias";
+"qiwi_statement_select_a_day" = "Selecionar um dia";
+"qiwi_statement_select_a_month" = "Selecionar um mês";
+"qiwi_statement_cancel" = "Cancelar";
+
+
+//Auth problem
+
+"auth_title" = "Ah não! Ocorreu um erro!";
+"auth_desc" = "Encontramos algum erro enquanto você utilizava, precisamos reiniciar o aplicativo para continuar :)";
+"auth_wait" = "Por favor, aguarde um momento…";
+"auth_button" = "continuar";
+
+// CET ERROR
+"cet_error_title" = "Ah não! Ocorreu um erro!";
+"cet_error_desc" = "Encontramos um erro enquanto você utilizava, isso pode ter sido causado por problemas de conexão ou instabilidade no servidor. Se o problema persistir, acesse o menu de atendimento ou entre em contato com nossa equipe de suporte (11) 4003-2989 / Whatsapp: (11) 97648–7787.";
+"cet_error_button" = "entendi";
+
+//Permissions
+
+"permission_need_permission" = "Precisamos de sua permissão!";
+"permission_ok" = "Entendi!";
+"permission_write_explain" = "Precisamos da sua permissão para configurar nossos arquivos de configuração.";
+
+//Update needed
+
+"update_needed_title" = "O aplicativo precisa ser atualizado!";
+"update_needed_desc" = "Temos algumas novidades para você! Atualize o aplicativo para continuar comprando!";
+"update_needed_go_to_store_button" = "atualizar agora";
+"update_needed_exit_button" = "sair";
+
+//Welcome screen
+
+"welcome_title" = "Bem-vindo a PIU!";
+"welcome_desc" = "Sua conta está pronta para comprar diversos produtos disponíveis na sua cidade! Com a PIU você pode:";
+"welcome_text_1" = "Recarregar celular e cartões de transporte";
+"welcome_text_2" = "Pagar contas através do código de barras";
+"welcome_text_3" = "Comprar dezenas de produtos com alguns cliques";
+"welcome_text_4" = "Utilizar créditos dos ATMs (autoatendimento) para comprar produtos";
+
+//Notification list
+
+"notification_toolbar_title" = "Notificações";
+"notification_no_content" = "Você não possui notificações ;D";
+
+//Login
+
+"login_toolbar_title" = "Entrar";
+"login_title" = "Digite o número do celular da sua conta";
+"login_logging_in_with_number" = "Entrando com o número {number}";
+"login_logging_access_password" = "Digite a SENHA DE ACESSO";
+"login_facebook" = "entrar com o facebook";
+"login_email" = "e-mail";
+"login_password" = "SENHA DE ACESSO";
+"login_enter_button" = "entrar";
+"login_must_login" = "Crie ou acesse sua conta para ver mais informações, é rapidinho :)";
+"login_login" = "entrar";
+"login_logon" = "criar conta";
+"login_logut" = "sair da conta";
+"login_account_info" = "ver ações";
+"login_not_my_number" = "entrar com outro número";
+"login_phone_error" = "Preencha o telefone corretamente!";
+"login_pass_error" = "Preencha a senha corretamente!";
+"login_failed" = "O login falhou. Tente novamente.";
+"login_no_acc_title" = "Não possui conta?";
+"login_no_acc_button" = "Crie a sua conta clicando aqui, é gratis :)";
+"login_warning" = "Você precisa entrar para continuar! Se não tiver uma conta, clique aqui para criar a sua!";
+
+//Register
+
+"register_toolbar_title" = "Criar nova conta";
+"register_facebook" = "cadastrar com facebook";
+"register_name" = "nome completo";
+"register_cpf" = "CPF";
+"register_email" = "e-mail";
+"register_birthday" = "data de nascimento";
+"register_phone" = "celular (xx) xxxxx-xxxx";
+"register_qiwi_password" = "senha da conta PIU";
+"register_confirm_qiwi_password" = "confirmar senha da conta PIU";
+"register_password" = "senha de acesso ao App";
+"register_confirm_password" = "confirmar senha de acesso ao App";
+"register_register_button" = "cadastrar";
+"register_register_finish_button" = "cadastrar";
+"register_accept_terms_1" = "Ao prosseguir, você está aceitando nossos ";
+"register_accept_terms_2" = "termos e condições de uso.";
+"register_need_more_info" = "Agora só precisamos do seu CPF e do seu celular para finalizarmos tudo por aqui :)";
+"register_sms_permission_desc" = "Precisamos da sua permissão para receber o SMS de confirmação!";
+"register_user_already_exists" = "Usuário já existe! Utilize seu número de celular para entrar. Caso não lembre a senha, utilize o botão \"esqueci a senha\" após digitar seu número!";
+
+"register_step_name" = "Digite seu nome completo";
+"register_step_cpf" = "Digite seu CPF para garantirmos segurança nas suas compras";
+"register_step_email" = "Digite seu e-mail de acesso";
+"register_step_birthday" = "Digite sua data de nascimento (dd/mm/aaaa)";
+"register_step_phone" = "Digite seu celular com DDD";
+"register_step_qiwi_password" = "Agora, escolha sua senha para a Conta PIU";
+"register_step_password" = "Escolha uma senha para acessar o aplicativo";
+"register_error_name" = "Digite corretamente o nome e sobrenome";
+"register_error_cpf" = "CPF inválido";
+"register_error_email" = "E-mail inválido!";
+"register_error_birthday" = "Data de nascimento inválida!";
+"register_error_phone" = "Telefone inválido!";
+"register_error_qiwi_password" = "A senha deve ter 6 números!";
+"register_error_password" = "A senha deve ter ao menos 8 caracteres!";
+"register_error_password_numbers" = "A senha deve conter ao menos 2 números!";
+"register_error_password_caracters" = "A senha deve conter ao menos 2 caracteres!";
+"register_error_repeat_password" = "As senhas não estão iguais!";
+"register_error_to_register" = "Ocorreu um erro ao registrar! Por favor, tente novamente.";
+
+"register_qiwi_pass_title" = "O que é senha da conta PIU?";
+"register_qiwi_pass_desc" = "É uma senha de 6 números que será solicitada para utilizar créditos da conta PIU.";
+"register_pass_title" = "O que é senha de acesso?";
+"register_pass_desc" = "É uma senha de no mínimo 8 digitos, contendo letras e números, utilizada para acessar o aplicativo.";
+
+"register_qiwi_pass_changed_title" = "A senha da sua conta PIU foi atualizada!";
+"register_qiwi_pass_changed_desc" = "Utilize esta senha para utilizar os créditos PIU no aplicativo ou nos ATMs.";
+
+//SMS
+
+"register_sms_toolbar_title" = "Validar SMS";
+"register_sms_title" = "Confirmação";
+"register_sms_text" = "Codigo de ativacao do app piu:";
+"register_sms_hint" = "Código SMS";
+"register_sms_resend" = "Reenviar";
+"register_sms_validate" = "Validar";
+"register_sms_text_welcome" = "Enviamos um SMS com o código de confirmação para o número {number}";
+"register_sms_invalid_code" = "Código inválido";
+"register_sms_resent" = "Código reenviado!";
+"register_window_closed_title" = "Verificação necessária!";
+"register_window_closed_desc" = "É necessário validar a sua conta via SMS para continuar! Toque no botão abaixo para validar seu SMS.";
+
+"exclude_user" = "Excluir CONTA";
+"share_app" = "Compartilhar";
+
+
+// App info
+
+"app_info_toolbar_title" = "Informações do App";
+"app_info_first_title" = "Informações";
+"app_info_second_title" = "Configurações do App";
+"app_info_version" = "Versão {version} [iOS]";
+"app_info_terminal_number" = "Terminal {number}";
+"app_info_licenses" = "Licenças";
+"app_info_playstore_page" = "  Página da AppStore";
+"app_info_terms" = "Termos e condições de uso";
+"app_info_contact" = "Acesse o menu de atendimento para suporte ou ligue: (11) 4003–2989 / WhatsApp: (11) 97648–7787.";
+
+//Location
+
+"location_need_permission" = "Precisamos obter sua locação para exibir os produtos disponíveis na sua região! Abra suas configurações e permita o acesso a sua localização!";
+"location_failed_to_connect" = "Falha ao receber sua localizacão.";
+
+//Balance
+
+"balance_add_toolbar_title" = "Adicionar créditos PIU";
+"balance_title" = "CONTA PIU:";
+"balance_go_to_statement" = "ver extrato";
+"balance_recharge" = "adicionar créditos";
+"balance_transfer" = "transferir créditos";
+"balance_updating" = "carregando…";
+"balance_no_available" = "Saldo não disponível";
+"balance_refresh" = "Toque para atualizar o saldo";
+"balance_historico" = "histórico";
+
+"balance_prepago_title" = "PRÉ PAGO:";
+"balance_prepago_transfer" = "transferir créditos";
+
+//Tokens
+
+"token_toolbar_title" = "QToken - Token web";
+"token_title" = "Selecione o serviço que deseja validar";
+"token_read_fail" = "QRCode nao encontrado";
+"token_scan_desc" = "Posicione o QRCode dentro do quadrado no centro para ler.";
+"token_success_title" = "Código válidado com sucesso!";
+"token_fail_title" = "Oops! Algo deu errado ao validar o código!";
+"token_fail_desc" = "Não foi possível validar o token. Por favor, tente novamente. Caso o erro persista, entre em contato com a nossa central de atendimento.";
+"token_try_again" = "tentar novamente";
+
+//Statement
+
+"statement_no_content" = "Não encontramos nenhum movimento na sua conta PIU.";
+"statement_no_content_error" = "Erro ao obter o extrato da conta PIU. Deslize o dedo para baixo para atualizar ;D";
+"statement_balance_of_today" = "saldo do dia: ";
+"statement_see_order" = "ver detalhes";
+
+//No Content list Generic
+"list_generic_no_content_payment_methods" = "Não há métodos de pagamento disponíveis para este produto.";
+"list_generic_no_content_values" = "Não há valores disponíveis para este produto.";
+"list_generic_no_content_all" = "Não há itens disponíveis para este produto.";
+
+//Order
+
+"order_searching_all" = "Exibindo todos os pedidos…";
+"order_filter_error" = "Por favor, selecione ao menos 1 filtro.";
+"order_searching_showing" = "Exibindo pedidos {filter}…";
+"order_change_filter" = "Alterar";
+"order_filter_button" = "filtrar";
+"order_filter_title" = "Filtros";
+"order_filter_show_orders_label" = "Exibir produtos";
+"order_filter_canceled" = " cancelados";
+"order_filter_pendent" = " pendentes";
+"order_filter_finished" = " concluídos";
+"order_no_orders_title" = "Nenhum pedido encontrado. Arraste o \ndedo para baixo para atualizar ;D";
+"order_no_orders_error_title" = "Erro ao obter pedidos. Arraste o dedo para baixo para atualizar ;D";
+"order_order_not_found" = "Pedido não encontrado";
+"order_toolbar_title" = "Pedido nº {number}";
+"order_transaction_toolbar_title" = "Transação no ATM nº {number}";
+"order_show_details" = "mais detalhes";
+"order_hide_details" = "esconder detalhes";
+"order_order_number" = "Nº Pedido";
+"order_transaction_number" = "Nº Transação";
+"order_order_status" = "Situação do pedido";
+"order_see_order_canceled_reason" = "ver detalhes";
+"order_see_order_canceled_reason_title" = "Por que meu pedido foi cancelado?";
+"order_order_date" = "Data do pedido";
+"order_order_price" = "Valor do pedido";
+"order_order_payment_method" = "Forma de pagamento";
+"order_selected_bank" = "Sua agência e conta";
+"order_receipt" = "Comprovante";
+"order_button_details" = "Detalhes";
+"order_not_found_name" = "Produto não identificado";
+"order_share_button" = "compartilhar";
+"order_resend_button" = "Reenviar recibo";
+"order_sent_to" = "Recbido enviado para {phone}";
+"order_timer" = "Reenvio disponível em {sec} segundos";
+"order_receipt_example" = "========================================\r\nTerminal: 1023                    Loja: \r\n\r\nData/Hora: 28/06/2018 11:17:15\r\n----------------------------------------\r\nNSU Rede: 6749\r\n\r\nProduto: \r\nValor: R$ 0,18\r\n\r\n========================================\r\nDados Cadastrais:\r\nCPF: 66666660110\r\nNome: MIGUEL ME PROTEJA\r\nData Situacao: 28/03/2014\r\n\r\nParticipacoes:\r\n== NADA CONSTA ==\r\n\r\nAlerta de Obito: 0000 - NADA CONSTA\r\nPARA ALERTA\r\n\r\nAnotacoes Negativas:\r\n== NADA CONSTA ==\r\n\r\n****************************************\r\n*     CONHECA E BAIXE O APLICATIVO     *\r\n*               PIU               *\r\n****************************************\r\n\r\n";
+
+"order_caixa_economica_op_code_desc" = "Para finalizar seu pedido, após a transferência digite o CÓDIGO DA OPERAÇÃO que está localizado no seu recibo da transferência.";
+"order_caixa_economica_op_code_hint" = "Digite o código aqui";
+"order_caixa_economica_send_button" = "Enviar código";
+
+"order_caixa_economica_input_error" = "Digite o código corretamente!";
+"order_caixa_economica_send_success" = "Código enviado!";
+"order_caixa_economica_send_success_desc" = "O código enviado foi {code}. Caso o código esteja correto, seu pedido será liberado em até 1 dia útil.";
+"order_caixa_economica_send_fail" = "Falha ao enviar!";
+"order_caixa_economica_send_fail_desc" = "Tivemos um problema ao concluir sua solicitação, por favor, tente novamente.";
+"order_caixa_economica_status_button" = "Reenviar";
+
+"order_pro_no_content" = "Não encontramos movimentação na sua conta no período selecionado.";
+"order_pro_no_content_error" = "Erro ao obter lista de pedidos";
+
+//Attendance fragment
+
+"attendance_title" = "Bem-vindo a PIU!\nutilize esta página para consultar dúvidas ou falar com a nossa equipe de suporte :)";
+"attendance_chat_online" = "atendimento online";
+
+"attendance_phone_title" = "Atendimento Telefônico";
+"attendance_phone_desc" = "Fale com nossa equipe de suporte via telefone. Serviço disponível de 9h as 20h de seg a sex e de 9h as 18h aos sábados. Clique para ligar ou digite o número: (11) 4003-2989";
+
+"attendance_whatsapp_title" = "Atendimento pelo WhatsApp";
+"attendance_whatsapp_desc" = "Envie sua dúvida e aguarde o retorno da nossa equipe. Toque para iniciar a conversa ou adicione o número (11) (11) 97648–7787.";
+
+"attendance_whatsapp_msg" = "Olá, meu nome é {NAME}, estou com um problema no meu aplicativo... Podem me ajudar?";
+"attendance_message_contact" = "Para tirar dúvidas\nentre em contato utilizando\nos canais abaixo!\nFone:(11) 4003.2989 \nwhatsapp: (11) (11) 97648–7787.";
+
+"attendance_input_order_error" = "Digite o número do pedido corretamente!";
+"attendance_input_protocol_error" = "Digite o número do protocolo corretamente!";
+"attendance_input_cpf_error" = "Digite o CPF corretamente!";
+"attendance_input_question_error" = "A dúvida deve conter ao menos 20 caracteres!";
+
+"attendance_still_can_help" = "Sua dúvida foi resolvida?";
+"attendance_order_not_founded" = "Não encontrei seu pedido… Por favor, digite o número do seu CPF para eu tentar novamente";
+"attendance_order_founded" = "Encontrei seu pedido!\n\nSeu pedido tem o número {id} e é um(a) {name} feito em {date} no valor de {value}.";
+"attendance_order_completed" = "O pedido está confirmado! Caso o pedido seja um cartão de transporte, vá até o posto de recarga mais próximo para recarregar :D";
+"attendance_order_pending" = "o pagamento ainda está sendo processado. Consulte novamente o status acessando a página de pedidos do menu principal";
+"attendance_order_canceled" = "O pagamento para este pedido foi recusado. Verifique se as informações de pagamento estão corretas ou tente outro meio de pagamento!";
+
+"attendance_protocol_not_founded" = "Não encontrei este protocolo… Vamos tentar com seu CPF.";
+"attendance_protocol_list_answer" = "Por favor, selecione um dos protocolos da lista para continuar.";
+"attendance_protocol_list_failed" = "Não consegui encontrar nenhum protocolo… Por favor, vamos tentar novamente!";
+"attendance_protocol_response" = "O número do protocolo é {protocol_id}.\n\nO chamado está {status} e foi feito em {date}.\n\nSua pergunta: {question}\n\nResposta: {answer}\n\nEncontrou o que estava procurando?";
+"attendance_protocol_still_no_answer" = "Ainda sem resposta…";
+
+"attendance_order_list_answer" = "Por favor, selecione um dos pedidos da lista para continuar.";
+"attendance_order_list_failed" = "Não consegui encontrar nenhum pedido… Por favor, vamos tentar novamente!";
+
+"attendance_hint_tap_message" = "Digite sua dúvida";
+"attendance_robot_qiwi" = "Assistente da PIU";
+"attendance_default_status" = "Em que posso ajudar?";
+"attendance_writting" = "Digitando...";
+"attendance_no_content" = "Problemas ao encontrar as perguntas… Tente novamente.";
+
+"attendance_robot_default_message" = "Em que posso ajudar?";
+"attendance_robot_finish_message" = "Em que posso ajudar?";
+"attendance_hint_action_order_number" = "Número do pedido";
+"attendance_hint_action_cpf" = "Digite o CPF";
+"attendance_hint_action_write_question" = "Digite sua dúvida…";
+"attendance_hint_action_protocol" = "Digite o número do protocolo…";
+
+"attendance_rate_title" = "Avalie o atendimento";
+"attendance_rate_desc" = "Considere cinco estrelas para excelente e uma estrela para ruim";
+
+"attendance_rate_thanks_title" = "Obrigado!";
+"attendance_rate_thanks_desc" = "Sua ajuda é importante para continuarmos melhorando! Toque no botão abaixo para finalizar o atendimento.";
+
+"attendance_finish_question" = "Conseguiu resolver seu problema?";
+"attendance_still_have_question" = "Gostaria de falar sobre outra dúvida?";
+"attendance_protocol_question" = "Por favor, escreva detalhadamente seu problema! Vou abrir um protocolo e enviar para nossa equipe especializada, iremos te responder em breve!";
+"attendance_rate_question"= "Por favor avalie meu atendimento! É importante para que possamos melhorar nosso trabalho!";
+"attendance_yes_finish" = "Sim! Não tenho mais dúvidas!";
+"attendance_yes_still_have_question" = "Sim! E eu tenho outra dúvida!";
+"attendance_no_protocol" = "Não… Quero falar com um técnico especializado!";
+"attendance_ok" = "OK";
+
+"attendance_common_questions_1" = "Quanto tempo demora pra confirmar meu pedido?";
+"attendance_common_questions_2" = "O que é PIU?";
+"attendance_common_questions_3" = "Porque meu pedido foi cancelado?";
+"attendance_common_questions_4" = "O que é NFC?<";
+
+//Password visibility
+"password_visibility_title" = "Deseja alterar a visibilidade de todas as senhas?";
+"password_visibility_desc" = "Todos os campos de senha do app serão alterados. Você poderá reverter essa opção nas configurações do aplicativo no menu mais.";
+"password_visibility_check" = "Não me perguntar novamente.";
+"password_visibility_yes" = "Sim, alterar todos!";
+"password_visibility_no" = "Não alterar!";
+
+//Account
+
+"account_see_more" = "ver opções";
+"account_hide_more" = "esconder";
+"account_welcome" = "Você está logado através do número {num} :)";
+
+"create_qiwi_title_toolbar" = "Criar uma senha";
+"create_qiwi_title_toolbar_what_is_qiwi_pass" = "O que é CONTA PIU?";
+"create_qiwi_pass_title" = "Precisamos cadastrar uma senha CONTA PIU para você realizar transacões com créditos PIU.";
+"create_qiwi_pass_sending" = "Enviando SMS...";
+"create_qiwi_pass_sending_desc" = "Aguarde um instante.";
+"create_qiwi_pass_sent" = "SMS Enviado!";
+"create_qiwi_pass_sent_failed" = "Falha ao enviar SMS!";
+"create_qiwi_pass_sent_desc_sucess" = "Enviamos SMS com um código de validação para o número {number}.";
+"create_qiwi_pass_sent_desc_failed" = "Tivemos um problema ao enviar o SMS. Por favor, tente novamente.";
+
+"create_qiwi_pass_sms_title" = "Te enviamos um SMS com um código de validação!";
+"create_qiwi_pass_input_title" = "Entre com o código recebido via SMS, seu CPF e uma senha de 6 números.";
+"create_qiwi_pass_code_holder" = "Código SMS recebido.";
+"create_qiwi_pass_cpf_holder" = "CPF";
+"create_qiwi_pass_pass_holder" = "Senha numérica de 6 digitos";
+"create_qiwi_pass_confirm_pass_holder" = "Confirmar senha";
+"create_qiwi_pass_continue" = "Continuar";
+
+"create_qiwi_pass_continue_to_change" = "Alterar senha";
+
+//Change password
+
+"change_pass_toolbar_title" = "Trocar a SENHA DE ACESSO";
+"change_pass_toolbar_title_forgot" = "Alterar SENHA DE ACESSO";
+"change_qiwi_pass_toolbar_title_forgot" = "Alterar SENHA CONTA PIU";
+"change_pass_account_info_title" = "Digite seu CPF e número do celular";
+"change_pass_resent" = "reenviar código";
+"change_pass_code_sent" = "Código enviado!";
+"change_pass_sms_hint" = "código recebido";
+"change_pass_current_pass" = "senha atual";
+"change_pass_new_pass" = "nova senha";
+"change_pass_new_pass_confirm" = "confirmar senha";
+"change_pass_change_button" = "alterar";
+"change_pass_status_title" = "Resultado da alteração";
+"change_pass_sucessed" = "A sua senha foi alterada!";
+"change_pass_failed" = "Falha ao alterar senha!";
+"change_pass_sms_failed" = "Falha ao enviar SMS!";
+"change_pass_sucessed_desc" = "Você ja pode realizar o login com a sua nova senha!";
+"change_qiwi_pass_sucessed_desc" = "Você ja pode realizar transações com a conta PIU utilizando a sua nova senha!";
+"change_pass_failed_desc" = "Algo deu errado enquanto alteravamos sua senha… Por favor, tente novamente!";
+"change_pass_sms_error" = "Digite o código corretamente.";
+"change_pass_current_pass_error" = "Digite a senha atual corretamente.";
+"change_pass_new_pass_error" = "A senha deve ter no minímo 6 caracteres.";
+"change_pass_new_pass_confirm_error" = "A senhas não são iguais!";
+"change_pass_send_sms_button" = "confirmar";
+"change_pass" = "esqueci a senha";
+"change_pass_phone_incorret" = "Digite um celular válido.";
+"change_pass_title" = "Enviar senha por e-mail";
+"change_pass_sms_text" = "Codigo de ativacao para alteracao de senha do app piu:";
+"change_pass_what_is_password" = "Qual é a minha senha de acesso?";
+"change_pass_what_is_password_desc" = "A senha é formada por letras e números e é a mesma que você utilizou ao se cadastrar no aplicativo.";
+"change_pass_password_container_title" = "Digite sua nova senha";
+"change_pass_sent" = "Um código de confirmação foi enviado!";
+"change_pass_sent_desc" = "Enviamos um código de confirmação para o e-mail cadastrado, caso não chegue em até 5 minutos, você pode reenvia-lo com o botão abaixo.";
+
+//Forgot qiwi pass
+
+"forgot_qiwi_pass_toolbar" = "Alterar senha conta PIU";
+"forgot_qiwi_pass_info" = "O que é senha conta PIU?";
+"forgot_qiwi_pass_info_desc" = "É uma senha de 6 números usada para transações com a conta PIU nos ATMs (autoatendimento) ou no aplicativo.";
+"forgot_qiwi_pass_title" = "Digite o código recebido e uma senha númerica de 6 digitos suas vezes";
+"forgot_qiwi_pass_sent" = "SMS Enviado!";
+"forgot_qiwi_pass_sent_desc" = "Enviamos SMS com um código de validação para o número {number}.";
+"forgot_qiwi_pass_resent" = "reenviar SMS";
+"forgot_qiwi_code_incorret" = "Código inválido";
+"forgot_qiwi_pass_what_is_qiwi_pass" = "O que é senha conta PIU?";
+"forgot_qiwi_pass_sms_failed" = "Tivemos um problema ao enviar o SMS com o código de validação. Por favor, tente novamente mais tarde.";
+
+"forgot_qiwi_code_invalid" = "Código de validação inválido.";
+"forgot_qiwi_cpf_invalid" = "CPF inválido.";
+"forgot_qiwi_password_must_be_numeric" = "A senha deve conter 6 números.";
+"forgot_qiwi_password_not_the_same" = "As senhas não são iguais.";
+
+"forgot_qiwi_status_success_title" = "Sua senha foi alterada!";
+"forgot_qiwi_status_success_desc" = "Você já pode usar sua nova senha nas suas transações com conta PIU.";
+"forgot_qiwi_status_fail_title" = "Não foi possível alterar a senha.";
+"forgot_qiwi_status_fail_desc" = "Tivemos um problema ao alterar sua senha. Por favor, tente novamente mais tarde.";
+
+//MORE
+
+"more_need_help" = "Digite sua dúvida aqui";
+"more_other_services_available" = "Outros serviços";
+"more_select_picture" = "Selecione uma imagem";
+"more_permission_picture_title" = "Precisamos de sua permissão!";
+"more_permission_picture_desc" = "Para mostrar suas fotos você precisa permitir que seus arquivos sejam acessados.";
+
+//Recharge transport card prodat
+"cittamobi_product_name" = "Recarrega de cartão de transporte";
+"cittamobi_product_desc" = "Recarga de créditos para cartão de transporte no valor de";
+"prodata_product_name" = "Recarrega de cartão de transporte";
+"prodata_product_desc" = "Recarga de créditos para cartão de transporte no valor de";
+
+//Recharge transport card urbs
+"urbs_product_name" = "Recarrega de cartão de transporte";
+"urbs_product_desc" = "Recarga de créditos para cartão de transporte no valor de";
+
+//Recharge transport card metrocard
+"metrocard_product_name" = "Recarrega de cartão de transporte";
+"metrocard_product_desc" = "Recarga de créditos para cartão de transporte no valor de";
+
+//Recharge transport cad
+
+"transport_toolbar_title_nav" = "Bilhete Unico";
+"transport_toolbar_title" = "Recarregar cartão de transporte";
+"transport_choose_card" = "Escolha um cartão para carregar";
+"transport_charge_button" = "recarregar";
+"transport_card_touch_to_edit" = "toque no cartão para editar ou remover ou toque em recarregar para continuar :)";
+"transport_or" = "ou ";
+"transport_recharge_another" = "recarregar outro cartão";
+"transport_add_card" = "Adicionar um cartão";
+"transport_edit_card" = "Editar um cartão";
+"transport_hint_add_card" = "Número do cartão";
+"transport_add_card_button" = "salvar";
+"transport_add_or_continue_desc" = "Ao continuar seu cartão será salvo automaticamente";
+"transport_add_name_desc" = "Digite um nome para o seu cartão, assim fica mais fácil identificá-lo no futuro! :)";
+"transport_add_name_hint" = "Nome do cartão (ex. cartão da facul)";
+"transport_error_to_get_list" = "Não existem opções de recarga para este cartão!";
+"transport_need_help" = "Onde está o número do meu cartão? Clique para conferir";
+"transport_select_the_similar_to_your" = "Selecione o cartão mais parecido com o seu";
+"transport_card_number_empty" = "o número não pode estar vazio!";
+"transport_card_number_invalid" = "o número é inválido!";
+"transport_card_saved_successed" = "Seu cartão foi salvo com sucesso! :)";
+"transport_card_saved_failed" = "Algo deu errado enquanto salvavamos seu cartão, tente novamente :(";
+"transport_amount_title" = "Como funciona a conta {}?";
+"transport_daily_amount_desc" = "A conta permite realizar até 10 viagens no período de 24h continuas, contadas a partir da 1ª utilização.";
+"transport_montly_amount_desc" = "A conta permite realizar até 10 viagens no período de 31 (trinta e um) dias corridos, contadas a partir da data da 1ª utilização.";
+"transport_where_will_use" = "Onde você irá utilizar sua recarga {type}?";
+"transport_select_amount" = "Qual a quantidade de cotas de {type} deseja recarregar?";
+"transport_value" = "Valor:";
+"transport_quota" = "Cota máxima do cartão é {value}.";
+"transport_inst_title" = "Vá até um terminal de recarga para validar seus créditos!";
+"transport_inst_desc" = "Utilize um dos terminais de recarga nas estações do metrô ou em algum dos novos ônibus para validar os créditos. Basta encostar o cartão e aguardar a mensagem de validação na tela.";
+"transport_inst_desc_urbs" = "Utilize um dos terminais de recarga nos ônibus ou terminais para validar os créditos. Basta encostar o cartão e aguardar a mensagem de validação na tela.";
+"transport_save_card" = "Salvar cartão para próximas recargas";
+"transport_save_error" = "Erro ao salvar cartão no servidor. Tente adiciona-lo mais tarde.";
+"transport_studant_tax_title" = "Taxa de renovação de cadastro:";
+
+//Recharge transport Metrocard
+
+"metrocard_toolbar" = "Metrocard";
+"metrocard_cpf_hint" = "CPF do proprietário do cartão";
+"metrocard_balance_title_nav" = "Saldo Metrocard";
+"metrocard_balance_date" = "Atualizado em {date}";
+"metrocard_balance_error" = "Sem recargas disponíveis ;)";
+"metrocard_balance_no_data" = "Sem recargas disponíveis ;)";
+
+"metrocard_card_not_found" = "Cartão não encontrado";
+"metrocard_cant_recharge" = "Não é possível recarregar este cartão. Por favor, selecione outro.";
+
+//Recharge transport card Urbs
+
+"transport_balance_title_nav" = "Saldo Bilhete URBS";
+"transport_extract_title_nav" = "Extrato Bilhete URBS";
+"transport_urbs_balance_date" = "Atualizado em {date}";
+"transport_urbs_balance_error" = "Falha ao consultar saldo.
+Toque na tela ou deslize para atualizar.";
+
+
+"transport_urbs_cant_recharge" = "Não é possível recarregar esta opção. Por favor, selecione outra forma de recarga.";
+
+"transport_urbs_statement_no_content" = "Não encontramos movimentacão no seu cartão. Deslize para baixo para atualizar ;D";
+"transport_urbs_statement_no_content_error" = "Erro ao pesquisar seu extrato. Deslize para baixo para atualizar ;D";
+
+//Payment methods
+
+"payments_toolbar_title" = "Pagamento de contas";
+"payments_title" = "Selecione a forma de pagamento";
+"payments_credit_card_title" = "Selecione ou adicione um cartão de crédito";
+"payments_credit_card_add" = "Adicionar cartão";
+"payments_credit_qiwi_balance" = "Utilizar créditos PIU";
+"payments_no_credit_cards_list" = "Você não possui cartões cadastrados";
+"payments_wait_for_balance" = "Aguarde enquanto validamos seus créditos PIU";
+"payments_balance_title" = "Saldo";
+"payments_balance_loading" = "Atualizando saldo, aguarde…";
+"payments_gbank_transfer_title" = "Selecione seu banco";
+"payments_no_payments_available" = "Nenhuma forma de pagamento disponível para o valor selecionado. Por favor, selecione outro valor.";
+"payments_qiwi_pass_hint" = "Senha";
+"payments_qiwi_pass_error" = "A senha deve conter 6 digitos";
+"payments_qiwi_pass_wrong" = "Usuário ou senha incorretos";
+"payments_method_credit_card" = "Cartão de crédito";
+"payments_method_qiwi_account" = "Créditos conta PIU";
+"payments_method_bank_transfer" = "Transferência bancária";
+"payments_method_pix" = "PIX";
+"payments_method_pix_v2" = "PIX\rCOPIA E COLA";
+"payments_method_promo_code" = "Cupom promocional";
+"payments_method_pre_pago" = "Pré Pago";
+"payments_method_money" = "Dinheiro";
+"payments_method_coupon" = "Cupom de desconto";
+"payments_method_credit_card_atm" = "Cartão de crédito no ATM";
+"payments_method_bill" = "Boleto";
+"payments_limit_label" = "Limite:";
+"payments_cash_type" = "Pagamento em Dinheiro";
+"payments_bill_title" = "Gerar Boleto";
+"payments_prepago_get_balance_error" = "Algo deu errado ao consultar seu saldo. Tente novamente.";
+
+"payments_prepago_no_balance" = "Você não possui crédito pré pago suficiente para esta transação.
+Valor da transação: {value}
+Saldo: {balance}";
+
+"cash_back_title" = "Você ganhou {value} de volta!";
+"cash_back_desc" = "Compartilhe com seus amigos para efetivar o crédito PIU em sua conta.";
+"cash_back_received" = "{value} foi adicionado em sua conta!";
+"cash_back_error" = "Falha ao receber cashback. Por favor, tente novamente.";
+"cash_back_available" = "{value} disponível";
+
+//PIX
+"pix_view_title" = "PIX!";
+"pix_view_desc" = "Sua transferência é recebida em alguns minutos, em qualquer horário, 7 dias por semana.";
+"pix_view_select_who_will_pay" = "Quem vai fazer o PIX?";
+"pix_view_select_who_will_pay_desc" = "O nome e documento devem ser o mesmo da sua conta bancária";
+"pix_view_document_placeholder" = "CPF/CNPJ do propriterário da conta";
+"pix_view_name_placeholder" = "Nome completo ou razão social";
+"pix_save_document" = "Salvar para futuras compras";
+
+"pix_info_title" = "Chave PIX - CNPJ";
+"pix_info_value" = "Efetue o pagamento no valor de {VALUE} para nossa chave PIX em seu banco de preferência.";
+"pix_info_48h" = "O PIX deve ser realizado em até 48 horas!";
+"pix_info_order_will_be_updated" = "Seu pedido será atualizado e você será notificado quando identificarmos o pagamento.";
+
+//Select value method
+
+"select_value_must_enter_a_value" = "Insira um valor para continuar";
+"select_value_out_of_limit" = "O valor está fora do limite.";
+"select_value_warning_limits" = "Alguns valores podem não conter formas de pagamentos disponíveis. Clique para conferir os limites.";
+"select_value_warning_qiwi_limits" = "Você pode adicionar o máximo de {value} de créditos na sua conta PIU.";
+"select_value_qiwi_limit_reached" = "O valor é maior do que o permitido para recarregar.";
+"select_value_recharge_type" = "O que deseja carregar?";
+"select_value_choose_value" = "Selecione o valor da recarga";
+"select_value_other_value" = "outro valor";
+"select_value_hint_add_value" = "valor da recarga";
+"select_value_add_value_limit_desc" = "lembre-se: o limite de recarga é entre {min} e {max}";
+"select_value_add_value_limit_transfer_desc" = "lembre-se: o limite de transferência é entre {min} e {max}";
+
+//Checkout
+
+"checkout_title" = "Finalizar compra";
+"checkout_order_detail" = "Detalhes do pedido";
+"checkout_product" = "Produto";
+"checkout_type" = "Tipo";
+"checkout_date" = "Data";
+"checkout_value" = "Valor";
+"checkout_total_value" = "Valor total";
+"checkout_tax" = "Taxa";
+"checkout_detalhes" = "Detalhes";
+"checkout_discount" = "Desconto";
+"checkout_transport_value" = "Recarga de transporte de cota comum no valor de {value}";
+"checkout_transport_type" = "Recarga de transporte tipo {type} no valor de {value}";
+"checkout_cvv" = "Código de segurança do cartão";
+"checkout_qiwi_pass_info" = "Senha da conta PIU";
+"checkout_qiwi_pass_error" = "Preencha os 6 digitos";
+"checkout_no_balance" = "Você não possui saldo suficiente. Clique para adicionar créditos PIU e finalizar a sua compra.";
+"checkout_input_cvv" = "Digite o CVV";
+"checkout_input_qiwi_pass" = "Digite a senha de 6 números";
+"checkout_input_bank" = "Digite sua conta";
+"checkout_bank_card_title" = "Informações bancárias";
+"checkout_bank_card_desc" = "Digite os dados da sua conta bancária";
+"checkout_bank_owner_name_hint" = "Seu nome completo";
+"checkout_bank_owner_CPF_hint" = "CPF ou CNPJ do titular";
+"checkout_bank_owner_CNPJ_hint" = "CNPJ do titular";
+"checkout_bank_owner_agency_hint" = "Agência";
+"checkout_bank_owner_account_hint" = "Conta";
+"checkout_bank_owner_account_digit_hint" = "Digito";
+"checkout_bank_owner_invalid_input" = "Preencha os campos corretamente!";
+"checkout_bank_owner_nickiname" = "Apelido da conta (ex. Conta da minha empresa)";
+"checkout_bank_bank_info" = "Agência: {agency}\nConta: {account}-{digit}";
+"checkout_bank_transfer_warning" = "Faça a transferência no valor de {value} para a conta abaixo:";
+"checkout_bank_transfer_info_warning" = "A transferência deve ser realizada em até 3 dias!";
+"checkout_bank_deposito_warning" = "Faça o depósito no valor de {value} para a conta abaixo:";
+"checkout_bank_transfer_and_deposito_info" = "A divida será atualizada automaticamente quando identificarmos o pagamento.";
+"checkout_bank_transfer_info" = "Seu pedido será atualizado e você será notificado quando identificarmos o pagamento.";
+"checkout_bank_transfer_info_caixa" = "Após transferir, envie-nos o código da operacão para concluir seu pedido.";
+"checkout_bank_deposito_info_caixa" = "Após depositar, envie-nos o código da operacão para concluir seu pedido.";
+"checkout_bank_field_error" = "Preencha o campo corretamente!";
+"checkout_taxes" = "(taxa de serviço de {tax})";
+"checkout_processing" = "Processando seu pedido, aguarde…";
+"checkout_success_finished" = "Seu pedido foi realizado com sucesso e está concluído!";
+"checkout_success_finished_desc" = "Você pode conferir mais informações na página de pedidos utilizando o botão abaixo.";
+"checkout_success_finished_prepago_desc" = "Você ainda pode reenviar o recibo para o número digitado anteriormente clicando no botão reenviar.";
+"checkout_success_pendent" = "Seu pedido foi realizado com sucesso e está pendente de aprovação!";
+"checkout_failed" = "Ops! Algo deu errado ao realizar seu pedido!";
+"checkout_failed_desc" = "Por favor, tente novamente. Se o erro persistir, contate nossa equipe de suporte.";
+"checkout_button_go_to_orders" = "ver detalhes";
+"checkout_button_go_to_orders_menu" = "voltar ao inicio";
+"checkout_buy_another" = "comprar outra coisa";
+"checkout_request_error" = "Algo deu errado durante a requisição. Tente novamente.";
+
+"checkout_send_receipt_phone_invalid" = "É necessário digitar um número válido para receber o recibo!";
+
+//Phone Recharge
+"phone_product_name" = "Recarga Telefone";
+"phone_product_desc" = "Compra de créditos para celular no valor de ";
+
+"phone_select_contact" = "Selecione um contato";
+"phone_select_contact_fav" = "Selecione um contato dos favoritos";
+"phone_title_recharge" = "Recarga Telefone";
+"phone_title_label_pro" = "Informe o número que deseja recarregar";
+"phone_or_tape_contact" = "outro número";
+"phone_search_contacts" = "agenda";
+"phone_search_contacts_fav" = "voltar";
+"phone_permission_title" = "Precisamos de sua permissão";
+"phone_permission_desc" = "É necessário permissão para acessar seus contatos.";
+"phone_hint_ddd" = "DDD";
+"phone_hint_number" = "Número com DDD";
+"phone_hint_name" = "nome (opcional)";
+"phone_keep_scrolling_desc" = "Deslize a lista para baixo para ver mais contatos.";
+"phone_search_hint" = "Procurar contato na agenda";
+"phone_no_content" = "Nenhum contato encontrado.";
+"phone_error_ddd" = "O DDD não foi preenchido corretamente";
+"phone_error_number" = "O número não foi preenchido corretamente";
+"phone_select_operator" = "Selecione a operadora";
+"phone_options_title" = "O que gostaria de fazer?";
+"phone_options_edit" = "Editar contato";
+"phone_edit_operator" = "Alterar operadora";
+"phone_select_operator_toolbar" = "Selecione uma operadora";
+"phone_title_message" = "qual a ação a ser realizada?";
+"phone_action_edit_contact" = "editar contato";
+"phone_action_remove_contact" = "remover contato";
+
+"national_phone_alert_title" = "Recargas Nacionais";
+"national_phone_alert_desc" = "Use este canal somente para recarregar números nacionais, para outros paises, clique no botão abaixo.";
+"national_phone_alert_click" = "Recarga Internacional";
+
+//International Phone
+"international_phone_title" = "Telefonia Internacional";
+"international_phone_alert_title" = "Recargas Internacionais";
+"international_phone_alert_desc" = "Use este canal somente para recargas internacionais, para recargas nacionais, clique no botão abaixo.";
+"international_phone_alert_click" = "Recarga Nacional";
+"international_phone_hint_number" = "Número com DDI (e DDD se houver)";
+"international_phone_consult_fail" = "Falha ao consultar o número. Por favor tente novamente mais tarde.";
+
+// CUPOM
+"coupon_toolbar" = "Cupons de desconto";
+"coupon_product_list_all" = "Pode ser utilizado na compra de qualquer serviço.";
+"coupon_product_list" = "Pode ser utilizado na compra de ";
+"coupon_list_not_found" = "Você não possuí cupons disponíveis ;)";
+"coupon_you_have_x_cupom_button" = "Você {count} cupom(ns) disponível(is)";
+"coupon_add_coupon_button" = "Adicionar cupom promocional";
+"coupon_new_coupon_button" = "Adicionar Cupom";
+"coupon_back_button" = "Cancelar";
+"coupon_send_button" = "Adicionar";
+"coupon_add_coupon_hint" = "Número do Cupom";
+"coupon_add_coupon_input_error" = "O cupom deve ter 16 digítos!";
+"coupon_one_applied" = "{value} cupom aplicado\n(toque para remover)";
+"coupon_multiple_applied" = "{value} cupons aplicados\n(toque para remover)";
+"coupon_invalid" = "Cupom inválido!";
+"coupon_value_limit_reached" = "O valor total do desconto não pode ser maior que o valor da compra.";
+"coupon_error" = "Erro ao adicionar cupom. Por favor, tente novamente mais tarde.";
+"coupon_error_inserting_on_list" = "Somente cupons acumulativos (verdes) podem ser acumulados.";
+"coupon_error_value_need_to_be_equal" = "O valor do cupom deve ser igual ou maior que valor da compra ({value}).
+Caso deseje pagar o restante com outra forma de pagamento, volte e selecione a forma de pagamento desejada e aplique o cupom na página de confirmação.";
+"coupon_error_value_alread_cross_limit" = "O número de cupons aplicados já é maior que o valor da venda.";
+
+"coupon_coupon_selected" = "Utilizar ({count})";
+
+"coupon_individual" = "Um por compra";
+"coupon_acumulative" = "Um ou mais por compra";
+"coupon_unative" = "Não aplicável";
+
+//Map Qiwi
+
+"map_title" = "Mapa PIU";
+"map_button_arrive" = "COMO CHEGAR AQUI";
+
+//Credit caqrd
+
+"credit_card_add_title" = "Adicionar cartão de crédito";
+"credit_card_edit_title" = "Editar cartão de crédito";
+"credit_card_hint" = "XXXX XXXX XXXX XXXX";
+"credit_card_name" = "NOME";
+"credit_card_validate_hint" = "MM/AA";
+"credit_card_validate_name" = "VALIDADE";
+"credit_card_name_title_hint" = "NOME IMPRESSO NO CARTÃO";
+"credit_card_cvv_title" = "CVV";
+"credit_card_cvv_hint" = "XXX";
+"credit_card_flag_visa" = "Visa";
+"credit_card_flag_master" = "Master Card";
+"credit_card_validation_brand" = "Selecione uma bandeira para continuar";
+"credit_card_validation_card_number_not_completed" = "Preencha os 16 números do cartão";
+"credit_card_validation_owner_name_not_completed" = "Digite corretamente o nome impresso no cartão";
+"credit_card_validation_validate_not_completed" = "Preencha o mês e ano de validade";
+"credit_card_validation_month_incorrect" = "Preencha o mês corretamente";
+"credit_card_validation_year_incorrect" = "Preencha o ano corretamente";
+"credit_card_validation_cvv_not_completed" = "Preencha os digitos do código de segurança";
+"credit_card_validation_credited_value_not_completed" = "Preencha o valor corretamente!";
+"credit_card_number_hint" = "número do cartão";
+"credit_owner_name_hint" = "Nome do proprietário";
+"credit_validate_hint" = "validade (mm/aa)";
+"credit_cvv_hint" = "código de segurança";
+"credit_nickname_hint" = "apelido (ex. meu visa) (opcional)";
+"credit_card_validated" = "Estamos prontos para continuar!";
+"credit_card_save_card" = "salvar cartão para futuras compras";
+"credit_card_button_pay" = "pagar";
+"credit_card_touch_to_edit" = "toque no cartão para remover ou toque em pagar para continuar :)";
+"credit_card_final" = "final {number}";
+"credit_card_remove_card" = "Deseja realmente remover este cartão?";
+"credit_card_pay_with_other_card" = "pagar com outro cartão";
+"credit_card_loading" = "Cadastrando cartão…";
+"credit_card_confimation_success" = "Cartão cadastrado!";
+"credit_card_confimation_failed" = "Falha ao enviar cartão";
+"credit_card_confimation_desc_failed" = "Tivemos um problema ao enviar seu cartão para o servidor :(\nPor favor, entre em contato com nossa equipe de suporte através número (11) 4003–2989 / Celular WhatsApp (11) 97648-7787.";
+"credit_card_confimation_desc_success" = "Seu cartão de crédito foi adicionado com sucesso!";
+"credit_card_validated" = "Estamos prontos para continuar!";
+"credit_card_save_card" = "salvar cartão para futuras compras";
+"credit_card_no_image" = "Falha ao verificar imagem do cartão.";
+"credit_card_confimation_desc_block" = "Você excedeu todas as tentativas! Entre em contato com nossa equipe de suporte através número (11) 4003–2989 / Celular WhatsApp (11) 97648-7787.";
+
+"credit_card_credited_value_title" = "Confirmação de valor";
+"credit_card_credited_value_desc" = "Debitamos um pequeno valor no seu cartão. Por favor, confirme o valor debitado em sua fatura ou app do cartão e insira abaixo. Após 3 tentativas incorretas, sua conta poderá ser temporariamente suspensa.";
+"credit_card_validated" = "Estamos prontos para continuar!";
+"credit_card_save_card" = "salvar cartão para futuras compras";
+"credit_card_confimation_devolution" = "Você também pode confirmar o valor mais tarde acessando o menu mais > cartões de crédito. O valor será estornado após a sua confirmação ou após 3 dias sem confirmação.";
+"credit_card_credited_value" = "valor debitado";
+"credit_card_credited_value_worng" = "O Valor está incorreto!";
+"credit_card_credited_value_fail_converting_to_float" = "Falha ao converter valor";
+
+"credit_card_picture_label" = "Precisamos identificar o modelo do seu cartão.
+Posicione-o no centro e toque para salvar";
+"credit_card_preview_label" = "Certifique-se de que a imagem esteja nítida";
+
+"credit_card_video_capture_button" = "Gravar vídeo";
+"credit_card_video_capture_again_button" = "Gravar outro vídeo";
+"credit_card_video_status_success_title" = "Vídeo Salvo!";
+"credit_card_video_status_success_desc" = "Seu vídeo foi salvo com sucesso! Você pode gravar um novo se preferir.";
+"credit_card_video_status_failed_title" = "Ops, algo deu errado!";
+"credit_card_video_status_failed_desc" = "Tivemos um problema para salvar seu vídeo. Por favor, tente novamente.";
+"credit_card_video_validation" = "Você precisa gravar um vídeo para continuar.";
+
+"credit_card_video_text_to_read_card_title" = "Ei, precisamos confirmar sua identidade.";
+"credit_card_video_text_to_read_card_desc" = "Esta é uma medida de segurança para garantir que é você mesmo. Toque no botão abaixo para iniciar a gravação e diga a frase:";
+"credit_card_video_text_to_read_card_instructions" = "\"Meu nome é {name} e eu autorizo meu cartão final {final} na PIU.\"";
+
+"credit_card_video_text_to_read" = "Aperte o botão abaixo e diga a frase: \"Meu nome é {name} e eu autorizo meu cartão final {final} na PIU.\"";
+
+// Credit card list
+"credit_card_list_toolbar_title" = "Cartões de crédito";
+"credit_card_list_title" = "Seus cartões disponíveis";
+"credit_card_list_info" = "Toque para remover ou clique abaixo parar adicionar um novo cartão";
+"credit_card_no_cards" = "Você não possuí cartões cadastrados, toque no botão abaixo para adicionar um novo cartåo ;D";
+"credit_card_list_add_button" = "adicionar novo cartão";
+"credit_card_list_edit_token" = "Editar apelido do seu cartão";
+"credit_card_list_pendent_desc" = "Para confirmar um cartão pendente, acesse o extrato do seu cartão e confirme o valor debitado. O valor é estornado ao confirmar ou após 3 dias sem confirmação. Caso não confirme, o valor será estornado e o cartão será excluido.";
+
+"credit_card_list_invalid_nickname" = "Digite um apelido com ao menos 3 caracteres.";
+"credit_card_list_edit_failed" = "Não foi possível atualizar o apelido. Tente novamente.";
+
+//Scan / Bill
+
+"scan_toolbar_title" = "Leitor de código de barras";
+"scan_positionate" = "Posicione o código de barras no local indicado";
+"scan_permission_cam_title" = "Precisamos utilizar a câmera!";
+"scan_permission_cam_desc" = "Precisamos de permissão para utilizar a câmera e ler seu código de barra.";
+"scan_tape_code" = "digite o código de barras";
+
+//Bill
+
+"bill_barcode_title_nav" = "Pagto de contas";
+"bill_barcode_title" = "Código de barras";
+"bill_confirm_detail" = "Detalhes da conta";
+"bill_checkout_desc" = "Pagamento de contas no valor de";
+"bill_due_date" = "vencimento";
+"bill_due_date_hint" = "vencimento (dd/mm/aaaa)";
+"bill_price" = "valor";
+"bill_confirm_bill_value" = "Adicionar ou editar o valor";
+"bill_confirm_bill_value_desc" = "Lembre-se de respeitar os valores minimos do boleto indicados na sua conta";
+"bill_confirm_bill_value_hint" = "Valor da conta";
+"bill_input_value_error" = "Entre com um valor válido!";
+"bill_barcode_incomplet" = "Digite o código de barras corretamente!";
+"bill_due_date_error" = "Data de válidade incorreta!";
+"bill_due_date_invalid" = "Boleto vencido!";
+"bill_due_date_validation_incorrent" = "Informar a data de vecimento";
+"bill_request_error" = "Nåo foi possível continuar devido á um erro. Tente novamente.";
+
+//Qiwi recharge
+
+"qiwi_recharge_toolbar_title" = "Recarga de crédito PIU";
+"qiwi_recharge_desc" = "Recarga de crédito PIU no valor de";
+"qiwi_recharge_type" = "PIU";
+"qiwi_recharge_pass_wrong" = "Senha incorreta!";
+
+//Qiwi transfer for pre pago
+
+"qiwi_transfer_prepago_toolbar_title" = "Transferir para Pré Pago";
+"qiwi_transfer_prepago_checkout_details" = "Transferência de créditos conta PIU para créditos Pré Pago no valor de ";
+
+//Serasa consult
+"cnpj_consult_toolbar_title" = "Consulta CNPJ";
+"cpf_consult_toolbar_title" = "Consulta CPF";
+
+"cnpj_consult_toolbar_desc"= "Consulta de CNPJ no serasa com o valor de";
+"cpf_consult_toolbar_desc"= "Consulta de CPF no serasa com o valor de";
+
+"generic_content_input_error"= "Digite o campo corretamente.";
+
+//Parking
+
+"parking_title_nav" = "Zona Azul São Paulo";
+"parking_toolbar_title" = "Ativar CADs da Zona Azul";
+"parking_select_or_add_car" = "Selecione ou adicione um veículo para estacionar";
+"parking_add_plate" = "Adicionar veículo";
+"parking_plate_hint" = "placa";
+"parking_another_street" = "outra rua";
+"parking_view_extract" = "Extrato Zona Azul";
+"parking_see_extract" = "ver extrato Zonal Azul";
+"parking_car_model_hint" = "modelo ou apelido do veículo";
+"parking_select_to_continue" = "selecione um veiculo para continuar";
+"parking_confirm_delete" = "Deseja realmente remover este veículo da sua lista?";
+"parking_buy_cards" = "Comprar cartões de estacionamento";
+"parking_buttons_buy_cards" = "comprar";
+"parking_buy_cards_values_desc" = "Selecione os valores para incrementar";
+"parking_cad_quantity" = "Escolha a quantidade de CADs";
+"parking_parked_cars_desc" = "Veículos estacionados ou que possuem cartões";
+"parking_add_vehicle_button" = "estacionar outro veículo";
+"parking_add_vehicle_error" = "Erro ao adicionar veículo, tente novamente.";
+"parking_parked_init_time" = "Ativado em {date}.";
+"parking_buy_cards_card_amount_single" = "1 cartão";
+"parking_buy_cards_card_amount_multiple" = "{amount} cartões";
+"parking_buy_cards_select_to_continue" = "Selecione um valor para continuar";
+"parking_touch_to_convert" = "Toque para exibir o saldo em reais";
+"parking_toolbar_add_vehicle" = "Adicionar veículo";
+"parking_button_buy_card" = "comp. cartão";
+"parking_touch_to_edit" = "toque para editar/remover ou clique em estacionar :)";
+"parking_button_active" = "estacionar";
+"parking_confirm_rule" = "Confirme a regra de estacionamento";
+"parking_time_up" = "Encerrado";
+"parking_description_cads" = "A cada 10 CADs comprados no mesmo pedido, 1 sai por nossa conta :)";
+"parking_popup_select_card_amount" = "Quantos cartões deseja ativar?";
+"parking_popup_no_cards_available" = "Você não possui cartões.";
+"parking_popup_no_cards_available_error" = "Erro ao obter cartões.";
+"parking_popup_touch_to_buy" = "Toque ao lado para comprar.";
+"parking_popup_available_one_card" = "Você possui 1 cartão disponível.";
+"parking_popup_available_cards" = "Você possui {amount} cartões.";
+"parking_error_type_not_selected" = "Selecione o tipo do veículo";
+"parking_error_plate" = "Preencha a placa corretamente";
+"parking_how_much_cards" = "Quantos cartões deseja usar?";
+"parking_parking_rule" = "Confirme a regra de estacionamento olhando a placa de sinalização da rua";
+"parking_expand" = "ver opções";
+"parking_one_card" = "1 cartão";
+"parking_two_cards" = "2 cartões";
+"parking_change" = "Alterar";
+"parking_rule_general" = "Geral";
+"parking_rule_truck" = "Caminhão";
+"parking_rule_special" = "Especial";
+"parking_rule_general_desc" = "A regra geral é utilizada quando a placa de sinalização não informa a regra de estacionamento";
+"parking_rule_truck_desc" = "Para caminhão ou ônibus, utilize 1 CAD para cada 30 minutos";
+"parking_select_address" = "Selecione o endereço desejado para estacionar";
+"parking_verify_time" = "Verifique o horário de funcionamento da Zona Azul através das placas disponíveis na rua. Para dúvidas, clique aqui.";
+"parking_rule_special_desc" = "Em áreas especiais verifique o tempo de validade do cartão na placa de sinalização";
+"parking_rule_confirm_activation" = "Deseja realmente ativar {amount} cartão(es) {type} por {time}?";
+"parking_rule_popup_title" = "Confirmação";
+"parking_confirm_title" = "Confirmar ativação";
+"parking_confirm_desc" = "Deseja realmente ativar {amount} cartão(es) {type} por {time}?";
+"parking_see_details" = "ver detalhes";
+"parking_see_order" = "ver pedido";
+"parking_activation_success" = "Ativado com sucesso!";
+"parking_activation_success_desc" = "Ativado as {date} com validade de {time}. O tempo restante será exibido na sua lista de veiculos com base no tempo escolhido.";
+"parking_activation_failed" = "Falha ao ativar cartão!";
+"parking_activation_failed_desc" = "Isso pode acontecer devido a instabilidade no servidor ou na sua conexão. Por favor, tente novamente.";
+"parking_rule_no_content" = "Nenhum cartão encontrado ou você não possui cartões suficientes :(";
+"parking_lable_general_rule" = "Regra Geral";
+
+//ClickBus
+
+"clickbus_title_nav" = "ClickBus";
+"clickbus_title_travel" = "Digite o local de partida";
+"clickbus_title_destination" = "Digite a cidade de destino";
+"clickbus_title_date" = "Selecione a data da viagem";
+"clickbus_downloading_cities" = "Aguarde enquanto atualizamos a lista de cidades…";
+"clickbus_placeholder_input_city" = "Digite a cidade aqui";
+"clickbus_going_to" = "Indo para";
+"clickbus_returning_to" = "Voltando para";
+"clickbus_no_trips_available" = "Não foi possível localizar nenhuma passagem… Por favor, tente novamente com outro destino ou volte mais tarde.";
+"clickbus_title_select_seat_go" = "Selecione os seus assentos de ida para {local}";
+"clickbus_title_select_seat_returning" = "Selecione os seus assentos de volta para {local}";
+"clickbus_get_seats_error" = "Não foi possível encontrar assentos disponíveis";
+"clickbus_title_departure" = "Digite o local de partida";
+"clickbus_title_destiny" = "Digite o local de destino";
+"clickbus_title_users_go" = "Selecione os passageiros de ida para {local}";
+"clickbus_title_users_returning" = "Selecione os passageiros de volta para {local}";
+"clickbus_title_data_input_insert" = "Inserir dado de usuário";
+"clickbus_title_data_input_change" = "Alterar dados do usuário";
+"clickbus_placeholder_username" = "Nome completo";
+"clickbus_placeholder_document" = "Número do documento";
+"clickbus_button_insert" = "Inserir";
+"clickbus_button_change" = "Mudar";
+"clickbus_message_statement" = "Você precisa preencher o campo para prosseguir";
+
+"clickbus_date_title_go" = "Selecione a data de ida";
+"clickbus_date_title_return" = "Selecione a data de volta";
+"clickbus_alert_date_must_be_future" = "A data deve ser igual ou superior à data atual!";
+"clickbus_alert_date_must_be_higher_than" = "A data deve ser igual ou superior à {date}";
+
+"clickbus_alert_sure_want_to_continue" = "Ao Prosseguir reservaremos seus assentos e não será possível altera-los durante esta compra, podemos continuar?";
+"clickbus_alert_reserv_seat_failed" = "Falha ao reservar assentos! Por favor tente novamente ou selecione novos assentos.";
+
+"clickbus_product_name" = "ClickBus";
+"clickbus_product_detail" = "Compra de {destiny_amount} passagem(ns) de ônibus de ida para {destiny} no valor de {destiny_value}, totalizando {total}";
+"clickbus_product_detail_go_and_returning" = "Compra de {destiny_amount} passagem(ns) de ônibus de ida para {destiny} no valor de {destiny_value} e {departure_amount} passagem(ns) de ônibus de volta para {departure} no valor de {departure_value} totalizando {total}";
+
+//Login Needed
+
+"login_needed_title" = "Precisamos identifica-lo para continuar! Faça o login ou cadastre uma conta, é rapidinho :)";
+
+// Login Intro
+
+"login_intro_1" = "Recarregue seus cartões de transporte, seu celular e muito mais!";
+"login_intro_2" = "Pague utilizando cartão de crédito, créditos PIU, transferência bancária ou PIX";
+"login_intro_3" = "São dezenas de produtos pra você adquirir!";
+
+//settings
+
+"settings_notification_title" = "Exibir notificações quando";
+"settings_notification_desc" = "Escolha se deseja ser notificado pelo aplicativo quando uma das seguintes ações ocorrerem";
+"settings_notification_order_status" = "Houver alteração no pedido";
+"settings_pass_visibility_title" = "Visibilidade das senhas";
+"settings_pass_visibility_desc" = "Ao clicar em exibir ou esconder o campo de senha, a configuração será replicada para todos os campos de senha do aplicativo.";
+"settings_pass_visibility" = "Alterar visibilidade inicial de todas";
+
+//commissioning
+
+"commissioning_title" = "Comissionamento";
+"more_menu_service_commissioning" = "comissionamento";
+"commissioning_desc" = "Para começar a operar neste terminal você precisará inserir créditos na sua conta PIU. Basta acessar à Conta PIU em seu terminal para adicionar créditos por transferência bancária.";
+"commissioning_text_1" = "Dentro de alguns minutos o saldo estará em sua conta para você começar a realizar as transações!";
+"commissioning_text_2" = "A cada transação um valor de comissionamento será gerado e somado à sua conta PIU!";
+"commissioning_text_3" = "Comissões: Bilhete Único 0.7%, Telefonia 2.5%, consumo geral 1%, boleto bancário 2%, Google Play 1%, League of Legends 2% e para demais produtos 1%.";
+"commissioning_text_4" = "Aguarde, teremos novidades em breve!";
+
+// Dividas
+"dividas_toolbar_title" = "Dividas em aberto";
+"dividas_list_title" = "Selecione uma dívida para pagar";
+"dividas_list_pay_button" = "ver";
+
+"dividas_detail_desc" = "Resumo das dívidas geradas.";
+"dividas_detail_bt_transition" = "ver transações";
+"dividas_detail_title_select_payment" = "Selecione um forma de pagamento";
+"dividas_detail_input_receipt" = "Entre com as informações de deposito";
+
+"dividas_data_validade" = "Validade:";
+"dividas_data_pagamento" = "Pagamento:";
+
+"dividas_status_pendente" = "Pendente";
+"dividas_status_paga" = "Paga";
+"dividas_status_vencida" = "Vencido";
+"dividas_status_parcial" = "Pago Parcialmente";
+"dividas_status_cancelada" = "Cancelado";
+"dividas_status_em_acordo" = "Acordo";
+
+"dividas_value_commission" = "Comissão:";
+"dividas_value_juros" = "Juros:";
+"dividas_value_multa" = "Multa:";
+"dividas_value_balance" = "Saldo:";
+
+"dividas_payment_transf" = "transferência bancária";
+"dividas_payment_deposito" = "depósito bancário";
+"dividas_payment_boleto" = "gerar boleto";
+"dividas_payment_pix" = "PIX";
+
+"dividas_transferencia_step_select_bank" = "Selecione um banco para transferir";
+"dividas_transferencia_step_select_account" = "Selecione sua agência e conta";
+
+"dividas_caixa_enviar_title" = "Enviar código da operação";
+"dividas_status_title_success" = "Processando pagamento";
+"dividas_status_desc_success" = "O processamento pode levar alguns minutos e sua divida será atualizada automaticamente quando tudo estiver certo ;)";
+"dividas_status_title_failed" = "Falha ao solicitar pagamento";
+"dividas_status_desc_failed" = "Ocorreu um erro ao solicitar o pagamento. Por favor, tente novamente.";
+
+"dividas_deposito_title" = "Qual banco você efetuou/efetuará o depósito?";
+"dividas_deposito_input_title" = "Preencha o campo de identificação de acordo com o local que realizou o deposito.";
+"dividas_deposito_id_error" = "A identificação é obrigatória!";
+"dividas_deposito_value_error" = "O valor do depósito é obrigatório!";
+"dividas_deposito_anexo_error" = "É necessário ao menos um anexo!";
+"dividas_deposito_receipt" = "Anexar comprovante";
+"dividas_deposito_example" = "Exemplo de recibo";
+"dividas_deposito_send_only_attaches" = "Código requisitado e/ou cópia do recibo não preenchidos. Deseja enviar os depósitos já informados?";
+
+"dividas_transacoes_title" = "Transações do período";
+
+"dividas_multiple_example_title" = "Onde está o código?";
+"dividas_multiple_example_desc" = "Devido a variedade de recibos, verifique o modelo mais parecido com o seu";
+
+"debt_expired_title" = "Parece que a divida está vencida";
+"debt_expired_desc" = "Após o vencimento, juros e multas são aplicados sobre o valor total. É possível solicitar a isenção dos juros e multas ou negociar essa transação.";
+"debt_expired_no_partial_value" = "Prosseguir com o pagamento normalmente";
+"debt_expired_juros_e_multas" = "Desejo solicitar a isenção de juros e multa";
+"debt_expired_negociar_transacao" = "Desejo negociar o valor total";
+"debt_expired_dont_agree_obs" = "São elegiveis casos de depositos feitos antes da data de vencimento, parceiros com saldo e pagamentos em dia ou com situação financeira irregular.";
+"debt_expired_dont_agree_reason" = "Explique o motivo";
+"debt_expired_partial_value_input" = "Qual valor deseja pagar?";
+"debt_expired_attach_title" = "Anexos";
+"debt_expired_attach_desc" = "Você pode enviar comprovantes ou documentos que ajudem a entender o motivo";
+"debt_expired_dont_agree_note" = "A sua explicação será análisada e se aprovada, atualizaremos o valor da dívida. O comercio será desbloqueado durante a análise.";
+"debt_expired_new_value_input_error" = "Digite o valor corretamente.";
+"debt_expired_reason_input_error" = "Digite pelo menos 10 caracteres.";
+"debt_expired_send_error" = "Erro ao enviar solicitação. Por favor, tente novamente.";
+
+"debt_expired_pendent_title" = "Aguardando seu pagamento";
+"debt_expired_pendent_desc" = "Para finalizar sua solicitação, basta efetuar o pagamento no valor indicado.";
+
+"anexo_view_button_add_file" = "+ ADICIONAR";
+"anexo_view_button_remove" = "REMOVER";
+"anexo_view_select_file_error" = "Selecione um arquivo!";
+"anexo_view_select_options" = "Selecione uma opção";
+"anexo_view_open_camera" = "Abrir Câmera";
+"anexo_view_select_from_files" = "Selecionar da galeria";
+"anexo_view_cancel" = "Cancelar";
+
+//GENERIC VIEW
+"genetic_input_error_cpf" = "CPF inválido";
+"genetic_input_error_cpf_subscriber" = "CPF ou código de assinante inválido";
+"genetic_input_error_cnpj" = "CNPJ inválido";
+"genetic_input_error_cep" = "CEP inválido";
+"genetic_input_error_name" = "Nome inválido";
+"genetic_input_error_date_birth" = "Data inválida";
+"genetic_input_error_email" = "Email inválido";
+"genetic_input_error_phone" = "Telefone inválido";
+"genetic_input_error_city" = "Cidade inválida";
+"genetic_input_error_street" = "Rua inválida";
+"genetic_input_error_neighborhood" = "Bairro inválido";
+"genetic_input_error_number" = "Número inválido";
+"genetic_input_error_complement" = "Complemento inválido";
+"genetic_input_error_empty" = "Favor preencher o campo";
+
+"serasa_anti_fraud_name_title" = "Informe seu nome completo:";
+"serasa_anti_fraud_date_birth_title" = "Informe sua data de nascimento:";
+"serasa_anti_fraud_email_title" = "Informe seu email:";
+"serasa_anti_fraud_phone_title" = "Informe seu telefone:";
+"serasa_anti_fraud_cpf_title" = "Informe o CPF:";
+"serasa_anti_fraud_cpf_subscriber_title" = "Informe seu CPF ou código de assinante:";
+"serasa_anti_fraud_cnpj_title" = "Informe o CNPJ que deseja consultar:";
+"serasa_anti_fraud_cep_title" = "Informe seu CEP:";
+"serasa_anti_fraud_state_title" = "Informe seu estado:";
+"serasa_anti_fraud_city_title" = "Informe sua cidade:";
+"serasa_anti_fraud_neighborhood_title" = "Informe seu bairro:";
+"serasa_anti_fraud_street_title" = "Informe sua Rua:";
+"serasa_anti_fraud_street_number_title" = "Informe o numero de sua residência:";
+"serasa_anti_fraud_complement_title" = "Informe o complemento(Opcional):";
+
+"serasa_anti_fraud_cpf_alternative_title" = "Informe o CPF que deseja consultar:";
+"serasa_anti_fraud_state_alternative_title" = "Confirme seu estado:";
+"serasa_anti_fraud_city_alternative_title" = "Confirme sua cidade:";
+"serasa_anti_fraud_neighborhood_alternative_title" = "Confirme seu bairro:";
+"serasa_anti_fraud_street_alternative_title" = "Confirme sua Rua:";
+"serasa_anti_fraud_street_number_alternative_title" = "Confirme o numero de sua residência:";
+
+"credit_analysis_validate_cpf_msg" = "Deseja utilizar o seu CPF {cpf}?";
+"credit_analysis_validate_cep_msg" = "Não foi possivel realizar a busca com o CEP informado. Favor informar seu endereço manualmente";
+"credit_analysis_verify_accont" = "Verifique seu cadastro para continuar.";
+
+"credit_qiwi_transfer_phone_title" = "Informe o telefone para qual deseja transferir";
+"credit_qiwi_transfer_ddd_wrong" = "Digite o DDD corretamente!";
+"credit_qiwi_transfer_phone_wrong" = "Digite o telefone corretamente!";
+"credit_qiwi_transfer_details" = "Detalhes da transferência";
+"credit_qiwi_select_from_cel" = "selecionar da agenda";
+"credit_qiwi_no_balance" = "Saldo insuficiente. Por favor, selecione um valor igual ou inferior a {value}.";
+"credit_qiwi_out_of_limit" = "Valor fora do limite permitido. Por favor, selecione um valor entre {min} e {max}";
+"credit_qiwi_toolbar_title" = "Transferir créditos PIU";
+
+"ddd_alert_title" = "Qual o DDD?";
+"ddd_alert_desc" = "Informe o DDD do número {number}.";
+
+// My banks
+"my_banks_toolbar_title" = "Contas bancárias";
+"my_banks_title" = "Minhas contas bancárias";
+"my_banks_desc" = "Toque para remover/editar ou toque no botão abaixo para adicionar uma nova conta.";
+"my_banks_no_content" = "Você ainda não cadastrou uma conta bancária ;(";
+"my_banks_add_btn" = "cadastrar conta";
+
+// ULTRAGAS
+"ultragaz_product_name" = "Ultragaz";
+"ultragaz_street_title" = "Digite seu endereço para pesquisarmos os melhores valores em sua região";
+"ultragaz_street_desc" = "Para garantir o melhor resultado, digite o nome da rua, número e a cidade.
+
+Ex. Avenida Paulista 2000, São Paulo.";
+"ultragaz_street_placeholder" = "Digite seu endereço";
+"ultragaz_street_other_address" = "Digitar outro endereço";
+"ultragaz_street_error" = "Não foi possível localizar o endereço. Tente digite o nome da rua, número e a cidade.
+
+Ex. Avenida Paulista 2000, São Paulo.";
+
+"ultragaz_product_list_title" = "Selecione os produtos desejados";
+"ultragaz_product_total_price" = "Total da compra";
+"ultragaz_product_price_desc" = "Por questões de segurança, é possível comprar até 5 produtos de uma vez :)";
+
+"ultragaz_user_title" = "Informe os dados do comprador";
+
+"ultragaz_select_value_title" = "Preços em ";
+"ultragaz_select_value_no_content" = "Não encontramos nenhuma oferta para sua região :(";
+"ultragaz_select_value_error" = "Erro ao consultar ofertas. Tente novamente.";
+
+"ultragaz_purchase_title" = "Tudo certo! Aqui está seu Vale-gás!";
+"ultragaz_purchase_desc" = "Peça seu botijão direto com a Ultragaz informando o código abaixo. É necessário um vasilhame e o código pode ser utilizado em até 180 dias.";
+"ultragaz_purchase_code" = "Código Vale-gás";
+"ultragaz_purchase_copy" = "Copiar";
+"ultragaz_purchase_ask" = "Já quer pedir seu botijão?";
+"ultragaz_purchase_ask_desk" = "Use uma das opções abaixo ou ligue para o número 0800 701 0123";
+"ultragaz_purchase_whats" = "WhatsApp";
+"ultragaz_purchase_phone_number" = "4003 0123";
+
+"ultragaz_whatsapp_msg" = "Olá, comprei um Vale-gás na PIU e gostaria de troca-lo com vocês! O(s) código(s): {number}";
+
+"ultragaz_products_details" = "Compra de {product} no valor de ";
+
+// Doutor terapia
+"dr_terapia_product_name" = "Doutor Terapia";
+"dr_terapia_checkout_details" = "Compra de {desc} no valor de {value}.
+
+Ao final da transação, um código será impresso. Você deverá fazer o resgate no site www.drterapia.com.br.
+No site do DR. Terapia, você poderá selecionar o especialista de sua preferência e marcar sua sessão de terapia.";
+
+// Tele sena
+"telesena_prepago_invalid_data" = "Preencha os dados corretamente!";
+"telesena_product_name" = "Tele sena";
+"telesena_user_title" = "Informe os dados do comprador";
+"telesena_products_title" = "Selecione o produto desejado";
+
+// DATA PRIVACY VIEW CONTROLLER
+"data_privacy_title" = "Aviso sobre proteção dos dados";
+"data_privacy_desc" = "Utilizamos tecnologias de armazenamento de dados para melhorar sua experiência de compra, se continuar, você concorda com estas condições.";
+
+// Transport Student
+"transport_students_cardlist_title" = "Enviar ou consultar formulário de estudante";
+"transport_students_cardlist_desc" = "Todo ano você deverá enviar um formulário com as suas informações pessoais e as de seu curso para validar e liberar créditos para seu cartão escolar";
+
+"transport_students_support_abc_title" = "Fale com a ABC Transportes";
+"transport_students_support_abc_desc" = "Caso esteja tendo problemas ou dúvidas sobre os dados enviados no formulário.";
+
+"transport_students_support_qiwi_title" = "Fale com a rede PIU";
+"transport_students_support_qiwi_desc" = "Em caso de algum problema técnico  ao enviar o formulário ou com o aplicativo";
+
+"transport_students_ei_students" = "Ei, estudante!";
+"transport_students_form_available" = "O formulário para validar seu cartão escolar já está disponível";
+"transport_students_send_form" = "Enviar";
+"transport_students_toolbar" = "Cartão Escolar";
+"transport_students_welcome" = "Bem-vindo,";
+"transport_students_student" = "Estudante.";
+"transport_students_select_options" = "O que vamos fazer hoje?";
+"transport_students_field_error" = "Preencha corretamente.";
+"transport_students_field_needed" = "Este campo é obrigatório!";
+"transport_students_send_new_form" = "Enviar um novo formulário";
+"transport_students_send_new_form_desc" = "Envie um formulário escolar para solicitar o benefício de uso das linhas municipais da sua cidade.";
+"transport_students_verify_situation" = "Verificar situação cadastral";
+"transport_students_verify_situation_desc" = "Use esta opção para consultar formulários enviados ou para verificar quando renovar seu cadastro.";
+"transport_students_form_student_or_teacher_title" = "O que você é?";
+"transport_students_form_student_student" = "Sou Estudante";
+"transport_students_form_student_teacher" = "Sou Professor";
+"transport_students_form_title_owner" = "Quem é o estudante?";
+"transport_students_form_dependent_title" = "Dados do estudante";
+"transport_students_form_owner_me" = "Eu, {NAME}";
+"transport_students_form_owner_other" = "Alguém que sou responsável";
+"transport_students_form_already_valid_title" = "Ei, boas noticias!";
+"transport_students_form_already_valid_desc" = "Parece que seu cadastro já está válido para este ano :)";
+"transport_students_form_already_pendent_desc" = "Parece que seu cadastro está sendo analisado pela escola e pela empresa de transporte. Se precisar, entre em contato com nossa equipe de suporte.";
+"transport_students_form_title_user" = "Identificação do estudante e responsável";
+"transport_students_form_responsible_warning" = "Declaro ser o responsável legal deste estudante. Caso o estudante seja maior de idade, o mesmo deverá baixar o app PIU e realizar seu proprio cadastro.";
+"transport_students_form_user_name" = "Seu nome completo";
+"transport_students_form_user_name_student" = "Nome completo do estudante";
+"transport_students_form_user_cpf" = "Seu CPF";
+"transport_students_form_user_cpf_student" = "CPF do estudante";
+"transport_students_form_user_parent" = "O que o estudante é seu? (filho, etc)";
+"transport_students_form_user_rg" = "Seu RG";
+"transport_students_form_user_rg_student" = "RG do estudante";
+"transport_students_form_user_father" = "Nome do Pai";
+"transport_students_form_user_mother" = "Nome da Mãe";
+"transport_students_form_user_birth" = "Data de Nascimento (dd/mm/aaaa)";
+"transport_students_form_user_selfie" = "Selfie";
+"transport_students_form_user_selfie_own_desc" = "Tire uma selfie nitida de seu rosto";
+"transport_students_form_user_selfie_dependent_desc" = "Tire uma selfie nitida do rosto do estudante";
+"transport_students_form_user_document" = "Documento com foto - frente e verso (RG/CNH/CPF)";
+"transport_students_form_title_cep" = "Agora precisamos saber o endereço do estudante";
+"transport_students_form_cep" = "CEP do estudante";
+"transport_students_form_title_address" = "Confirme os dados do endereço";
+"transport_students_form_address_street" = "Rua";
+"transport_students_form_address_number" = "Número";
+"transport_students_form_address_cep" = "CEP";
+"transport_students_form_address_complement" = "Complemento";
+"transport_students_form_address_district" = "Bairro";
+"transport_students_form_address_city" = "Cidade";
+"transport_students_form_address_state" = "Estado";
+"transport_students_form_address_document" = "Comprovante de Residência";
+"transport_students_form_address_document_desc" = "No nome do estudante ou responsável emitida nos últimos 3 meses.";
+"transport_students_form_title_school" = "Informações da Escola";
+"transport_students_form_school_name" = "Nome da Escola";
+"transport_students_form_course_name" = "Nome do Curso";
+"transport_students_form_semester" = "Série/Semestre";
+"transport_students_form_time_time" = "Horários";
+"transport_students_form_time_saturday" = "Sábados";
+"transport_students_form_time_prat_desportiva" = "Prát. Desportiva";
+"transport_students_form_time_time_desc" = "Preencha o horario de suas aulas (se houver mais de uma aula no mesmo dia, use o segundo campo)";
+"transport_students_form_time_desportiva_desc" = "Preencha somente se houver um horário";
+"transport_students_form_time_entrance" = "Entrada";
+"transport_students_form_time_exit" = "Saída";
+"transport_students_form_school_list_failed" = "Falha ao obter lista de escolas";
+"transport_students_form_bus_line_list_failed" = "Falha ao obter lista de linhas";
+"transport_students_form_days_of_week" = "Dias da Semana";
+"transport_students_form_days_of_week_desc" = "Selecione os dias da semana que você utiliza o transporte";
+"transport_students_form_lines" = "Linhas";
+"transport_students_form_lines_desc" = "Selecione as linhas utilizadas no trajeto até a escola";
+"transport_students_form_line_1" = "Linha 1";
+"transport_students_form_line_2" = "Linha 2";
+"transport_students_form_line_3" = "Linha 3";
+"transport_students_form_line_4" = "Linha 4";
+"transport_students_form_emtu_form" = "Formulário EMTU";
+"transport_students_form_emtu_form_desc" = "Se você utiliza as linhas da EMTU e pegou o formulário da EMTU, tire um foto nitida do formulário. Se não utiliza as linhas EMTU e não tem um formulário, desconsidere este campo.";
+"transport_students_form_school_list_title" = "Escolas e Cursos";
+"transport_students_form_school_list_desc" = "Se você adicionou todos os dados necessário, então podemos continuar. Caso estude em duas escolas e deseja incluir no formulário, clique para adicionar uma nova escola.";
+"transport_students_form_school_list_touch_to_edit" = "(toque para editar)";
+"transport_students_form_school_list_confirm_delete" = "Tem certeza que deseja remover esta escola?";
+"transport_students_form_add_other_school_button" = "Adicionar outra escola";
+"transport_students_form_transport_title" = "Horários de suas aulas e transporte";
+"transport_students_form_sent_success_title" = "É isso ai! Agora é só aguardar!";
+"transport_students_form_sent_success_desc" = "Agora é só aguardar a aprovação da escola e da empresa de transportes responsável! A gente te avisa quando tudo estiver certo :)";
+
+"transport_students_form_sent_amazon_failed" = "Erro ao enviar anexos. Verifique as imagens selecionadas e tente novamente.";
+"transport_students_form_sent_failed_title" = "Ops, parece que algo deu errado.";
+"transport_students_form_sent_failed_desc" = "Isso pode acontecer devido a problemas de conexão ou de algum problema encontrado ao receber o formulário. Você pode tentar novamente mais tarde ou entrar em contato com o suporte da rede PIU pela página de atendimento :)";
+"transport_students_form_status_cpf_wrong" = "CPF Inválido";
+"transport_students_form_status_what_wanna_do" = "O que quer fazer?";
+"transport_students_form_status_send_other" = "Verificar de outro estudante";
+"transport_students_form_status_edit_form" = "Editar e reenviar formulário";
+"transport_students_form_status_send_new_form" = "Enviar um novo formulário";
+"transport_students_form_status_send_other_title" = "Verificar a situação de outro estudante";
+"transport_students_form_status_send_other_desc" = "Aqui você pode consultar a situação de algum estudante cadastrado anteriormente por você. Lembre-se que ele deve ser seu dependente legal.";
+"transport_students_form_status_valid_title" = "Cadastro Válido!";
+"transport_students_form_status_valid_desc" = "Está tudo certo com a sua cota deste mês. A gente te avisa quando precisar renovar :)";
+"transport_students_form_status_not_found_title" = "Não encontrado";
+"transport_students_form_status_not_found_desc" = "Não encontramos nenhum formulário enviado para este estudante. Certifique-se que um formulário foi enviado para ele anteriormente antes de consultar. Se o erro persistir, verifique sua conexão ou entre em contato conosco.";
+"transport_students_form_status_expired_title" = "Recusado!";
+"transport_students_form_status_expired_desc" = "Parece que seu último formulário foi recusado. Toque em enviar novamente para gerar um novo formulário e liberar sua cota.";
+"transport_students_form_status_refused_title" = "Devolvido";
+"transport_students_form_status_refused_desc" = "Parece que seu último formulário foi devolvido. Você pode enviar um novo formulário a qualquer momento ou corrigir os dados do formulário enviado.";
+"transport_students_form_status_refused_reason" = "Motivo";
+"transport_students_form_status_pendent_title" = "Pendente";
+"transport_students_form_status_pendent_desc" = "Seu formulário está sendo analisado pela sua escola e pelo orgão responsável pelo transporte na sua cidade! A gente te avisa quando tudo estiver certo :)";
+
+"transport_students_whatsapp_msg" = "Oi, meu nome é {NAME}, estou com uma dúvida sobre o formulário escolar que enviei no aplicativo da PIU!";
+
+//
+
+"transport_card_type_common" = "Cartão Comum";
+"transport_card_tax_payment" = "Selecionar Taxa";
+
+// Other Services
+
+"other_services_product_desc" = "Compra de serviços no valor de ";
+
+"menu_produto_ifood" = "Delivery de comida online pra todos os tipos de fome: arroz com feijão, esfiha, doce, lanches, hambúrguer, salada, pizza, sushi, yakisoba, açaí e muito mais!
+
+Compre nos melhores restaurantes da cidade e receba sua comida em casa, trabalho ou onde estiver, sempre com muita economia.
+
+Acabou a bebida e não tem como ir ao mercado? Compre pelo app seus itens e receba na sua casa tudo o que precisar!
+
+Como funciona?
+
+Para resgatar seu iFood Card:
+1. Abra seu iFood e clique em Perfil;
+2. Acesse sua carteira e pressione Resgatar iFood Card;
+3. Digite ou copie e cole o código do seu iFood Card;
+4. O saldo do iFood Card estará na sua conta para ser utilizado.";
+
+"menu_produto_freefire" = "O que é?
+
+Free Fire é um jogo do gênero Battle Royale, ou seja, seu principal objetivo é ser o último sobrevivente entre vários adversários online de um grande mapa.
+
+Lançado em 2017, o jogo foi o mais baixado nos primeiros nove meses de 2020 e a última atualização (dezembro/2020) vem com a Operação Chronos que traz o mais novo embaixador do jogo como personagem: Cristiano Ronaldo.
+
+Como funciona?
+
+Após adquirir seu gift card digital:
+Acesse o site https://ggcredits.com/ para resgatar seu PIN.
+Clicar no botão \"Resgatar PIN\".
+Digite o número do PIN e clique em CONTINUAR.
+Escolha Créditos para Free Fire e clique em CONTINUAR.
+Preencha os campos e clique em CONTINUAR.";
+
+"menu_produto_telesena" = "Agora a Tele Sena digital pode ser adquirida na PIU!
+
+Como funciona?
+
+- Você precisará informar seu CPF e telefone para realizar a compra de sua Tela Sena digital;
+- Ao finalizar a transação, será emitido um comprovante aqui no app PIU confirmando a aquisição de sua Tele Sena digital.
+- Basta acessar o site da Tele Sena (www.telesena.com.br) para conferir o seu título de capitalização na página \"Minhas Tele Senas\";
+- Também poderá conferir no site, os resultados dos sorteios, valores dos prêmios e resgate de sua Tele Sena digital.";
+
+"menu_produto_ultragaz" = "Importante: é necessário ter um vasilhame vazio para realizar a troca do seu vale gás digital.
+
+Você compra o seu vale gás no aplicativo PIU e pode solicitar a troca pelos canais de atendimento da Ultragaz: app Ultragaz, WhatsApp (0800 70 10 123) ou Central de Atendimento (4003 0123). É só entrar em contato, informando o código do seu vale gás e a entrega do seu botijão azul será feita no endereço escolhido.
+
+Como usar? Ao adquirir o seu vale gás no aplicativo piu, você receberá um código de 7 dígitos. Para solicitar a troca do seu botijão, você pode entrar em contato com a Ultragaz pelos canais: app Ultragaz, WhatsApp (0800 70 10 123) ou Central de Atendimento (4003 0123) em até 180 dias após a compra.";
+
+"menu_produto_drterapia" = "O DR. TERAPIA é uma plataforma de organização, promoção e distribuição de serviços de saúde mental para o público em geral, no Brasil e América Latina. A plataforma oferece tanto atendimento presencial, quanto online.
+\n\n
+Como usar?\n
+Ao final da transação, um código será impresso. Você deverá fazer o resgate no site www.drterapia.com.br.\n
+No site do DR. Terapia, você poderá selecionar o especialista de sua preferência e marcar uma sessão.";
+
+"menu_produto_imvu" = "IMVU é uma rede social em que você se torna um personagem em um mundo virtual 3D. Você monta um avatar e começa a viver uma vida online com seus amigos.\n\nOCartão Pré-pago é indispensável para adquirir produtos e conteúdo online exclusivos dentro do mundo de IMVU.\n\n Como usar?\n Um código de resgate será impresso ao final da transação. Acesse pt.imvu.com/prepaid e siga as instruções, digitando o código de resgate quando for solicitado. O IMVU não se responsabiliza por códigos perdidos. Não serão permitidos reembolsos ou trocas. Para uso dos créditos IMVU é necessário ter acesso à Internet, software e hardware compatíveis. O uso deste código implica aceitação de todos termos e condições do site.";
+
+"menu_produto_googleplay" = "O vale-presente Google Play te dá acesso a um mundo de entretenimento. É muito fácil encontrar algo que você goste, seja você um fã de filmes, livros, apps ou jogos. Tudo em um só lugar e a qualquer hora.\nAproveite o melhor do entretenimento em smartphones, tablets, Chromecast e também no computador. O pagamento é fácil e rápido, você não precisa de um cartão de crédito e o saldo não expira.\nCompre para alguém especial ou para você mesmo.\nUm presente. Infinitas possibilidades de aproveitá-lo.
+    \n\nInstruções de Resgate:\nPara resgatar, insira o código no app Play Store ou em play.google.com.\nIMPORTANTE: só use o código deste vale-presente no Google Play. Outras solicitações deste código podem ser golpes. Acesse play.google.com/giftcardscam.\n\nTermos e Condições: veja a íntegra dos Termos e Condições e da política de privacidade em play.google.com/br-card-terms. Vale-presente (Gift Card) emitido por Google Brasil Pagamentos Ltda. (Google Payments Brazil). Os usuários devem ser residentes no Brasil e ter 13 anos de idade ou mais (usuários com idade entre 13 e 17 anos necessitam de permissão dos pais ou responsável). Requer uma conta brasileira no Google Payments e acesso à Internet para realizar o resgate. Válido apenas para itens qualificados no Google Play. Não pode ser utilizado para comprar itens classificados como Hardware e determinadas assinaturas. Sujeito a outras limitações. Não está sujeito à incidência de taxas ou vencimento. Exceto se exigido por lei, o vale-presente não pode ser resgatado em dinheiro ou em outros vales-presente. Não recarregável ou passível de reembolso; não pode ser utilizado em conjunto com outros saldos não provenientes do Google Play; não pode ser revendido, trocado ou transferido por meio do recebimento de qualquer valor. O usuário é responsável pela eventual perda do cartão. Para ajuda ou para ver o saldo acesse support.google.com/googleplay/go/cardhelp.";
+
+"menu_produto_minecraft" = "Minecraft é um jogo disponível para PC, Xbox 360, Xbox One, PS3 e PS4, com versões mobile para Android e iPhone (iOS), considerado um dos melhores e mais importantes da década.\nMais do que um jogo, Minecraft é um “Centro de Entretenimento”, que consiste em um mundo 3D pixelizado, em que é possível extrair recursos do cenário para construir os mais diferentes tipos de edificações, desde casas até reinos completos.\n\nPasso a passo:\n1- Acesse: redeem.microsoft.com (Resgatar um código)\n2- insira o código de 25 caracteres e siga as instrucões. Não se preocupe com os hifens, o sistema cuidara deles para você.";
+
+"menu_produto_xbox_ultimate" = "Mergulhe em uma biblioteca de mais de 100 jogos de alta qualidade. Junte-se à diversão em novos jogos ou acompanhe um sucesso recente. Com Xbox Game Pass Ultimate, você sempre terá algo novo para jogar. Inclui novos jogos adicionados a todo momento. Títulos do Xbox Game Studios disponíveis no mesmo dia de lançamento. Descontos e ofertas exclusivos para membros, Xbox live GOLD, Jogue 4 dias antes no console e no PC. Pacote Ultimate Edition Character e 30 dias de Boost.\n\nComo usar?\n- No console Xbox, basta selecionar a opção \"Resgatar código\" e inserir o código recebido.\n- Feito isso, basta conferir os dados na tela e confirmar.";
+
+"menu_produto_cartaoPresenteXbox" = "Xbox Cartão Presente serve para jogos e entretenimento para o seu Xbox. Compre os jogos mais recentes, pacotes de mapas, música, filmes, programas de TV e muito mais.\n\nComo usar?\nUm código de resgate será impresso ao final da transação. Acesse xbox.com/redeemcode e siga as instruções, digitando o código de resgate quando for solicitado.Requer uma conta xbox live e acesso à Internet.\nPrecisa criar uma conta? Visite o site xbox.com/live, siga as etapas para criar uma conta e inserir o código. Para saber mais sobre como resgatar códigos em seu console Xbox, visite xbox.com/howtoredeem-console. O CÓDIGO DESTE CARTÃO SOMENTE É VÁLIDO NO TERRITÓRIO BRASILEIRO.";
+
+"menu_produto_assinaturaXbox" = "Com Xbox Live Assinatura é possível pagar exclusivamente a assinatura da Xbox Live. \nPara compra de jogos, filmes etc, é necessário adquirir o Xbox Cartão Presente no menu anterior.\n\nComo usar?\nUm código de resgate será impresso ao final da transação. Acesse xbox.com/redeemcode e siga as instruções, digitando o código de resgate quando for solicitado. Requer uma conta xbox live e acesso à Internet. \nPrecisa criar uma conta? Visite o site xbox.com/live, siga as etapas para criar uma conta e inserir o código. Para saber mais sobre como resgatar códigos em seu console Xbox, visite xbox.com/howtoredeem-console.\nO CÓDIGO DESTE CARTÃO SOMENTE É VÁLIDO NO TERRITÓRIO BRASILEIRO";
+
+"menu_produto_neopets" = "Neopets é o maior site de Pets Virtuais na internet, já existem mais de 100 milhões de proprietários de Pets no mundo todo. O Cartão Pré-pago é indispensável para adquirir produtos e conteúdo online exclusivos dentro do mundo de Neopets.\n\nComo usar?\nUm código de segurança será impresso ao final da transação. Acesse http://nc.neopets.com/redeemnc e siga as instruções, digitando o código de segurança quando for solicitado. Requer uma conta e acesso à Internet.\nTermos de Uso do site ver http://www.neopets.com/terms.phtml";
+
+"menu_produto_uber" = "O Uber é um aplicativo de celular que conecta uma pessoa a um motorista particular.\nVocê pode usar o Cartão Pré-Pago Uber para adicionar créditos na sua conta Uber e pagar as corridas que efetuar com o aplicativo. Você ainda pode dar de presente o Cartão Pré-Pago Uber para amigos, familiares, professores e outras pessoas.\n\nComo usar?\nUm vale-presente será impresso ao final da transação.\nPara resgatar o crédito Uber, selecione o item PAGAMENTO no menu do aplicativo, toque em ADICIONAR FORMA DE PAGAMENTO, selecione VALE PRESENTE e insira o código que está neste recibo. Para mais informações sobre Termos e Condições, acesse: uber.com/legal/gift/br.";
+
+"menu_produto_norton" = "Com o mobile security é possivel:\n• Bloquear o seu aparelho caso ele seja roubado ou perdido.\n• Localizar seu aparelho instantaneamente, através de um comando remoto.\n• Apagar as informações contidas no aparelho de qualquer lugar com acesso remoto.\n• Espiar o ambiente onde seu dispositivo está, através de uma foto que você pode tirar remotamente.\n• Emitir um alarme de sirene através de um comando remoto para que você possa localizar o seu dispositivo móvel perdido.\n• Ter proteção contra ameaças, vírus e downloads que podem causar danos.\n• Ter proteção contra sites perigosos, phishing e cartão de memória SD\n\nComo usar?\nUm código de resgate será impresso ao final da transação. Acesse www.resgate.norton.best e siga as instruções, digitando o código de resgate quando for solicitado.A chave do produto Norton e as instruções para download serão enviadas a você por e-mail. Siga as instruções para acessar sua conta do Norton, registre a chave do produto e faca o download do serviço Norton. 1 ano de assinatura. Para suporte acesse: suporte.norton.best/support/home";
+
+"menu_produto_office365" = "O Office 365 é um serviço de assinatura que garante que você sempre tenha as ferramentas mais recentes da Microsoft, como Word, Excel, PowerPoint e etc. Há planos do Office 365 para uso doméstico e pessoal, bem como para empresas de pequeno e médio portes, organizações de grande porte, escolas e entidades sem fins lucrativos.\n\nComo usar?\nUm código de resgate será impresso ao final da transação. \nAcesse https://redeem.microsoft.com/ e siga as instruções, digitando o código de resgate quando for solicitado.\nRequer uma conta Microsoft e acesso à Internet.";
+
+"menu_produto_lol" = "League of Legends é um jogo online competitivo que mistura a velocidade e a intensidade de um RTS com elementos de RPG. Duas equipes de poderosos campeões, cada um com design e estilo único, lutam em diversos campos de batalha e modos de jogo. Com um elenco de campeões em constante expansão, atualizações frequentes e uma cena competitiva exuberante, League of Legends oferece diversão incessante para jogadores de todos os níveis de habilidade.\n\nComo usar?\nUm código de resgate será impresso ao final da transação.\nAcesse o jogo e siga as instruções, digitando o código de resgate quando for solicitado.\nRequer uma conta na Riot Games.";
+
+"menu_produto_aacd" = "Como ajudar?\nA AACD oferece aproximadamente 6.000 atendimentos todos os dias, graças ao apoio de pessoas e empresas que acreditam na causa da pessoa com deficiência física.\n\nPara aumentar este número e mudar para melhor a vida de mais crianças em diversas regiões do país, sua contribuição é muito importante. Escolha um valor que deseja ajudar e faça sua parte.";
+
+"menu_produto_velho_amigo" = "O Projeto Velho Amigo tem como objetivo promover por meio de assistência e do desenvolvimento social, da educação, do esporte, da cultura e do lazer, a melhoria da qualidade de vida dos idosos, como forma de resgatar a sua dignidade e auto-estima.\n\nÉ uma associação sem fins lucrativos que desde 1999 contribui para o melhor funcionamento de instituições de longa permanência e cuidamos diretamente de cerca de 1.300 idosos.\n\nPara aumentar este número e mudar para melhor a vida de mais idosos, sua contribuição é muito importante. Escolha o valor que deseja ajudar e faça sua parte.";
+
+"menu_produto_casaDoZezinho" = "A Casa do Zezinho, desde sua fundação, tem sido um espaço de oportunidades de desenvolvimento para crianças e jovens que vivem em situações de alta vulnerabilidade social.\n\nPara conduzir e direcionar nossa trajetória foi preciso formalizar os ideais da Tia Dag e tentar sistematizar seu processo de trabalho! Com isso se fizeram mais de vinte anos de trabalho e muitas histórias de sucesso para contar.\n\nPara mudar para melhor a vida de mais crianças, sua contribuição é muito importante. Escolha o valor que deseja ajudar e faça sua parte.";
+
+"menu_produto_ronald_mcdonald" = "O instituto Ronald MCDonald tem a missão de promover a saúde e a qualidade de vida de adolescentes e crianças com câncer.\n\nÉ uma organização sem fins lucrativos, que desenvolve e coordena programas que possibilitam o diagnóstico precoce, o encaminhamento adequado, o acolhimento e o atendimento integral de qualidade para os jovens pacientes e seus familiares.\n\nMilhares de crianças e adolescentes estão lutando contra o câncer neste exato momento. Sua doação faz toda a diferença na vida delas. Escolha o valor que deseja ajudar e faça sua parte.";
+
+"menu_produto_blizzard" = "O que é o cartão Blizzard?\nOs fãs brasileiros agora podem comprar o Cartão de Saldo exclusivo da loja da Blizzard, a Battle.net. Com este cartão o consumidor pode adquirir jogos, caixas de itens, pacotes de cards, serviços e muito mais. O cartão é válido apenas para contas brasileiras e funciona como o saldo Battle.net.\n\nComo usar?\nUse seu saldo BLIZZARD para comprar jogos, itens da BLIZZARD digitalmente ou presente a um amigo para ser usado em um jogo BLIZZARD de sua escolha. Vá até blizzard.com/code, Crie uma Conta Blizzard GRATUITA. Se você já tem uma, conecte-se. Insira o código no respectivo campo.";
+
+"menu_produto_lvlup" = "Você escolhe o jogo de sua preferência e cadastra o cartão para resgatar a quantia equivalente de crédtios eletrônicos. Com estes créditos o consumidor pode adquirir CASH (Créditos dentro do jogo), serviços e muito mais. Os cartões são válidos para acesso aos servidores brasileiros da Level Up! Interactive S.A.\n\nComo usar?\nPara cadastrar seu cartão pré-pago é muito simples: basta entrar em Minha Conta, no site da Level Up, e conectar-se à sua conta Level Up. Dentro da aba de cada jogo, há a opção “Creditar PIN”, que é onde o Código de Acesso e o PIN devem ser inseridos.";
+
+"menu_produto_steam" = "O Steam é muito mais que uma ferramenta para baixar jogos. Com ele você fica por dentro dos lançamentos, participa de uma comunidade de feras, compra games originais por muito menos, instala e gerencia seus jogos em diversas máquinas e com máxima segurança, baixa games de graça e ainda conta com suporte online\n\nComo usar?\nPara cadastrar seu cartão pré-pago é muito simples: basta entrar em www.store.steampowered.com/account/redeemwalletcode, criar sua conta ou efetuar o login, e no campo Código da Carteira Steam informar o PIN.";
+
+"menu_produto_netflix" = "A Netflix é um serviço de transmissão online que permite aos clientes assistir a uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet. Com a Netflix, você tem acesso ilimitado ao conteúdo, sempre sem comerciais, novos filmes e séries todos os meses.\n\nComo usar?\nPara resgatar um cartão pré-pago Netflix, acesse ao site netflix.com/br/resgate, insira o código PIN de 11 dígitos. Se você já tiver uma conta Netflix, também poderá inserir o código na página Conta (Account), acessando o site, aplicativo ou sua TV Smart. O saldo disponível será adicionado à sua conta, e o próximo pagamento será retirado desse saldo.";
+
+"menu_produto_sky" = "O SKY Pré-Pago é a antena parabólica da SKY sem compromisso de mensalidade.\nAo comprar o aparelho, além dos recursos interativos, você terá imagem e som 100% digital. Nesta modalidade, você também pode fazer recargas para ter acesso a diversos canais da SKY! Recarregue e Divirta-se.\n\nComo usar?\nPara usar você ja deve possuir cadastro no SKY Pré-Pago e o equipamento instalado no local. Depois, você pode escolher fazer uma recarga quando quiser do seu pacote favorito e todo mês ter o melhor da programação sem se preocupar. Basta informar seu CPF ou Código de Assinante para realizar a compra de sua recarga. Seu sinal será estabelecido em até 4 horas. Em caso de dúvidas, ligue para 106 11.";
+
+"menu_produto_clarotv" = "A CLARO TV é a antena parabólica da CLARO sem compromisso de mensalidade.\nAo comprar o aparelho, além dos recursos interativos, você terá imagem e som 100% digital. Nesta modalidade, você também pode fazer recargas para ter acesso a diversos canais da CLARO! Recarregue e Divirta-se.\n\nComo usar?\nPara usar você já deve possuir cadastro na CLARO TV e o equipamento instalado no local. Depois, você pode escolher fazer uma recarga quando quiser do seu pacote favorito e todo mês ter o melhor da programação sem se preocupar. Basta informar seu CPF ou Código de Assinante para realizar a compra de sua recarga. Seu sinal será estabelecido em até 4 horas. Em caso de dúvidas, ligue para 106 99.";
+
+"menu_produto_rixty" = "Ao adquirir seu PIN, você pode  escolher um entre os 1000 jogos para receber CASH, itens exclusivos, acesso VIP e muito mais.\n\nPara mais informações visite: www.rixty.com\n\nComo usar?\nPara cadastrar seu PIN é muito simples: basta entrar no site www.rixty.com,  conecte-se à sua conta Rixty. Depois é so clicar em RESGATAR PIN e adicionar o PIN no campo.";
+
+"menu_produto_rimo" = "RiMO Play é a mais nova plataforma de entretenimento digital do Brasil! Aqui você poderá encontrar Games, Filmes, Séries e muito mais, a um play de distância!\n\nComo usar?\nPara usar você deve acessar https://www.rimoplay.com.br/resgate.\nApós acessar, basta informar o código fornecido no local indicado e avançar. Você poderá conectar sua conta ou criar uma, caso ainda não possua.";
+
+"menu_produto_eprepag" = "O Cartão E-Prepag é um cartão virtual pré-pago que pode ser utilizado para pagar uma compra no site da E-Prepag ou em serviços digitais parceiros da E-Prepag. Com o Cartão E-Prepag você recebe seus créditos imediatamente, sem depender de prazos bancários ou compensações de boletos.\n\nComo usar?\nPara usar você deve acessar https://www.e-prepag.com.br/.\nApós acessar, clicar em Minha Conta, selecionar a opção Cartão E-Prepag. Clique na opção Adicionar Saldo e depois clique em Utilizar o PIN ou Card. Agora basta inserir seu PIN adquirido no local indicado.";
+
+"menu_spotify" = "Spotify é um serviço de streaming de música, podcast e vídeo que foi lançado oficialmente em 7 de outubro de 2008. É o serviço de streaming mais popular e usado do mundo.
+
+COMO USAR?
+Os cartões presente são válidos por 12 meses a partir da data da compra.
+Eles não podem ser usados em conjunto com outros descontos ou promoções, como o Plano Premium Familiar, o Premium para Universitários ou a oferta de teste.
+Os cartões presente só podem ser resgatados em contas do Spotify que estejam registradas no mesmo país em que os cartões foram comprados.
+Outros Termos e condições podem ser aplicáveis.";
+
+"menu_cs_go" = "Um dos jogos mais populares de todos os tempos finalmente está de volta.
+
+Counter Strike: Global Offensive (CS GO) ainda carrega os elementos que tornaram a série um fenômeno nas lan houses e que promete causar nostalgia na sua legião de fãs.
+
+CS: GO contém novos mapas, personagens e armas, além de conter versões atualizadas de conteúdos do CS clássico (como de_dust2). Além disso, CS: GO introduzirá novos modos de jogo, criação de partidas (matchmaking), placares de líderes e mais.
+
+Para regastar você deve entrar na plataforma STEAM.
+Em jogos você deve escolher ATIVAR UM CÓDIGO DE UM PRODUTO…
+E em seguida adicionar o PIN de ativação.Após adicionar, seu jogo está pronto para ser baixado.";
+
+"menu_produto_playstation" = "O que é?
+O Cartão Playstation PSN é indispensável para adquirir produtos e conteúdos exclusivos da Playstation®Store (Loja Online Do Playstation).
+Onde você terá acesso permanente (24 Horas Por Dia, 7 Dias Por Semana) a jogos, conteúdos exclusivos e muito mais para o Playstation.
+
+Como usar?
+1) Inicie a sessão na Playstation Network através do Playstation.
+2) Acesse a Playstation Store e selecione o ícone redeem codes no topo da página.
+3) Introduza o código de 12 Dígitos do card nos espaços em branco (Serão 4 Dígitos Por Espaço), Após isso pressione em continue, você será questionado se deseja acrescentar o crédito em sua conta, pressione em YES e os fundos serão automaticamente adicionados a sua conta.";
+
+"menu_produto_playstation_plus" = "O que é?
+O Cartão Playstation PSN é indispensável para adquirir produtos e conteúdos exclusivos da Playstation®Store (Loja Online Do Playstation).
+Onde você terá acesso permanente (24 Horas Por Dia, 7 Dias Por Semana) a jogos, conteúdos exclusivos e muito mais para o Playstation.
+
+Como usar?
+1) Inicie a sessão na Playstation Network através do Playstation.
+2) Acesse a Playstation Store e selecione o ícone redeem codes no topo da página.
+3) Introduza o código de 12 Dígitos do card nos espaços em branco (Serão 4 Dígitos Por Espaço), Após isso pressione em continue, você será questionado se deseja acrescentar o crédito em sua conta, pressione em YES e os fundos serão automaticamente adicionados a sua conta.";
+
+
+"menu_produto_uber_eats" = "O que é?
+
+Está com fome? Receba seus pratos preferidos dos restaurantes que você adora.Peça o que quiser, onde quiser e quando quiser. Está com vontade de quê? Faça o pedido direto no app. Ainda não decidiu? Veja o que os restaurantes e redes de fast food da região têm a oferecer. Você também pode encontrar um restaurante, prato ou tipo de cozinha específico pelo sistema de busca. Pizza? Comida mexicana? Hambúrguer? Sushi? No Uber Eats, você encontra tudo isso e muito mais.
+
+Como usar?
+
+O Cartão Pré Pago Uber Eats é muito simples de utilizar, o crédito ficará disponível em sua conta e conforme sua utilização os valores serão descontados até o término do seu saldo. Os créditos ficarão disponíveis para pagar os pedidos de delivery. Para usá-lo você deve ir a aba Perfil > Promoções > Adicionar promoção > Digite código > Confirma.";
+
+"menu_produto_hospital_do_amor" = "O que é?
+O Hospital de Amor, o antigo Hospital de Câncer de Barretos, há mais de 5 anos ajuda milhares de pessoas no tratamento e prevenção do câncer.
+
+São mais de 6 mil atendimentos por dia em diversas unidades espalhadas pelo país. Para ajudar a salvar a vida de ainda mais pessoas, sua contribuição é muito importante. Escolha o valor que deseja ajudar e faça sua parte.";
+
+"menu_produto_aacd" = "Como ajudar?
+A AACD oferece aproximadamente 6.000 atendimentos todos os dias, graças ao apoio de pessoas e empresas que acreditam na causa da pessoa com deficiência fisica.
+
+Para aumentar este número e mudar para melhorar a vida de mais crianças em diversas regiões do país, sua contribuição é muito importante. Escolha um valor que deseja ajudar e faça sua parte.";
+
+"menu_produto_unibes" = "Como ajudar?
+O público atendido pela Unibes é formado por crianças, adolescentes, idosos e famílias que vivem em situação de vulnerabilidade social. Hoje, mais de 15 mil pessoas são atendidas pela instituição que tem como propósito ajudar essas pessoas a transformarem a sua própria história de vida.
+
+Este trabalho tem o objetivo de fornecer educação de qualidade, capacitar para o trabalho, desenvolver a autonomia individual e disseminar o interesse pela cultura, além de promover cuidados com a saúde, resgate da autoestima e qualidade de vida.";
+
+"menu_produto_velho_amigo" = "Como ajudar?
+O projeto Velho Amigo tem como objetivo promover por meio de assistência e do desenvolvimento social, da educação, do esporte, da cultura e do lazer, a melhoria da qualidade de vida dos idosos, como forma de resgatar a sua dignidade e auto-estima.
+
+É uma assosiação sem fins lucrativos que desde 1999 contribui para o melhor funcionamento de instituições de longa permanência e cuidamos diretamente de cerca de 1.300 idosos.
+
+Para aumentar este número e mudar para melhorar a vida de mais idosos, sua contribuicão é muito importante. Escolha o valor que deseja ajudar e faca sua parte.";
+
+"menu_produto_casa_do_zezinho" = "A Casa do Zezinho, desde sua fundação, tem sido um espaço de oportunidades de desenvolvimento para crianças e jovens que vivem em situações de alta vulnerabilidade social.
+
+Para conduzir e direcionar nossa trajetória foi preciso formalizar os ideais da Tia Dag e tentar sistematizar seu processo de trabalho! Com isso se fizram mais de vinte anos de trabalho e muitas histórias de sucesso para contar.
+
+Para mudar para melhor a vida de mais crianças sua contribuição é muito importante. Escolha o valor que deseja ajudar e faça sua parte.";
+
+"menu_produto_ronald_mcdonald" = "Como ajudar?
+O instituto Ronald MCDonald tem a missão de promover a saúde e a qualidade de vida de adolescentes e crianças com câncer.
+
+É uma organização sem fins lucrativos, que desenvolve e coordena programas que possibilitam o diagnóstico precoce, o encaminhamento adequado, o acolhimento e o atendimento integral de qualidade para os jovens pacientes e seus familiares.
+
+Milhares de crianças e adolescentes estão lutando contra o câncer neste exato momento. Sua doação faz toda a diferneça na vida delas. Escolha um valor que deseja ajudar e faça sua parte.";
+
+"menu_produto_g10" = "O G10 das Favelas é um bloco de líderes e Empreendedores de Impacto Social das favelas que unirá forças em prol do desenvolvimento econômico e protagonismo das Comunidades, visando tanto o desenvolvimento econômico e social dessas áreas urbanas quanto o crescimento do país.";
+
+"menu_produto_roblox" = "Roblox é o universo virtual que permite que você jogue, crie e personalize seu avatar com vários rostos, equipamentos e muito mais. Seja tudo que puder imaginar, descubra uma variedade infinita de mundos imersivos criados por uma comunidade global!\n\nJogue com amigos e milhões de outras pessoas em seus computadores, dispositivos móveis, Xbox One ou óculos de RV,  usando recursos de chat, mensagens privadas e grupos.\n\nComo usar?\nInstruções de resgate:\n1-Acesse: ww.roblox.com/redeem\n2- Faça seu login ou crie uma conta\n3- Digite o PIN do cartão\n4- Clique em redeem para acionar o crédito ou Robux a sua conta";
+
+"menu_produto_razer_gold" = "Como funciona?\nAo adquirir seu PIN, você pode escolher um entre 1.000 jogos para receber CASH, itens exclusivos, acesso VIP e muito mais.\n\nComo usar?\nPara cadastrar seu PIN é muito simples, basta entrar no site www.gold.razer.com, conecte-se à sua conta Razer Gold. Depois é só clicar em RESGATAR PIN e adicionar o PIN no campo.";
+
+"menu_produto_adra" = "A ADRA é a Agência Humanitária da Igreja Adventista do Sétimo Dia. Está presente em 118 países e, no Brasil, se organiza em 13 regionais que atendem 15 estados.Nosso propósito é servir à humanidade para que todos possam viver conforme o plano de Deus, levando justiça, compaixão e amor às pessoas que se encontram em situação vulnerável.";
+
+"menu_produto_betsul" = "O Vale Crédito Betsul é perfeito para quem gosta de apostas esportivas. No Betsul é possível apostar nos principais campeonatos em todo o mundo, em esportes diversificados como futsal, futebol, basquete, tênis, vôlei, boxe, handebol, MMA, UFC, rugby e muitos outros.\n\nA Betsul é considerada o melhor site de apostas esportivas da América do Sul, ainda tem o respaldo do melhor time de embaixadores da área esportiva.\n\nPara apostar no Betsul é preciso ser maior de 18 anos e se cadastrar no site da Betsul.";
+
+"menu_produto_cresca" = "Cresça Brasil faz parte do Grupo UOL EdTech, a maior empresa de tecnologia para a educação do Brasil!\n\nOferece a melhor experiência digital de aprendizagem, com tecnologia de ponta e um preço acessível, acesso aos melhores recursos de aprendizado online para que você não dependa de uma sala de aula, sua qualificação acontece quando, como e onde você quiser, a partir de um computador, um celular ou um tablet. Sempre de maneira prática e eficiente!\n\nA Cresça atua nas categorias Fit, Plus, Standard, Idiomas e Profissionalizantes. Presente em diversas áreas do mercado de trabalho, como negócios, artesanato, culinária, informática, saúde, beleza e vários outros.";
+
+"menu_produto_dazn" = "DAZN é o primeiro serviço de streaming de esportes ao vivo, tem mais esportes ao vivo que em qualquer outro lugar!\n\nO vale presente DAZN é uma forma de pagamento para clientes novos ou para quem já é usuário da DAZN.\n\nVocê pode utilizar o vale presente dentro do período de validade em sua própria conta, ou mesmo dar de presente para alguém e pode assistir ao DAZN até seu vale-presente expirar; depois disso, sua conta será cancelada automaticmente. Mas fique tranquilo que você será avisado antes disso.";
+
+"menu_produto_decathlon" = "O Cartão presente Decathlon é uma ótima opção para presentear quem gosta de esportes, além da facilidade e economia de tempo, você dará mais liberdade para que a pessoa escolha o presente de acordo com a prática esportiva e gosto.\n\nNa Decathlon tem produtos técnicos para mais de 65 esportes com a melhor qualidade, melhores preços e com design funcional para o esportista iniciante ao de alta performance.\n\nO cartão presente pode ser utilizado em qualquer loja Decathlon em todo Brasil e no site www.decathlon.com.br.";
+
+"menu_produto_deezer" = "Deezer é um serviço de streaming de áudio, onde você encontra músicas que você ama e também suas preferidas do passado, no meio de mais de 73 milhões de faixas.\n\nCom Deezer Premium, você não precisa estar conectado para aproveitar suas músicas mais queridas.\n\nCrie playlists a partir de milhões de faixas e leve todas com você onde quer que vá.\n\nO Flow aprende o que você gosta e o que não gosta. Explore sua trilha sonora personalizada.";
+
+"menu_produto_evino" = "Quer dar um vinho de presente, mas não sabe qual escolher?\n\nO Cartão Presente Evino é um cartão virtual, onde o presenteado enche a adega sem ter que sair do sofá, escolhe e compra os melhores vinhos on-line.\n\nO saldo gerado pelo cartão presente deve ser utilizado em apenas uma compra e não é acumulativo com outros vouchers. Caso o valor da compra seja superior ao saldo do cartão, pode ser complementado com outra forma de pagamento.\n\nVálido para compra de qualquer produto do site!";
+
+"menu_produto_kaspersky" = "A Kaspersky é a opção ideal para usuários multi-dispositivos, oferece diversos níveis de proteção para manter seus dispositivos pessoais livres de vírus e ameaças on-line. Descubra qual é o melhor para você.\n\nO My Kaspersky concentra toda a proteção de que você precisa para sua vida digital e de sua família. Monitore todos os seus dispositivos em uma única tela.";
+
+"menu_produto_looke" = "O Looke e a forma mais simples de assistir a filmes e séries de TV sem sair de casa.\n\nUse os créditos para assinar, alugar ou comprar filmes e séries.\n\nOs usuários e assinantes do Looke podem assistir a todo nosso conteúdo em território nacional, por meio de seus dispositivos Android, iPad, Smart TV (Philips, LG, Samsung e Sony), computadores (PC e MAC), XBOX360, XBOX ONE e Windows 10. Em breve suporte para Playstation 3 e 4.";
+
+"menu_produto_looke_kids" = "O Looke Kids é a forma mais simples para crianças assistirem a filmes e séries de TV sem sair de casa.\n\nSão centenas de títulos que reúnem os personagens mais amados pelas crianças, como a Turma da Mônica, o Sonic e diversos outros!\n\nUse os créditos para assinar, alugar ou comprar filmes e séries.\n\nOs usuários e assinantes do Looke Kids podem assistir a todo nosso conteúdo em território nacional, por meio de seus dispositivos Android, iPad, Smart TV (Philips, LG, Samsung e Sony), computadores (PC e MAC), XBOX360, XBOX ONE e Windows 10. Em breve suporte para Playstation 3 e 4.";
+
+"menu_produto_mcdonalds" = "O Cartão McDonalds será válido por 3 meses a aprtir da emissão do vale presente e poderá ser utilizado como forma de pagamento em território nacional nos restaurantes McDonalds participantes.\n\nO Cartão McDonalds é um vale-compras ao portador e a responsabilidade por seu uso exclusivo é de quem o comprou.\n\nVocê poderá utilizar o valor parcial, total ou ainda complementar o pagamento com as formas disponíveis nos restaurantes.\n\nO crédito deverá ser utilizado como forma de pagamento nos restaurantes participantes e não é válido para delivery.";
+
+"menu_produto_mcafee" = "É mais do que apenas um software antivírus, é tranquilidade.\n\nDefenda você e a toda a família contra os mais recentes ataques de vírus, malware, spyware e ransomware, ao mesmo tempo em que mantém o controle de sua privacidade e identidade.";
+
+"menu_produto_minecoins" = "Seu código pré-pago Minecoins pode ser usado para comprar novos conteúdos emocionantes dos Criadores do Minecraft através da loja Minecraft no jogo!\n\nMinecoins são as moedas do jogo que você pode usar para comprar Skins, Pacotes de Texturas, Mundos e muito mais no Mercado Minecraft.\n\nMinecoins e o conteúdo do Mercado estão disponíveis para Android, iOS (iPhone e iPad), Amazon Kindle Fire, Amazon Kindle Fire TV, Gear VR, Oculus Rift, Windows 10, Windows 10 Mobile e Xbox One.";
+"menu_produto_netshoes" = "Com o Cartão Presente Netshoes você tem acesso a mais de 40 mil itens esportivos das melhores marcas à sua escolha e também pode ser usado para pagamento de frete.\n\nO Código do seu Cartão Presente deverá ser vinculado ao seu CPF para ficar disponível no menu \"Vales\" assim seu saldo será apresentado na hora de escolher a forma de pagamento.\n\nO saldo gerado pelo cartão presente pode ser utilizado quantas vezes quiser como forma de pagamento, até que seja zerado. Caso o valor da compra seja maior que o valor do cartão presente, a compra pode ser complementada com outra forma de pagamento.";
+"menu_produto_paysafecard" = "O PaySafeCard é um pequeno cartão de pagamento com um código de 16 dígitos que permite fazer pagamentos online, nas lojas que disponibilizam este método de pagamento.\n\nÉ um método de pagamento rápido e que tem como objetivo realiza-los de forma segura, porque são pequenos cartões com códigos aleatórios que não revelam de modo algum a identidade da pessoa que realiza o pagamento, ou seja, nenhum dado referente a e-mail, cartão de crédito, etc…";
+"menu_produto_playeduca_disney" = "Play Educa Disney oferece atividades desenvolvidas por educadores brasileiros, de acordo com a Base Nacional Curricular do Ministério da Educação (MEC) para a pré-escola. Divertem a criança e promovem o desenvolvimento de habilidades que ela necessita para a alfabetização.\n\nNa pré-escola, a criança conta com a supervisão de um professor, no Play Educa Edição Disney, ela só vai precisar, no inicio, da ajuda de um adulto para fazê-la chegar até as atividades e tudo o que a criança fizer fica registrado. São enviados relatórios que indicam o desempenho dos pequenos e fazem sugestões de novas atividades se eles deixarem de praticar algum habilidade específica.";
+"menu_produto_primepass" = "Primepass é o novo aplicativo que contêm em um único lugar, diversos conteúdos digitais para você aproveitar pagamento somente um pequeno valor fixo no mês (além de um plano principal, você também pode escolher um pacote de serviços adicionais). Com ele, você tem acesso a streaming de música, filmes, séries e ainda conta com ingressos de cinema.\n\nOs serviços disponibilizados pela Primepass são: Acesso as redes de cinema, Paramount+, HBO, Cartoon Network, Deezer, Superplayer, PlayKids, Discovery Kids, DAZN, Starz Play, Looke, Napster, Tidal, Ubook e Hube.\n\nVocê pode realizar o download do aplicativo na App Store ou Google Play de forma gratuita.";
+"menu_produto_outback" = "Dê um presente SURPREENDENTE e com muito sabor!!\n\nVocê compra o cartão presente Outback e depois é super simples! Você utiliza o cartão presente no momento do pagamento da conta e ele pode ser usado em quantas visitas forem necessário para zerar o saldo.\n\nO cartão presente não é válido para delivery e a utilização é somente nos restaurantes.\n\nÉ uma ótima opção de vale-presente para aquela pessoa especial que não resiste a um #MomentoOutback.";
+"menu_produto_wargaming" = "Com o Crédito Wargming.net você pode adquirir veículos exclusivos, moedas do jogo e Conta Premium para receber mais experiência e créditos por batalha e abrir mais opções nos jogos.\n\nO Wargaming.net Game Center é o nosso aplicativo para que você tenha todos os seus jogos da Wargaming em um só lugar! Além disso, pode ler as últimas notícias sobre os próximos recursos, ver vídeos e encontrar ofertas muito mais fácil! Por que ter várias abas no seu navegador, se com o Game Center você acessa o melhor do Universo Wargaming rapidamente?";
+"menu_produto_weburn" = "O Weburn é uma plataforma com programas de exercícios para fazer em casa.\n\nCom o Vale Presente Weburn você tem acesso a 15 modalidades de aulas criadas pelos melhores profissionais de fitness, saúde e bem-estar do Brasil!\n\nVocê recebe aulas de HIIT, funcional, localizados, Yoga, Pilates, musculação e corrida, além de uma agenda de aulas ao vivo. Selecione seu nível, desde iniciante até avançado, escolha a modalidade que mais combina com você, determine seu objetivo e se exercite em qualquer lugar, mesmo sem nenhum equipamento. Faça as aulas atraves do aplicatio e baixe para assistir sem internet, ou acompanhe através de Smart TV, computador ou tablet.";
+"menu_produto_cec" = "O Cartão Presente C&C é a nova forma de realiar sonhos e presentear. Feito para todos aqueles que precisam construir, reformar ou decorar, o presenteado poderá escolher o produto que quiser no site ou nas lojas fisicas e utilizar como forma de pagamento na finalização da compra.\n\nO Cartão Presente C&C é válido por 12 meses, contados da compra do mesmo, após esse período, o cartão será desativado e o saldo existente será inutilizado.\n\nEste cartão poderá ser utilizado para compras realizadas nas lojas da C&C Casa e Construção e no site da C&C (www.cec.com.br)";
+"menu_produto_drconsulta" = "O Dr. Consulta é uma rede de centros médicos que oferece consultas médicas, exames e serviços de saúde utilizando as tecnologias mais avançadas em gestão de saúde para entregar medicina de qualidade a preços acessíveis à população.\n\nSem burocracia, sem fila e sem susto para pagar e tem mais, não tem mensalidade, pois não são convênio e sua consulta de retorno, quando solicitada pelo médico, não tem custo no período de 30 dias.";
+"menu_produto_appstore" = "Encontrou um presente especial na App Store, iTunes ou Apple Books?\n\nVocê pode enviar um Cartão Presente a um amigo ou membro da família.\n\nVocê compra e escolhe as inúmeras opções de envio oferecidas pela App Store, usando um iPhone, iPad e iPod touch!";
+"menu_produto_twitch" = "menu_produto_rixty";
+"menu_produto_smite" = "menu_produto_rixty";
+"menu_produto_crossfire" = "menu_produto_rixty";
+"menu_produto_starcraft" = "menu_produto_blizzard";
+"menu_produto_hearthstone" = "menu_produto_blizzard";
+"menu_produto_heroesOfTheStorm" = "menu_produto_blizzard";
+"menu_produto_arenaOfValor" = "menu_produto_googleplay";
+"menu_produto_clashRoyale" = "menu_produto_googleplay";
+"menu_produto_frozen" = "menu_produto_googleplay";
+"menu_produto_csgo" = "menu_produto_steam";
+"menu_produto_dota2" = "menu_produto_steam";
+"menu_produto_dragonball" = "menu_produto_rimo";
+"menu_produto_grow" = "menu_produto_rimo";
+"menu_produto_project" = "menu_produto_rimo";
+"menu_produto_rainbow" = "menu_produto_rimo";
+"menu_produto_tekken" = "menu_produto_rimo";
+
+// User CPF Consult
+"user_cpf_consult_list_status_error_title" = "Ops! Você ainda não possui pedidos.";
+"user_cpf_consult_list_status_error_description" = "Peça um cartão de transporte novo.";
+
+"transport_card_btn_emit_card_title" = "emitir cartão";
+"transport_card_btn_verify_situation_title" = "verificar situação cadastral";

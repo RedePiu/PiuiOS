@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kkd-OJ-gYB" customClass="ProductCardMenu" customModule="MyQiwi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qT-NV-dh3" customClass="UICardView" customModule="MyQiwi" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_produto_googleplay" translatesAutoresizingMaskIntoConstraints="NO" id="Vxn-BJ-z1x">
+                                <rect key="frame" x="10" y="10" width="90" height="90"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vxn-BJ-z1x" secondAttribute="trailing" constant="10" id="BMG-WF-RkK"/>
+                            <constraint firstAttribute="bottom" secondItem="Vxn-BJ-z1x" secondAttribute="bottom" constant="10" id="Ps1-iz-GlN"/>
+                            <constraint firstItem="Vxn-BJ-z1x" firstAttribute="top" secondItem="4qT-NV-dh3" secondAttribute="top" constant="10" id="bdt-yM-DBf"/>
+                            <constraint firstItem="Vxn-BJ-z1x" firstAttribute="leading" secondItem="4qT-NV-dh3" secondAttribute="leading" constant="10" id="cnc-oJ-EVk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4qT-NV-dh3" firstAttribute="top" secondItem="kkd-OJ-gYB" secondAttribute="top" id="HII-42-4FS"/>
+                <constraint firstAttribute="trailing" secondItem="4qT-NV-dh3" secondAttribute="trailing" id="R3U-bV-vsg"/>
+                <constraint firstAttribute="bottom" secondItem="4qT-NV-dh3" secondAttribute="bottom" id="knA-Bw-2st"/>
+                <constraint firstItem="4qT-NV-dh3" firstAttribute="leading" secondItem="kkd-OJ-gYB" secondAttribute="leading" id="nU7-Ir-WSa"/>
+            </constraints>
+            <connections>
+                <outlet property="imgMenuItem" destination="Vxn-BJ-z1x" id="dpd-l1-0KY"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="124"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="menu_produto_googleplay" width="100" height="100"/>
+    </resources>
+</document>

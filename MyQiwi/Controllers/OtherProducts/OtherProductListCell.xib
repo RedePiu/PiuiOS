@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qLU-87-IRs" customClass="OtherProductListCell" customModule="MyQiwi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uY8-dY-wKA">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dce-Dj-TSj">
+                        <rect key="frame" x="10" y="10" width="57.5" height="29"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" systemColor="systemBlueColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="n66-hb-rnj">
+                        <rect key="frame" x="10" y="47" width="326" height="110"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="q4Q-w3-hp2"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m9L-7z-HP7">
+                            <size key="itemSize" width="110" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="n66-hb-rnj" firstAttribute="top" secondItem="Dce-Dj-TSj" secondAttribute="bottom" constant="8" symbolic="YES" id="99x-kl-v72"/>
+                    <constraint firstItem="Dce-Dj-TSj" firstAttribute="leading" secondItem="uY8-dY-wKA" secondAttribute="leading" constant="10" id="Ucm-Jp-tJ5"/>
+                    <constraint firstAttribute="bottom" secondItem="n66-hb-rnj" secondAttribute="bottom" constant="10" id="aqd-ND-3g8"/>
+                    <constraint firstItem="Dce-Dj-TSj" firstAttribute="top" secondItem="uY8-dY-wKA" secondAttribute="top" constant="10" id="cXD-cF-DjP"/>
+                    <constraint firstItem="n66-hb-rnj" firstAttribute="leading" secondItem="uY8-dY-wKA" secondAttribute="leading" constant="10" id="pZP-aD-CXq"/>
+                    <constraint firstAttribute="trailing" secondItem="n66-hb-rnj" secondAttribute="trailing" constant="10" id="xHl-aL-YNj"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="346" height="167"/>
+            <connections>
+                <outlet property="collection" destination="n66-hb-rnj" id="BJr-qA-8r1"/>
+                <outlet property="title" destination="Dce-Dj-TSj" id="3Ip-hd-b3t"/>
+            </connections>
+            <point key="canvasLocation" x="-637.68115942028987" y="123.54910714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

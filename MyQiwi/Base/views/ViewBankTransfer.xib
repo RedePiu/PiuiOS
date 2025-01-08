@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewBankTransfer" customModule="MyQiwi" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFinish" destination="uGu-9R-PDs" id="gIj-aY-T0M"/>
+                <outlet property="btnUseOther" destination="Vsb-Kg-g0b" id="rCw-J7-deT"/>
+                <outlet property="heightTable" destination="Oyn-ZY-DAS" id="FpU-bF-b5S"/>
+                <outlet property="imgIconBank" destination="xQH-Av-JND" id="Pp4-Se-iqy"/>
+                <outlet property="lbLabelInfoBank" destination="M4p-Ln-xA4" id="fzI-bY-7Zf"/>
+                <outlet property="svAddBank" destination="Xwu-s2-RVf" id="hVG-Cw-pOL"/>
+                <outlet property="svMainContainer" destination="7j7-nz-cxk" id="pgb-88-tah"/>
+                <outlet property="tableView" destination="FQJ-iN-S67" id="oxg-ED-Vry"/>
+                <outlet property="txtAccount" destination="VJl-CD-0rL" id="DF6-UY-6Qj"/>
+                <outlet property="txtAgency" destination="tFX-jJ-Xli" id="vPt-yF-kUh"/>
+                <outlet property="txtCPF" destination="p9g-t0-NHU" id="PCP-NS-PtO"/>
+                <outlet property="txtDigit" destination="551-aS-Rho" id="to5-Rp-QS7"/>
+                <outlet property="txtNickname" destination="i6U-gp-pjz" id="NnF-K8-iP7"/>
+                <outlet property="txtOwnerName" destination="eZf-yg-RfK" id="85B-lm-nq8"/>
+                <outlet property="viewCheckout" destination="eWd-Tx-zZp" id="6xc-f9-xyi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" id="Z7c-SO-pzj">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="345"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9HF-9k-XW3">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="20"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bank_transfer" translatesAutoresizingMaskIntoConstraints="NO" id="xQH-Av-JND">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                            <color key="tintColor" red="0.0" green="0.45882352939999999" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="dIV-zW-gUj"/>
+                                <constraint firstAttribute="height" constant="20" id="zdX-Yd-Ye9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Informações bancárias" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4p-Ln-xA4">
+                            <rect key="frame" x="30" y="0.0" width="265" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xwu-s2-RVf">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="344"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GYr-hD-n8e">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seu nome completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-yg-RfK" customClass="MaterialField" customModule="MyQiwi" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="lVn-MB-uht"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nG6-aY-fQC">
+                            <rect key="frame" x="0.0" y="60" width="295" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agência" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tFX-jJ-Xli" customClass="MaterialField" customModule="MyQiwi" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="PNx-zk-1Re"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Conta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJl-CD-0rL" customClass="MaterialField" customModule="MyQiwi" customModuleProvider="target">
+                                    <rect key="frame" x="90" y="0.0" width="129" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digíto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="551-aS-Rho" customClass="MaterialField" customModule="MyQiwi" customModuleProvider="target">
+                                    <rect key="frame" x="229" y="0.0" width="66" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="28y-RQ-Sp3">
+                            <rect key="frame" x="0.0" y="120" width="295" height="94"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CPF do titular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9g-t0-NHU" customClass="JMMaskTextField" customModule="MyQiwi" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="aq9-F5-A7u"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="000.000.000-00"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vnw-fd-R6R">
+                                    <rect key="frame" x="0.0" y="60" width="295" height="34"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apelido da conta (ex. Conta da minha mãe)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6U-gp-pjz" customClass="MaterialField" customModule="MyQiwi" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="5fb-P8-ZbJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <viewLayoutGuide key="safeArea" id="Um4-A2-mXd"/>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWd-Tx-zZp" customClass="ViewCheckbox" customModule="MyQiwi" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="234" width="295" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XT1-vj-mls">
+                                    <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="1FW-hp-CS8"/>
+                                <constraint firstItem="XT1-vj-mls" firstAttribute="top" secondItem="eWd-Tx-zZp" secondAttribute="top" constant="0.01" id="AbT-r8-VXI"/>
+                                <constraint firstAttribute="bottom" secondItem="XT1-vj-mls" secondAttribute="bottom" constant="0.01" id="Dcd-le-2Y5"/>
+                                <constraint firstAttribute="trailing" secondItem="XT1-vj-mls" secondAttribute="trailing" constant="0.01" id="gsk-r3-iEW"/>
+                                <constraint firstItem="XT1-vj-mls" firstAttribute="leading" secondItem="eWd-Tx-zZp" secondAttribute="leading" constant="0.01" id="p7l-ff-SpJ"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGu-9R-PDs">
+                            <rect key="frame" x="0.0" y="304" width="295" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="wkD-og-eUX"/>
+                            </constraints>
+                            <state key="normal" title="finalizar"/>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Zf9-ak-suf"/>
+                </stackView>
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7j7-nz-cxk">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="166.5"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FQJ-iN-S67">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="106.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="106.5" id="Oyn-ZY-DAS"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="ib5-Cg-dYD"/>
+                                <outlet property="delegate" destination="-1" id="DSf-Zn-7xx"/>
+                                <outlet property="prefetchDataSource" destination="-1" id="33P-NC-Efc"/>
+                            </connections>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ou" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBp-VR-nid">
+                            <rect key="frame" x="0.0" y="116.5" width="295" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.58441952720207246" green="0.58441952720207246" blue="0.58441952720207246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsb-Kg-g0b">
+                            <rect key="frame" x="0.0" y="126.5" width="295" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="eEU-QE-cAs"/>
+                            </constraints>
+                            <state key="normal" title="usar outra conta"/>
+                            <connections>
+                                <action selector="onClickUseOther:" destination="-1" eventType="touchUpInside" id="2dd-n0-HZX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Vi5-OZ-DHp"/>
+            <constraints>
+                <constraint firstItem="Xwu-s2-RVf" firstAttribute="top" secondItem="9HF-9k-XW3" secondAttribute="top" id="wz2-sS-T6N"/>
+            </constraints>
+            <point key="canvasLocation" x="23.199999999999999" y="134.48275862068968"/>
+        </stackView>
+    </objects>
+    <resources>
+        <image name="ic_bank_transfer" width="85.333335876464844" height="85.333335876464844"/>
+    </resources>
+</document>

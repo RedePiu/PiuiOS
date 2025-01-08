@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewBalancePrePago" customModule="MyQiwi" customModuleProvider="target">
+            <connections>
+                <outlet property="btnRecharge" destination="hA4-eF-edd" id="Tfk-fb-lq3"/>
+                <outlet property="imgArrow" destination="WJS-L2-Ybe" id="CQu-ac-PTk"/>
+                <outlet property="imgMoneyPrePago" destination="oea-Vh-swf" id="vji-VP-ir4"/>
+                <outlet property="imgMoneyQiwi" destination="YVq-eu-gTC" id="3yD-hi-9Oh"/>
+                <outlet property="imgRefresh" destination="lgu-eR-ttc" id="4YU-UU-TLB"/>
+                <outlet property="lbAccountValue" destination="MXe-BB-69x" id="CfH-7a-vOP"/>
+                <outlet property="lbContaQiwi" destination="37R-Js-3NZ" id="igI-DD-fHx"/>
+                <outlet property="lbLabelAccount" destination="izA-Qv-4X9" id="Neb-l4-9yH"/>
+                <outlet property="lbLabelRefresh" destination="aqC-nw-YLz" id="afc-nv-YAQ"/>
+                <outlet property="lbPrePago" destination="HH6-wt-Yb0" id="R2B-Xq-eav"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" id="hdq-vp-WDq">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="306"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZVn-em-D2Z">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTA PIU:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izA-Qv-4X9">
+                            <rect key="frame" x="0.0" y="0.0" width="142.5" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXe-BB-69x">
+                            <rect key="frame" x="152.5" y="0.0" width="142.5" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="XoP-HM-eXh"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BQf-t3-zvg">
+                    <rect key="frame" x="0.0" y="50" width="295" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_refresh" translatesAutoresizingMaskIntoConstraints="NO" id="lgu-eR-ttc">
+                            <rect key="frame" x="0.0" y="0.0" width="47" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="47" id="ajF-dD-yHI"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Toque para atualizar o saldo" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqC-nw-YLz">
+                            <rect key="frame" x="57" y="0.0" width="238" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="NRA-4e-ffL"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mut-0L-opr">
+                    <rect key="frame" x="0.0" y="120" width="295" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Zh-qA-XG4">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="ic_money_bag" translatesAutoresizingMaskIntoConstraints="NO" id="oea-Vh-swf">
+                                    <rect key="frame" x="0.0" y="0.0" width="118" height="30"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_left_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="WJS-L2-Ybe">
+                                    <rect key="frame" x="118" y="0.0" width="59" height="30"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_money_bag" translatesAutoresizingMaskIntoConstraints="NO" id="YVq-eu-gTC">
+                                    <rect key="frame" x="177" y="0.0" width="118" height="30"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="oea-Vh-swf" firstAttribute="width" secondItem="0Zh-qA-XG4" secondAttribute="width" multiplier="0.4" id="Xb5-uu-pjC"/>
+                                <constraint firstItem="YVq-eu-gTC" firstAttribute="width" secondItem="0Zh-qA-XG4" secondAttribute="width" multiplier="0.4" id="fgI-TB-z0S"/>
+                                <constraint firstAttribute="height" constant="30" id="k5l-Vj-x0G"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phN-2x-a8r">
+                            <rect key="frame" x="0.0" y="30" width="295" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pré Pago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HH6-wt-Yb0">
+                                    <rect key="frame" x="0.0" y="0.0" width="118" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUK-MQ-A5G">
+                                    <rect key="frame" x="118" y="0.0" width="59" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta PIU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37R-Js-3NZ">
+                                    <rect key="frame" x="177" y="0.0" width="118" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="HH6-wt-Yb0" firstAttribute="width" secondItem="phN-2x-a8r" secondAttribute="width" multiplier="0.4" id="JZv-aZ-CYc"/>
+                                <constraint firstItem="xUK-MQ-A5G" firstAttribute="width" secondItem="phN-2x-a8r" secondAttribute="width" multiplier="0.2" id="vzL-80-jT2"/>
+                                <constraint firstItem="37R-Js-3NZ" firstAttribute="width" secondItem="phN-2x-a8r" secondAttribute="width" multiplier="0.4" id="wLu-p8-Ax1"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="lIK-Gn-SQF"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qIy-Wn-ou0">
+                    <rect key="frame" x="0.0" y="190" width="295" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA4-eF-edd">
+                            <rect key="frame" x="18" y="0.0" width="259" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.65259213490000001" blue="0.27565779460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="XXs-Zb-LFy"/>
+                            </constraints>
+                            <state key="normal" title="transferir">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hA4-eF-edd" firstAttribute="leading" secondItem="qIy-Wn-ou0" secondAttribute="leading" constant="18" id="qcV-At-v6e"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="jNx-iV-9Pn"/>
+            <point key="canvasLocation" x="39.855072463768117" y="115.17857142857142"/>
+        </stackView>
+    </objects>
+    <resources>
+        <image name="ic_left_arrow" width="512" height="512"/>
+        <image name="ic_money_bag" width="512" height="512"/>
+        <image name="ic_refresh" width="42.666667938232422" height="42.666667938232422"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="MessageCell" customModule="MyQiwi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfy-jT-kZF">
+                        <rect key="frame" x="20" y="8" width="98" height="54.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="14:23" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7o-es-YFd">
+                                <rect key="frame" x="58" y="17" width="32" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rb-jk-hlL">
+                                <rect key="frame" x="8" y="8" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U7o-es-YFd" firstAttribute="leading" secondItem="9rb-jk-hlL" secondAttribute="trailing" constant="8" id="1LS-11-sbe"/>
+                            <constraint firstItem="9rb-jk-hlL" firstAttribute="leading" secondItem="Jfy-jT-kZF" secondAttribute="leading" constant="8" id="KTX-db-Bj5"/>
+                            <constraint firstAttribute="trailing" secondItem="U7o-es-YFd" secondAttribute="trailing" constant="8" id="OHp-sx-Zz9"/>
+                            <constraint firstItem="U7o-es-YFd" firstAttribute="top" secondItem="9rb-jk-hlL" secondAttribute="baseline" constant="-7" id="R91-YV-8Fb"/>
+                            <constraint firstItem="9rb-jk-hlL" firstAttribute="top" secondItem="Jfy-jT-kZF" secondAttribute="top" constant="8" id="UCO-y2-gfk"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="U7o-es-YFd" secondAttribute="bottom" constant="3" id="dJj-GM-qUl"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9rb-jk-hlL" secondAttribute="bottom" constant="12" id="iNe-M4-xNZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jfy-jT-kZF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="998" constant="100" id="BYN-GT-LoQ"/>
+                    <constraint firstItem="Jfy-jT-kZF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Jp6-vi-7lQ"/>
+                    <constraint firstItem="Jfy-jT-kZF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="OqN-Ut-277"/>
+                    <constraint firstAttribute="trailing" secondItem="Jfy-jT-kZF" secondAttribute="trailing" constant="20" id="PS4-QG-UeB"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jfy-jT-kZF" secondAttribute="trailing" constant="100" id="aGu-zH-HmR"/>
+                    <constraint firstAttribute="bottom" secondItem="Jfy-jT-kZF" secondAttribute="bottom" constant="8" id="ofM-cl-oud"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="PS4-QG-UeB"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbBody" destination="9rb-jk-hlL" id="7xk-dS-vpb"/>
+                <outlet property="lbTime" destination="U7o-es-YFd" id="CwG-ln-eql"/>
+                <outlet property="leadingBubble" destination="OqN-Ut-277" id="4kM-Rj-SxF"/>
+                <outlet property="leadingGreaterBubble" destination="BYN-GT-LoQ" id="bHW-fG-HZG"/>
+                <outlet property="trailingBubble" destination="PS4-QG-UeB" id="Rpy-cG-llQ"/>
+                <outlet property="trailingGreaterBubble" destination="aGu-zH-HmR" id="4hr-di-3ob"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="166.8665667166417"/>
+        </tableViewCell>
+    </objects>
+</document>

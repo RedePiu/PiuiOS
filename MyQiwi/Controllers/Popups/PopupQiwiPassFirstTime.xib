@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupQiwiPassFirstTime" customModule="MyQiwi" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="A8C-85-l7r" id="jCg-yn-3Oy"/>
+                <outlet property="btnContinue" destination="ztc-ob-tAU" id="iy0-c5-OcT"/>
+                <outlet property="imgIcon" destination="LcB-wW-7Su" id="2wd-uI-YAT"/>
+                <outlet property="lbDesc" destination="1y5-5w-p7i" id="REF-3S-U2i"/>
+                <outlet property="lbTitle" destination="hi2-0D-8B8" id="0OF-Z8-oj7"/>
+                <outlet property="view" destination="z7x-K9-oGy" id="XlZ-eD-JsR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="z7x-K9-oGy">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKO-Yt-bZb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueF-5U-7mZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0QU-th-9Wu" customClass="UICardView" customModule="MyQiwi" customModuleProvider="target">
+                            <rect key="frame" x="21.5" y="153.5" width="332" height="360"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLF-mc-kih">
+                                    <rect key="frame" x="20" y="20" width="292" height="320"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n9y-7H-7cc">
+                                            <rect key="frame" x="0.0" y="0.0" width="292" height="320"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONx-wd-5Vo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="292" height="90"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_worker" translatesAutoresizingMaskIntoConstraints="NO" id="LcB-wW-7Su">
+                                                            <rect key="frame" x="0.0" y="0.0" width="292" height="90"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="LcB-wW-7Su" firstAttribute="leading" secondItem="ONx-wd-5Vo" secondAttribute="leading" id="1JQ-X4-ypa"/>
+                                                        <constraint firstItem="LcB-wW-7Su" firstAttribute="top" secondItem="ONx-wd-5Vo" secondAttribute="top" id="2u4-Dj-umL"/>
+                                                        <constraint firstAttribute="bottom" secondItem="LcB-wW-7Su" secondAttribute="bottom" id="7Pt-US-uEx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="LcB-wW-7Su" secondAttribute="trailing" id="rj3-Dl-Wco"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="74C-VB-V9m">
+                                                    <rect key="frame" x="0.0" y="100" width="292" height="120"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Ei, parece que você ainda não tem uma senha da conta QIWI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi2-0D-8B8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="292" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="ghz-cR-eoC"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgU-Cs-E5f">
+                                                            <rect key="frame" x="0.0" y="50" width="292" height="70"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" fixedFrame="YES" text="A senha conta QIWI é uma senha de 6 números que será solicitada para utilizar créditos da conta QIWI." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1y5-5w-p7i">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="292" height="70"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="70" id="fPD-f0-tgD"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztc-ob-tAU">
+                                                    <rect key="frame" x="0.0" y="230" width="292" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="dNG-9I-8Gr"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Continuar"/>
+                                                    <connections>
+                                                        <action selector="onClickContinue:" destination="-1" eventType="touchUpInside" id="WeQ-zY-DV2"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8C-85-l7r">
+                                                    <rect key="frame" x="0.0" y="280" width="292" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="E8w-PU-RsZ"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Cancelar"/>
+                                                    <connections>
+                                                        <action selector="onClickCancel:" destination="-1" eventType="touchUpInside" id="mly-vj-JpO"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="74C-VB-V9m" firstAttribute="centerY" secondItem="n9y-7H-7cc" secondAttribute="centerY" id="17t-VY-pMK"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="n9y-7H-7cc" secondAttribute="trailing" id="NZe-nd-eep"/>
+                                        <constraint firstAttribute="bottom" secondItem="n9y-7H-7cc" secondAttribute="bottom" id="TnZ-TT-UH2"/>
+                                        <constraint firstItem="n9y-7H-7cc" firstAttribute="leading" secondItem="VLF-mc-kih" secondAttribute="leading" id="dwO-vS-Qs2"/>
+                                        <constraint firstItem="n9y-7H-7cc" firstAttribute="top" secondItem="VLF-mc-kih" secondAttribute="top" id="gdV-Yw-4h8"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="VLF-mc-kih" secondAttribute="trailing" constant="20" id="PLP-aR-gvy"/>
+                                <constraint firstAttribute="bottom" secondItem="VLF-mc-kih" secondAttribute="bottom" constant="20" id="cBB-x8-5NH"/>
+                                <constraint firstItem="VLF-mc-kih" firstAttribute="top" secondItem="0QU-th-9Wu" secondAttribute="top" constant="20" id="jJX-kA-JxY"/>
+                                <constraint firstItem="VLF-mc-kih" firstAttribute="leading" secondItem="0QU-th-9Wu" secondAttribute="leading" constant="20" id="mc3-p8-idp"/>
+                                <constraint firstAttribute="width" constant="332" id="rCb-wL-JN6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0QU-th-9Wu" firstAttribute="centerY" secondItem="ueF-5U-7mZ" secondAttribute="centerY" id="ngC-Ft-0y1"/>
+                        <constraint firstItem="0QU-th-9Wu" firstAttribute="centerX" secondItem="ueF-5U-7mZ" secondAttribute="centerX" id="xlF-ER-4bv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ueF-5U-7mZ" firstAttribute="bottom" secondItem="efT-dC-xk0" secondAttribute="bottom" id="5Mi-3S-QS9"/>
+                <constraint firstItem="QKO-Yt-bZb" firstAttribute="top" secondItem="z7x-K9-oGy" secondAttribute="top" id="5nL-M2-vAu"/>
+                <constraint firstAttribute="trailing" secondItem="ueF-5U-7mZ" secondAttribute="trailing" id="EPa-hT-LBD"/>
+                <constraint firstItem="ueF-5U-7mZ" firstAttribute="top" secondItem="QKO-Yt-bZb" secondAttribute="top" id="Ff2-4l-pj2"/>
+                <constraint firstItem="ueF-5U-7mZ" firstAttribute="trailing" secondItem="QKO-Yt-bZb" secondAttribute="trailing" id="Xtl-Io-lBd"/>
+                <constraint firstItem="ueF-5U-7mZ" firstAttribute="leading" secondItem="QKO-Yt-bZb" secondAttribute="leading" id="b7f-7T-0OT"/>
+                <constraint firstItem="QKO-Yt-bZb" firstAttribute="centerY" secondItem="z7x-K9-oGy" secondAttribute="centerY" id="g5p-92-56F"/>
+                <constraint firstItem="ueF-5U-7mZ" firstAttribute="leading" secondItem="z7x-K9-oGy" secondAttribute="leading" id="i7D-Nl-nbl"/>
+                <constraint firstItem="QKO-Yt-bZb" firstAttribute="bottom" secondItem="efT-dC-xk0" secondAttribute="bottom" id="ohF-zm-E1b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="efT-dC-xk0"/>
+            <point key="canvasLocation" x="52" y="76.911544227886068"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_worker" width="409.60000610351562" height="409.60000610351562"/>
+    </resources>
+</document>

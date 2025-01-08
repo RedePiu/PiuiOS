@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BankComingSoonViewController" customModule="MyQiwi" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="Yxk-nf-jmj" id="uy0-Bo-0Ab"/>
+                <outlet property="imgIcon" destination="hWT-Kk-cm5" id="b5W-0d-5vp"/>
+                <outlet property="lbMessage" destination="KGu-tn-FT7" id="vQ3-gc-gNs"/>
+                <outlet property="lbTitle" destination="B5B-C0-Bsr" id="Jxk-eB-AvD"/>
+                <outlet property="view" destination="FDz-H2-FxW" id="vQZ-7n-JdE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FDz-H2-FxW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2Eg-Tx-9W7">
+                    <rect key="frame" x="20" y="84" width="335" height="298.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-CV-YUr">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="233.5"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srQ-Ar-V5H">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="102"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qiwi_mascot" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-Kk-cm5">
+                                            <rect key="frame" x="111.5" y="62" width="112.5" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="112" id="SwZ-oz-hh4"/>
+                                                <constraint firstAttribute="height" constant="100" id="WvD-Bw-UQ9"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hWT-Kk-cm5" firstAttribute="centerX" secondItem="srQ-Ar-V5H" secondAttribute="centerX" id="FhI-YV-MDE"/>
+                                        <constraint firstAttribute="bottom" secondItem="hWT-Kk-cm5" secondAttribute="bottom" constant="-60" id="lt1-YS-xBh"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estamos trabalhando nisso!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5B-C0-Bsr">
+                                    <rect key="frame" x="0.0" y="112" width="335" height="70.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Este e muitos outros serviços estarão disponiveis em breve!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGu-tn-FT7">
+                                    <rect key="frame" x="0.0" y="192.5" width="335" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="srQ-Ar-V5H" firstAttribute="height" secondItem="NiT-CV-YUr" secondAttribute="height" multiplier="0.15" constant="66.775000000000006" id="CtA-vu-haw"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dV2-jd-Hed">
+                            <rect key="frame" x="0.0" y="258.5" width="335" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxk-nf-jmj">
+                                    <rect key="frame" x="36.5" y="0.0" width="262.5" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Vjb-zE-cAm"/>
+                                    </constraints>
+                                    <state key="normal" title="voltar"/>
+                                    <connections>
+                                        <action selector="closeModalWithSender:" destination="-1" eventType="touchUpInside" id="6o6-TE-oDc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2Eg-Tx-9W7" firstAttribute="top" secondItem="zNj-IZ-8Z6" secondAttribute="top" constant="64" id="30K-w3-DWK"/>
+                <constraint firstItem="2Eg-Tx-9W7" firstAttribute="leading" secondItem="zNj-IZ-8Z6" secondAttribute="leading" constant="20" id="Px3-kI-iJD"/>
+                <constraint firstItem="Yxk-nf-jmj" firstAttribute="width" secondItem="FDz-H2-FxW" secondAttribute="width" multiplier="0.7" id="R0s-Ol-oVz"/>
+                <constraint firstAttribute="trailing" secondItem="2Eg-Tx-9W7" secondAttribute="trailing" constant="20" id="bZg-Pj-IeH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zNj-IZ-8Z6"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qiwi_mascot" width="542" height="1023"/>
+    </resources>
+</document>

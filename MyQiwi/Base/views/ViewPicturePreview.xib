@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewPicturePreview" customModule="MyQiwi" customModuleProvider="target">
+            <connections>
+                <outlet property="btnRemove" destination="EDw-eY-xYh" id="GbZ-zD-Hev"/>
+                <outlet property="imgPicture" destination="tev-PB-lwe" id="6Rv-Xi-fdw"/>
+                <outlet property="imgPlaceholder" destination="KfH-oc-6cM" id="YwZ-fr-dsb"/>
+                <outlet property="lbPlaceholder" destination="2ZB-ek-FvH" id="nXe-D0-eN4"/>
+                <outlet property="stackView" destination="BKG-TA-2NZ" id="3Td-ri-yx5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" id="tCf-Ue-chk">
+            <rect key="frame" x="0.0" y="0.0" width="87" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dh-AM-XD9">
+                    <rect key="frame" x="0.0" y="0.0" width="87" height="163"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BKG-TA-2NZ">
+                            <rect key="frame" x="0.0" y="0.0" width="87" height="163"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nyF-z9-h0W">
+                                    <rect key="frame" x="0.0" y="0.0" width="87" height="128"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tev-PB-lwe">
+                                            <rect key="frame" x="0.0" y="0.0" width="87" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="128" id="Bgs-Ou-bVf"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDw-eY-xYh">
+                                    <rect key="frame" x="0.0" y="128" width="87" height="35"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="REMOVER"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="KfH-oc-6cM">
+                            <rect key="frame" x="26" y="28.5" width="35" height="51"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRENTE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZB-ek-FvH">
+                            <rect key="frame" x="5" y="86.5" width="77" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="BKG-TA-2NZ" secondAttribute="bottom" id="Aqk-Et-ST4"/>
+                        <constraint firstItem="BKG-TA-2NZ" firstAttribute="top" secondItem="4dh-AM-XD9" secondAttribute="top" id="GNE-SK-QSk"/>
+                        <constraint firstItem="2ZB-ek-FvH" firstAttribute="top" secondItem="KfH-oc-6cM" secondAttribute="bottom" constant="7" id="HVG-ik-A4o"/>
+                        <constraint firstItem="BKG-TA-2NZ" firstAttribute="leading" secondItem="4dh-AM-XD9" secondAttribute="leading" id="JbV-u3-ZXU"/>
+                        <constraint firstItem="BKG-TA-2NZ" firstAttribute="top" secondItem="4dh-AM-XD9" secondAttribute="top" id="Joq-zP-VTB"/>
+                        <constraint firstItem="KfH-oc-6cM" firstAttribute="height" secondItem="tev-PB-lwe" secondAttribute="height" multiplier="0.4" id="KbY-NG-Ebt"/>
+                        <constraint firstItem="2ZB-ek-FvH" firstAttribute="centerX" secondItem="KfH-oc-6cM" secondAttribute="centerX" id="MrA-LW-Idy"/>
+                        <constraint firstAttribute="width" constant="87" id="NJV-y1-aYQ"/>
+                        <constraint firstItem="BKG-TA-2NZ" firstAttribute="trailing" secondItem="4dh-AM-XD9" secondAttribute="trailing" id="Q8R-1U-SE2"/>
+                        <constraint firstItem="2ZB-ek-FvH" firstAttribute="leading" secondItem="4dh-AM-XD9" secondAttribute="leading" constant="5" id="Rh0-2l-VTi"/>
+                        <constraint firstItem="KfH-oc-6cM" firstAttribute="centerX" secondItem="tev-PB-lwe" secondAttribute="centerX" id="Tge-PR-4uN"/>
+                        <constraint firstAttribute="trailing" secondItem="2ZB-ek-FvH" secondAttribute="trailing" constant="5" id="Wpu-jE-DLn"/>
+                        <constraint firstItem="BKG-TA-2NZ" firstAttribute="leading" secondItem="4dh-AM-XD9" secondAttribute="leading" id="auA-lu-tga"/>
+                        <constraint firstItem="KfH-oc-6cM" firstAttribute="width" secondItem="tev-PB-lwe" secondAttribute="width" multiplier="0.4" id="dcU-DH-RP3"/>
+                        <constraint firstItem="KfH-oc-6cM" firstAttribute="centerY" secondItem="tev-PB-lwe" secondAttribute="centerY" constant="-10" id="e7u-Tj-Hx5"/>
+                        <constraint firstAttribute="trailing" secondItem="BKG-TA-2NZ" secondAttribute="trailing" id="rPa-5Y-RGf"/>
+                        <constraint firstItem="BKG-TA-2NZ" firstAttribute="bottom" secondItem="4dh-AM-XD9" secondAttribute="bottom" id="uR2-5f-YYQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="J9U-KT-clh"/>
+            <point key="canvasLocation" x="430" y="-124"/>
+        </stackView>
+    </objects>
+    <resources>
+        <image name="ic_search" width="26" height="26"/>
+    </resources>
+</document>

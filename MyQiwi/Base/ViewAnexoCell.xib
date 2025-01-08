@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="f4b-Y4-TTt" customClass="ViewAnexoCell" customModule="MyQiwi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxo-7A-6zM">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NPk-YW-mzb">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUD-xe-baj">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="95"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_claro" translatesAutoresizingMaskIntoConstraints="NO" id="2Jd-gQ-7sL">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="95"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="ACr-i2-9IS"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2Jd-gQ-7sL" secondAttribute="trailing" constant="0.01" id="EEj-PK-o4D"/>
+                                            <constraint firstAttribute="bottom" secondItem="2Jd-gQ-7sL" secondAttribute="bottom" constant="0.01" id="bej-xC-h6a"/>
+                                            <constraint firstItem="2Jd-gQ-7sL" firstAttribute="top" secondItem="BUD-xe-baj" secondAttribute="top" constant="0.01" id="tk6-qs-mvY"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gml-wW-1kE">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0d2-Lq-HIs"/>
+                                        </constraints>
+                                        <state key="normal" title="REMOVER"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NPk-YW-mzb" firstAttribute="top" secondItem="nxo-7A-6zM" secondAttribute="top" id="8gl-8C-jN9"/>
+                            <constraint firstAttribute="height" constant="140" id="Ypf-9A-Zxv"/>
+                            <constraint firstAttribute="bottom" secondItem="NPk-YW-mzb" secondAttribute="bottom" id="fiW-vz-je6"/>
+                            <constraint firstAttribute="width" constant="100" id="jf2-M7-GVV"/>
+                            <constraint firstItem="NPk-YW-mzb" firstAttribute="leading" secondItem="nxo-7A-6zM" secondAttribute="leading" constant="0.01" id="jyx-Pa-xG2"/>
+                            <constraint firstAttribute="trailing" secondItem="NPk-YW-mzb" secondAttribute="trailing" constant="0.01" id="vvT-SV-2Nr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nxo-7A-6zM" secondAttribute="bottom" id="EaS-6F-WZ2"/>
+                <constraint firstItem="nxo-7A-6zM" firstAttribute="leading" secondItem="f4b-Y4-TTt" secondAttribute="leading" id="mwd-cF-SvB"/>
+                <constraint firstItem="nxo-7A-6zM" firstAttribute="top" secondItem="f4b-Y4-TTt" secondAttribute="top" id="noQ-3r-k5W"/>
+                <constraint firstAttribute="trailing" secondItem="nxo-7A-6zM" secondAttribute="trailing" id="yOg-6m-2tO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="XMU-gg-nag"/>
+            <size key="customSize" width="100" height="140"/>
+            <connections>
+                <outlet property="btnRemove" destination="gml-wW-1kE" id="Kot-pP-iNk"/>
+                <outlet property="icon" destination="2Jd-gQ-7sL" id="bHm-OG-8jK"/>
+                <outlet property="widthLayout" destination="jf2-M7-GVV" id="uWQ-mQ-95k"/>
+            </connections>
+            <point key="canvasLocation" x="-40.579710144927539" y="-86.383928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="menu_claro" width="100" height="100"/>
+    </resources>
+</document>

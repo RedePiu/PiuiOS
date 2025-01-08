@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ehA-ew-3le" customClass="StudentSchoolCell" customModule="MyQiwi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bCn-o4-sKe" customClass="UICardView" customModule="MyQiwi" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-Lj-OfK">
+                        <rect key="frame" x="10" y="10" width="305" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="ESCOLA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nN7-l1-iFg">
+                                <rect key="frame" x="0.0" y="0.0" width="305" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Curso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMh-24-BxT">
+                                <rect key="frame" x="0.0" y="18" width="305" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZI-hv-Etm">
+                        <rect key="frame" x="305" y="0.0" width="60" height="56"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oc2-is-6Id">
+                                <rect key="frame" x="10" y="9" width="40" height="36.5"/>
+                                <color key="tintColor" systemColor="systemGray2Color"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGC-HN-HS2">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="56"/>
+                                <connections>
+                                    <action selector="onClickDelete:" destination="ehA-ew-3le" eventType="touchUpInside" id="GMO-ja-jbN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YGC-HN-HS2" firstAttribute="top" secondItem="OZI-hv-Etm" secondAttribute="top" id="CEr-19-kwl"/>
+                            <constraint firstAttribute="bottom" secondItem="oc2-is-6Id" secondAttribute="bottom" constant="10" id="Kwa-fB-fR2"/>
+                            <constraint firstAttribute="trailing" secondItem="YGC-HN-HS2" secondAttribute="trailing" id="Obl-fk-EP2"/>
+                            <constraint firstItem="oc2-is-6Id" firstAttribute="top" secondItem="OZI-hv-Etm" secondAttribute="top" constant="10" id="RJo-we-Jsq"/>
+                            <constraint firstAttribute="width" constant="60" id="e6l-BD-O8e"/>
+                            <constraint firstAttribute="trailing" secondItem="oc2-is-6Id" secondAttribute="trailing" constant="10" id="ehW-JI-xHL"/>
+                            <constraint firstItem="YGC-HN-HS2" firstAttribute="leading" secondItem="OZI-hv-Etm" secondAttribute="leading" id="fiK-vz-ci9"/>
+                            <constraint firstAttribute="bottom" secondItem="YGC-HN-HS2" secondAttribute="bottom" id="oFB-6A-5P8"/>
+                            <constraint firstItem="oc2-is-6Id" firstAttribute="leading" secondItem="OZI-hv-Etm" secondAttribute="leading" constant="10" id="xrv-Dx-a8m"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9l9-Lj-OfK" firstAttribute="top" secondItem="bCn-o4-sKe" secondAttribute="top" constant="10" id="ErU-Gc-QlO"/>
+                    <constraint firstAttribute="bottom" secondItem="9l9-Lj-OfK" secondAttribute="bottom" constant="10" id="Wll-FI-hXG"/>
+                    <constraint firstAttribute="trailing" secondItem="9l9-Lj-OfK" secondAttribute="trailing" constant="50" id="a09-tX-Bdd"/>
+                    <constraint firstItem="9l9-Lj-OfK" firstAttribute="leading" secondItem="bCn-o4-sKe" secondAttribute="leading" constant="10" id="beL-cG-1ur"/>
+                    <constraint firstItem="OZI-hv-Etm" firstAttribute="top" secondItem="bCn-o4-sKe" secondAttribute="top" id="f4I-KO-CHO"/>
+                    <constraint firstAttribute="trailing" secondItem="OZI-hv-Etm" secondAttribute="trailing" id="fLP-3D-zFZ"/>
+                    <constraint firstAttribute="bottom" secondItem="OZI-hv-Etm" secondAttribute="bottom" id="r0b-rF-qRU"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="365" height="56"/>
+            <connections>
+                <outlet property="lbCourse" destination="oMh-24-BxT" id="rwY-10-85c"/>
+                <outlet property="lbSchoolName" destination="nN7-l1-iFg" id="YRT-Ox-lka"/>
+            </connections>
+            <point key="canvasLocation" x="54.347826086956523" y="6.6964285714285712"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

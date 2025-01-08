@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "menu_produto_hospital_do_amor_new.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

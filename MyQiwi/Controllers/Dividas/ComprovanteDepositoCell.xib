@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6o5-Rz-NuR" customClass="ComprovanteDepositoCell" customModule="MyQiwi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dYQ-Zz-A6P">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6cS-Kb-LhB">
+                        <rect key="frame" x="10" y="10" width="101" height="117"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7d-lK-tV8">
+                                <rect key="frame" x="0.0" y="0.0" width="101" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_comprovante" translatesAutoresizingMaskIntoConstraints="NO" id="LLn-Zs-ae5">
+                                        <rect key="frame" x="10.5" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="GP1-h5-OpO"/>
+                                            <constraint firstAttribute="width" constant="80" id="W8k-tG-SF5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="M6d-Fr-Pyo"/>
+                                    <constraint firstItem="LLn-Zs-ae5" firstAttribute="centerX" secondItem="i7d-lK-tV8" secondAttribute="centerX" id="S6k-xy-VEY"/>
+                                    <constraint firstItem="LLn-Zs-ae5" firstAttribute="centerY" secondItem="i7d-lK-tV8" secondAttribute="centerY" id="X7W-C0-g69"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9z-vR-kth">
+                                <rect key="frame" x="0.0" y="85" width="101" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dL-MH-Lx3">
+                                <rect key="frame" x="0.0" y="90" width="101" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgQ-Ea-0VY">
+                                <rect key="frame" x="0.0" y="95" width="101" height="22"/>
+                                <state key="normal" title="REMOVER"/>
+                                <connections>
+                                    <action selector="onClickRemover:" destination="6o5-Rz-NuR" eventType="touchUpInside" id="3df-TZ-hBG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6cS-Kb-LhB" secondAttribute="bottom" constant="10" id="7S3-8W-ek9"/>
+                    <constraint firstItem="6cS-Kb-LhB" firstAttribute="leading" secondItem="dYQ-Zz-A6P" secondAttribute="leading" constant="10" id="WVJ-wn-K2T"/>
+                    <constraint firstItem="6cS-Kb-LhB" firstAttribute="top" secondItem="dYQ-Zz-A6P" secondAttribute="top" constant="10" id="eY8-s2-eBs"/>
+                    <constraint firstAttribute="trailing" secondItem="6cS-Kb-LhB" secondAttribute="trailing" constant="10" id="sm0-Dt-kFF"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="121" height="137"/>
+            <connections>
+                <outlet property="btnRemover" destination="cgQ-Ea-0VY" id="aRU-j9-OdX"/>
+                <outlet property="imgIcon" destination="LLn-Zs-ae5" id="BbX-WP-aMZ"/>
+                <outlet property="lbCode" destination="e9z-vR-kth" id="afy-RS-eBb"/>
+                <outlet property="lbValue" destination="6dL-MH-Lx3" id="56y-za-d3V"/>
+            </connections>
+            <point key="canvasLocation" x="-116.66666666666667" y="103.45982142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_comprovante" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,600 @@
+/* 
+  Localizable.strings
+  MyQiwi
+
+  Created by Douglas Garcia on 13/04/2018.
+  Copyright © 2018 Qiwi. All rights reserved.
+*/
+
+
+"app_name" = "My Qiwi";
+
+//***************** GENERIC WORDS *****************
+
+"alert" = "Attention";
+"yes" = "Yes";
+"no" = "No";
+"yes_low_case" = "yes";
+"no_low_case" = "no";
+"ok" = "Ok";
+"close" = "Close";
+"processing" = "Processing…";
+"please_wait" = "Please wait…";
+"loading" = "Loading…";
+"done" = "Completed!";
+"notification" = "Notification";
+"expand" = "expand";
+"hide" = "hide";
+"continue_label" = "continue";
+"back" = "back";
+"cancel" = "cancel";
+"help" = "help";
+"finish" = "finish";
+"add" = "add";
+"plus_add" = "+ add";
+"edit" = "edit";
+"save" = "save";
+"or" = "or";
+"confirm" = "confirm";
+"hour" = "hour";
+"hours" = "hour(s)";
+"minute" = "minute";
+"minutes" = "minute(s)";
+
+// GENERIC SENTENCES
+"alert_confirm_remove" = "Are you sure you want to remove this item?";
+"error_some_error_occourred" = "Something went wrong, try again.";
+"password_content_description" = "Your password";
+"development_mode" = "Mode of development";
+
+// Main navigation bar
+"main_nav_home" = "Home";
+"main_nav_shopping" = "Orders";
+"main_nav_extract" = "Account Qiwi";
+"main_nav_attendance" = "Attendance";
+"main_nav_more" = "More";
+
+// ALERTS
+
+"alert_close_charge_sequence" = "Would you really like to leave?";
+"alert_close_edit_credit_card" = "Would you really like to go back to the form of payment screen?";
+
+//Toolbar
+
+"toolbar_mnu_transparent" = "Transparent";
+"toolbar_mnu_edit" = "edit";
+"toolbar_mnu_remove" = "delete";
+"toolbar_mnu_search" = "search";
+"toolbar_mnu_filter" = "filter";
+
+// Push notification
+"push_default_message" = "We have news for you. Click to verify.";
+
+//Net
+
+"net_error_generic_error" = "Unexpected error during request. Please try again.";
+"net_error_baptism_failed" = "Failed to configure device with server. Try again.";
+
+// Home
+"home_choose_what_want_to_do" = "Simplifying life";
+"home_other_available_services" = "Other services available";
+"no_content" = "No results found :(";
+
+//No content
+
+"no_content" = "No results found :(";
+
+// No network
+
+"no_network_title" = "No connection";
+"no_network_desc" = "We are waiting for the connection to resume our services ...";
+
+//Bank coming soon
+
+"bank_coming_soon_tootlbar_title" = "Coming soon in Qiwi";
+"bank_coming_soon_title" = "More banks will be available soon!";
+"bank_coming_soon_desc" = "We are working to add more bank options for transfer! Please use one of the current banks to complete your transaction :)";
+
+//Coming soon
+
+"content_soon_toolbar_title" = "Coming soon in Qiwi";
+"content_soon_title" = "We're working on it!";
+"content_soon_desc" = "This and many other services \nwill be available soon!";
+
+//Log out popup
+
+"logout_title" = "Session closed";
+"logout_desc" = "Sign in to buy and recharge dozens of products!";
+"logout_button" = "restart";
+
+//Payment limit list
+
+"payment_limit_title" = "Limit payments";
+"payment_limit_desc" = "Some types of payments have purchase limits. If the purchase exceeds the limit, the payment option will not be displayed.";
+"payment_limit_unlimited" = "Unlimited";
+
+//Auth problem
+
+"auth_title" = "Oh no! An error has occurred!";
+"auth_desc" = "We found some error while you were using, we need to restart the application, okay?";
+"auth_button" = "got it";
+
+//Permissions
+
+"permission_need_permission" = "We need your permission!";
+"permission_ok" = "Got it!";
+"permission_write_explain" = "We need your permission to configure our configuration files.";
+
+//Update needed
+
+"update_needed_title" = "The app needs to be updated!";
+"update_needed_desc" = "We have some news for you! Please update the application to continue commprando!";
+"update_needed_go_to_store_button" = "update now";
+"update_needed_exit_button" = "logoff";
+
+//Welcome screen
+
+"welcome_title" = "Welcome to QIWI!";
+"welcome_desc" = "Your account is ready to buy several products available in your city! With My Qiwi you can:";
+"welcome_text_1" = "Recharge cell phone and transport cards";
+"welcome_text_2" = "Pay bills through the bar code";
+"welcome_text_3" = "Buy dozens of products with a few clicks";
+"welcome_text_4" = "Use ATM (self-service) credits to purchase products";
+
+//Login
+
+"login_toolbar_title" = "Log in";
+"login_title" = "Enter your mobile phone number";
+"login_logging_in_with_number" = "Entering the number {number}";
+"login_logging_access_password" = "Enter the access password";
+"login_facebook" = "come with facebook";
+"login_email" = "e-mail";
+"login_password" = "password";
+"login_enter_button" = "log in";
+"login_must_login" = "Create or access your account to see more information, it's quick :)";
+"login_login" = "log in";
+"login_logon" = "Create an account";
+"login_logut" = "leave account";
+"login_account_info" = "see actions";
+"login_not_my_number" = "enter another number";
+"login_phone_error" = "Fill up the phone properly!";
+"login_pass_error" = "Fill in the password correctly!";
+"login_failed" = "Login failed. Try again.";
+"login_no_acc_title" = "No account yet?";
+"login_no_acc_button" = "Create your account clicking here, it's free :)";
+"login_warning" = "You must be signed in to continue! If you do not have an account, click here to create your account!";
+
+//Register
+
+"register_toolbar_title" = "Create new account";
+"register_facebook" = "register with facebook";
+"register_name" = "full name";
+"register_cpf" = "CPF";
+"register_email" = "e-mail";
+"register_birthday" = "date of birth";
+"register_phone" = "cell (xx) xxxxx-xxxx";
+"register_password" = "password";
+"register_confirm_password" = "confirm password";
+"register_register_button" = "register";
+"register_register_finish_button" = "register";
+"register_accept_terms" = "By proceeding, you are agreeing to our terms and conditions of use.";
+"register_need_more_info" = "Now we just need your CPF and your cell phone to finish everything here :)";
+"register_sms_permission_desc" = "We need your permission to receive the confirmation SMS!";
+"register_step_name" = "Enter your full name";
+"register_step_cpf" = "Enter your CPF to ensure security in your purchases";
+"register_step_email" = "Enter your access email";
+"register_step_birthday" = "Enter your date of birth (dd/mm/yyyy)";
+"register_step_phone" = "Enter your phone with DDD";
+"register_step_password" = "Enter your password two more times and we are ready to finish! :)";
+"register_error_name" = "Please enter first and last name";
+"register_error_cpf" = "CPF invalid";
+"register_error_email" = "E-mail invalid!";
+"register_error_birthday" = "Invalid birth date!";
+"register_error_phone" = "Invalid phone!";
+"register_error_password" = "The password must be at least 8 characters long!";
+"register_error_password_numbers" = "The password must contain at least 2 numbers!";
+"register_error_password_caracters" = "Password must contain at least 2 characters!";
+"register_error_repeat_password" = "The passwords are not the same!";
+"register_error_to_register" = "There was an error registering! Please try again.";
+
+//SMS
+
+"register_sms_toolbar_title" = "Validar SMS";
+"register_sms_title" = "Confirmação";
+"register_sms_text" = "Codigo de ativacao do app myQiwi:";
+"register_sms_hint" = "Código SMS";
+"register_sms_resend" = "Reenviar";
+"register_sms_validate" = "Validar";
+"register_sms_text_welcome" = "Enviamos um SMS com o código de confirmação para o número";
+"register_sms_invalid_code" = "Código inválido";
+"register_sms_resent" = "Código reenviado!";
+"register_window_closed_title" = "Verificação necessária!";
+"register_window_closed_desc" = "É necessário validar a sua conta via SMS para continuar! Toque no botão abaixo para validar seu SMS.";
+
+//App info
+
+"app_info_toolbar_title" = "App Information";
+"app_info_first_title" = "Information";
+"app_info_second_title" = "App Settings";
+"app_info_version" = "Version";
+"app_info_terminal_number" = "Terminal";
+"app_info_licenses" = "License";
+"app_info_playstore_page" = "AppStore page";
+
+//Location
+
+"location_need_permission" = "Precisamos obter sua locação para exibir os produtos disponíveis na sua região! Deseja abrir as configurações do aplicativo?";
+"location_failed_to_connect" = "Falha ao conectar-se a API de localização.";
+
+//Balance
+
+"balance_add_toolbar_title" = "Adicionar créditos QIWI";
+"balance_title" = "ACCOUNT QIWI:";
+"balance_go_to_statement" = "ver extrato";
+"balance_recharge" = "adicionar créditos";
+"balance_updating" = "Atualizando saldo…";
+"balance_no_available" = "Saldo não disponível";
+"balance_refresh" = "Toque para atualizar o saldo";
+
+//Statement
+
+"statement_no_content" = "We could not find any movement in your Qiwi account. Swipe down to refresh ;D";
+"statement_no_content_error" = "Erro ao obter o extrato da conta Qiwi. Deslize o dedo para baixo para atualizar ;D";
+"statement_balance_of_today" = "saldo do dia: ";
+"statement_see_order" = "ver detalhes";
+
+//Order
+
+"order_searching_all" = "Displaying all requests...";
+"order_filter_error" = "Por favor, selecione ao menos 1 filtro.";
+"order_searching_showing" = "Exibindo pedidos {filter}…";
+"order_change_filter" = "Change";
+"order_filter_button" = "filtrar";
+"order_filter_title" = "Filtros";
+"order_filter_show_orders_label" = "Exibir produtos";
+"order_filter_canceled" = "cancelados";
+"order_filter_pendent" = "pendentes";
+"order_filter_finished" = "concluídos";
+"order_no_orders_title" = "No order found. Drag your finger \ndown to refresh ;D";
+"order_no_orders_error_title" = "Erro ao obter pedidos. Arraste o dedo para baixo para atualizar ;D";
+"order_order_not_found" = "Pedido não encontrado";
+"order_toolbar_title" = "Pedido nº {number}";
+"order_transaction_toolbar_title" = "Transação no ATM nº {number}";
+"order_show_details" = "mais detalhes";
+"order_hide_details" = "esconder detalhes";
+"order_order_number" = "Nº Pedido";
+"order_transaction_number" = "Nº Transação";
+"order_order_status" = "Situação do pedido";
+"order_order_date" = "Data do pedido";
+"order_order_price" = "Valor do pedido";
+"order_order_payment_method" = "Forma de pagamento";
+"order_receipt" = "Comprovante";
+"order_button_details" = "Detalhes";
+"order_not_found_name" = "Produto não identificado";
+"order_share_button" = "compartilhar";
+
+//Attendance fragment
+
+"attendance_title" = "Welcome to QIWI! \NUse this page to ask questions or talk to our support team :)";
+"attendance_chat_online" = "online service";
+
+//Account
+
+"account_see_more" = "see actions";
+"account_hide_more" = "hide";
+"account_welcome" = "You are logged in";
+"account_other_products" = "Other products available soon";
+"account_info_about_app" = "App Information";
+"account_add_credits"  = "add credits to your QIWI account";
+
+//Change password
+
+"change_pass_toolbar_title" = "Trocar a senha";
+"change_pass_toolbar_title_forgot" = "Esqueci a senha";
+"change_pass_account_info_title" = "Digite seu CPF e número do celular";
+"change_pass_resent" = "reenviar código";
+"change_pass_code_sent" = "Código enviado!";
+"change_pass_sms_hint" = "código recebido";
+"change_pass_current_pass" = "senha atual";
+"change_pass_new_pass" = "nova senha";
+"change_pass_new_pass_confirm" = "confirmar senha";
+"change_pass_change_button" = "alterar";
+"change_pass_status_title" = "Resultado da alteração";
+"change_pass_sucessed" = "A sua senha foi alterada!";
+"change_pass_failed" = "Falha ao alterar senha!";
+"change_pass_sucessed_desc" = "Você ja pode realizar o login com a sua nova senha!";
+"change_pass_failed_desc" = "Algo deu errado enquanto alteravamos sua senha… Por favor, tente novamente!";
+"change_pass_sms_error" = "Digite o código corretamente.";
+"change_pass_current_pass_error" = "Digite a senha atual corretamente.";
+"change_pass_new_pass_error" = "A senha deve ter no minímo 6 caracteres.";
+"change_pass_new_pass_confirm_error" = "A senhas não são iguais!";
+"change_pass_send_sms_button" = "confirmar";
+"change_pass" = "esqueci a senha";
+"change_pass_phone_incorret" = "Digite um celular válido.";
+"change_pass_title" = "Enviar senha por e-mail";
+"change_pass_sms_text" = "Codigo de ativacao para alteracao de senha do app myQiwi:";
+"change_pass_what_is_password" = "Qual é a minha senha de acesso?";
+"change_pass_what_is_password_desc" = "A senha é formada por letras e números e é a mesma que você utilizou ao se cadastrar no aplicativo.";
+"change_pass_password_container_title" = "Digite sua nova senha";
+"change_pass_sent" = "Um código de confirmação foi enviado!";
+"change_pass_sent_desc" = "Enviamos um código de confirmação para o e-mail cadastrado, caso não chegue em até 5 minutos, você pode reenvia-lo com o botão abaixo.";
+
+//Forgot qiwi pass
+
+"forgot_qiwi_pass_toolbar" = "Não sei minha senha QIWI";
+"forgot_qiwi_pass_info" = "O que é senha da conta QIWI?";
+"forgot_qiwi_pass_info_desc" = "É uma senha de 6 digitos usada para transações com a conta QIWI nos ATMs (autoatendimento) ou no aplicativo. Você recebeu essa senha por SMS, mas se você não lembra, preencha os dados abaixo para receber a senha novamente.";
+"forgot_qiwi_pass_title" = "Digite seu CPF e número do celular que lhe enviaremos sua senha via SMS";
+"forgot_qiwi_pass_sent" = "Sua senha foi enviada!";
+"forgot_qiwi_pass_sent_desc" = "Enviamos sua senha via SMS! Você pode utiliza-la para realizar suas compras feitas através do saldo da conta QIWI.";
+"forgot_qiwi_pass_resent" = "reenviar senha";
+"forgot_qiwi_pass_what_is_qiwi_pass" = "O que é senha conta QIWI?";
+
+//MORE
+
+"more_need_help" = "Digite sua dúvida aqui";
+"more_other_services_available" = "Outros serviços disponíveis";
+"more_select_picture" = "Selecione uma imagem";
+"more_permission_picture_title" = "Precisamos de sua permissão!";
+"more_permission_picture_desc" = "Para mostrar suas fotos você precisa permitir que seus arquivos sejam acessados.";
+
+//Recharge transport cad
+
+"transport_toolbar_title" = "Recarregar cartão de transporte";
+"transport_choose_card" = "Escolha um cartão para carregar";
+"transport_charge_button" = "recarregar";
+"transport_card_touch_to_edit" = "toque no cartão para editar ou remover ou toque em recarregar para continuar :)";
+"transport_or" = "ou ";
+"transport_recharge_another" = "recarregar outro cartão";
+"transport_add_card" = "Adicionar um cartão";
+"transport_edit_card" = "Editar um cartão";
+"transport_hint_add_card" = "Número do cartão";
+"transport_add_card_button" = "salvar";
+"transport_add_or_continue_desc" = "Ao continuar seu cartão será salvo automaticamente";
+"transport_add_name_desc" = "Digite um nome para o seu cartão, assim fica mais fácil identificá-lo no futuro! :)";
+"transport_add_name_hint" = "Nome do cartão (ex. cartão da facul)";
+"transport_error_to_get_list" = "Não existem opções de recarga para este cartão!";
+"transport_need_help" = "Onde está o número do meu bilhete único? Clique para conferir";
+"transport_select_the_similar_to_your" = "Selecione o cartão mais parecido com o seu";
+"transport_card_number_empty" = "o número não pode estar vazio!";
+"transport_card_number_invalid" = "o número do bilhete é inválido!";
+"transport_card_saved_successed" = "Seu cartão foi salvo com sucesso! :)";
+"transport_card_saved_failed" = "Algo deu errado enquanto salvavamos seu cartão, tente novamente :(";
+"transport_amount_title" = "Como funciona a conta {}?";
+"transport_daily_amount_desc" = "A conta permite realizar até 10 viagens no período de 24h continuas, contadas a partir da 1ª utilização.";
+"transport_montly_amount_desc" = "A conta permite realizar até 10 viagens no período de 31 (trinta e um) dias corridos, contadas a partir da data da 1ª utilização.";
+"transport_where_will_use" = "Onde você irá utilizar sua recarga {type}?";
+"transport_select_amount" = "Qual a quantidade de cotas de {type} deseja recarregar?";
+"transport_value" = "Valor:";
+"transport_quota" = "Cota máxima do cartão é {value}.";
+
+//Payment methods
+
+"payments_toolbar_title" = "Pagamento de contas";
+"payments_title" = "Selecione a forma de pagamento";
+"payments_credit_card_title" = "Selecione ou adicione um cartão de crédito";
+"payments_credit_card_add" = "Adicionar cartão";
+"payments_credit_qiwi_balance" = "Utilizar créditos QIWI";
+"payments_no_credit_cards_list" = "Você não possui cartões cadastrados";
+"payments_wait_for_balance" = "Aguarde enquanto validamos seus créditos QIWI";
+"payments_balance_title" = "Saldo";
+"payments_balance_loading" = "Atualizando saldo, aguarde…";
+"payments_gbank_transfer_title" = "Selecione seu banco";
+"payments_no_payments_available" = "Nenhuma forma de pagamento disponível para o valor selecionado. Por favor, selecione outro valor.";
+"payments_qiwi_pass_hint" = "Senha";
+"payments_qiwi_pass_error" = "A senha deve conter 6 digitos";
+"payments_qiwi_pass_wrong" = "Usuário ou senha incorretos";
+"payments_method_credit_card" = "Cartão de crédito";
+"payments_method_qiwi_account" = "Créditos conta QIWI";
+"payments_method_bank_transfer" = "Transferência bancária";
+"payments_limit_label" = "Limite:";
+
+//Select value method
+
+"select_value_must_enter_a_value" = "Insira um valor para continuar";
+"select_value_out_of_limit" = "O valor está fora do limite.";
+"select_value_warning_limits" = "Alguns valores podem não conter formas de pagamentos disponíveis. Clique para conferir os limites.";
+"select_value_warning_qiwi_limits" = "Você pode adicionar o máximo de {value} de créditos na sua conta QIWI.";
+"select_value_qiwi_limit_reached" = "O valor é maior do que o permitido para recarregar.";
+"select_value_recharge_type" = "O que deseja carregar?";
+"select_value_choose_value" = "Selecione o valor da recarga";
+"select_value_other_value" = "outro valor";
+"select_value_hint_add_value" = "valor da recarga";
+"select_value_add_value_limit_desc" = "lembre-se: o limite de recarga é entre {min} e {max}";
+
+//Checkout
+
+"checkout_title" = "Finalizar compra";
+"checkout_order_detail" = "Detalhes do pedido";
+"checkout_product" = "Produto";
+"checkout_type" = "Tipo";
+"checkout_date" = "Data";
+"checkout_value" = "Valor";
+"checkout_total_value" = "Valor total";
+"checkout_tax" = "Taxa";
+"checkout_detalhes" = "Detalhes";
+"checkout_transport_value" = "Recarga de transporte de cota comum no valor de {value}";
+"checkout_transport_type" = "Recarga de transporte tipo {type} no valor de {value}";
+"checkout_cvv" = "Código de segurança do cartão";
+"checkout_qiwi_pass_info" = "Senha da conta QIWI";
+"checkout_qiwi_pass_error" = "Preencha os 6 digitos";
+"checkout_no_balance" = "Você não possui saldo suficiente. Clique para adicionar créditos QIWI e finalizar a sua compra.";
+"checkout_input_cvv" = "Digite o CVV";
+"checkout_input_qiwi_pass" = "Digite a senha de 6 números";
+"checkout_input_bank" = "Digite sua conta";
+"checkout_bank_card_title" = "Informações bancárias";
+"checkout_bank_card_desc" = "Digite os dados da sua conta bancária";
+"checkout_bank_owner_name_hint" = "Seu nome completo";
+"checkout_bank_owner_CPF_hint" = "Seu CPF";
+"checkout_bank_owner_agency_hint" = "Agência";
+"checkout_bank_owner_account_hint" = "Conta";
+"checkout_bank_owner_account_digit_hint" = "Digito";
+"checkout_bank_bank_info" = "Agência: {agency}\nConta: {account}-{digit}";
+"checkout_bank_transfer_warning" = "Faça a transferência no valor de {value} para a conta abaixo:";
+"checkout_bank_transfer_info" = "Seu pedido será atualizado e você será notificado quando identificarmos o pagamento.";
+"checkout_bank_field_error" = "Preencha o campo corretamente!";
+"checkout_taxes" = "(taxa de serviço de {tax})";
+"checkout_processing" = "Processando seu pedido, aguarde…";
+"checkout_success_finished" = "Seu pedido foi realizado com sucesso e está concluído!";
+"checkout_success_finished_desc" = "Você pode conferir mais informações na página de pedidos utilizando o botão abaixo.";
+"checkout_success_pendent" = "Seu pedido foi realizado com sucesso e está pendente de aprovação!";
+"checkout_failed" = "Ops! Algo deu errado ao realizar seu pedido!";
+"checkout_failed_desc" = "Por favor, tente novamente. Se o erro persistir, contate nossa equipe de suporte.";
+"checkout_button_go_to_orders" = "ver detalhes";
+"checkout_button_go_to_orders_menu" = "voltar ao inicio";
+"checkout_buy_another" = "comprar outra coisa";
+"checkout_request_error" = "Algo deu errado durante a requisição. Tente novamente.";
+
+//Phone Recharge
+
+"phone_select_contact" = "Selecione um contato";
+"phone_select_contact_fav" = "Selecione um contato dos favoritos";
+"phone_title_recharge" = "Recharge Telephone";
+"phone_or_tape_contact" = "outro número";
+"phone_search_contacts" = "agenda";
+"phone_search_contacts_fav" = "voltar";
+"phone_permission_title" = "Precisamos de sua permissão";
+"phone_permission_desc" = "É necessário permissão para acessar seus contatos.";
+"phone_hint_ddd" = "DDD";
+"phone_hint_number" = "número";
+"phone_hint_name" = "nome (opcional)";
+"phone_keep_scrolling_desc" = "Deslize a lista para baixo para ver mais contatos.";
+"phone_search_hint" = "Procurar contato na agenda";
+"phone_no_content" = "Nenhum contato encontrado.";
+"phone_error_ddd" = "O DDD não foi preenchido corretamente";
+"phone_error_number" = "O número não foi preenchido corretamente";
+"phone_select_operator" = "Selecione a operadora";
+"phone_title_message" = "qual a ação a ser realizada?";
+"phone_action_edit_contact" = "editar contato";
+"phone_action_remove_contact" = "remover contato";
+
+//Credit caqrd
+
+"credit_card_add_title" = "Adicionar cartão de crédito";
+"credit_card_edit_title" = "Editar cartão de crédito";
+"credit_card_hint" = "XXXX XXXX XXXX XXXX";
+"credit_card_name" = "NOME";
+"credit_card_validate_hint" = "MM/AA";
+"credit_card_validate_name" = "VALIDADE";
+"credit_card_name_title_hint" = "NOME IMPRESSO NO CARTÃO";
+"credit_card_cvv_title" = "CVV";
+"credit_card_cvv_hint" = "XXX";
+"credit_card_flag_visa" = "Visa";
+"credit_card_flag_master" = "Master Card";
+"credit_card_validation_brand" = "Selecione uma bandeira para continuar";
+"credit_card_validation_card_number_not_completed" = "Preencha os 16 números do cartão";
+"credit_card_validation_owner_name_not_completed" = "Digite corretamente o nome impresso no cartão";
+"credit_card_validation_validate_not_completed" = "Preencha o mês e ano de validade";
+"credit_card_validation_month_incorrect" = "Preencha o mês corretamente";
+"credit_card_validation_year_incorrect" = "Preencha o ano corretamente";
+"credit_card_validation_cvv_not_completed" = "Preencha os digitos do código de segurança";
+"credit_card_number_hint" = "número do cartão";
+"credit_owner_name_hint" = "Nome do proprietário";
+"credit_validate_hint" = "validade (mm/aa)";
+"credit_cvv_hint" = "código de segurança";
+"credit_card_validated" = "Estamos prontos para continuar!";
+"credit_card_save_card" = "salvar cartão para futuras compras";
+"credit_card_button_pay" = "pagar";
+"credit_card_touch_to_edit" = "toque no cartão para remover ou toque em pagar para continuar :)";
+"credit_card_final" = "final {number}";
+"credit_card_remove_card" = "Deseja realmente remover este cartão?";
+"credit_card_pay_with_other_card" = "pagar com outro cartão";
+
+//Scan / Bill
+
+"scan_toolbar_title" = "Leitor de código de barras";
+"scan_positionate" = "Posicione o código de barras no local indicado";
+"scan_permission_cam_title" = "Precisamos utilizar a câmera!";
+"scan_permission_cam_desc" = "Precisamos de permissão para utilizar a câmera e ler seu código de barra.";
+"scan_tape_code" = "digite o código de barras";
+
+//Bill
+
+"bill_barcode_title" = "Código de barras";
+"bill_confirm_detail" = "Detalhes da conta";
+"bill_due_date" = "vencimento";
+"bill_due_date_hint" = "vencimento (dd/mm/aaaa)";
+"bill_price" = "valor";
+"bill_confirm_bill_value" = "Adicionar ou editar o valor";
+"bill_confirm_bill_value_desc" = "Lembre-se de respeitar os valores minimos do boleto indicados na sua conta";
+"bill_confirm_bill_value_hint" = "Valor da conta";
+"bill_input_value_error" = "Entre com um valor válido!";
+"bill_barcode_incomplet" = "Digite o código de barras corretamente!";
+"bill_due_date_error" = "Digite a data corretamente!";
+"bill_due_date_invalid" = "Boleto vencido!";
+
+//Qiwi recharge
+
+"qiwi_recharge_toolbar_title" = "Recarga de crédito QIWI";
+"qiwi_recharge_type" = "QIWI";
+"qiwi_recharge_pass_wrong" = "Senha incorreta!";
+
+//Parking
+
+"parking_toolbar_title" = "Ativar CADs da Zona Azul";
+"parking_select_or_add_car" = "Selecione ou adicione um veículo para estacionar";
+"parking_add_plate" = "Adicionar veículo";
+"parking_plate_hint" = "placa";
+"parking_car_model_hint" = "modelo ou apelido do veículo";
+"parking_select_to_continue" = "selecione um veiculo para continuar";
+"parking_confirm_delete" = "Deseja realmente remover este veículo da sua lista?";
+"parking_buy_cards" = "Comprar cartões de estacionamento";
+"parking_buttons_buy_cards" = "comprar";
+"parking_buy_cards_values_desc" = "Selecione os valores para incrementar";
+"parking_parked_cars_desc" = "Veículos estacionados ou que possuem cartões";
+"parking_add_vehicle_button" = "estacionar outro veículo";
+"parking_add_vehicle_error" = "Erro ao adicionar veículo, tente novamente.";
+"parking_parked_init_time" = "Ativado em {date}.";
+"parking_buy_cards_card_amount_single" = "1 cartão";
+"parking_buy_cards_card_amount_multiple" = "{amount} cartões";
+"parking_buy_cards_select_to_continue" = "Selecione um valor para continuar";
+"parking_toolbar_add_vehicle" = "Adicionar veículo";
+"parking_button_buy_card" = "comp. cartão";
+"parking_touch_to_edit" = "toque para editar/remover ou clique em estacionar :)";
+"parking_button_active" = "estacionar";
+"parking_time_up" = "Encerrado";
+"parking_popup_select_card_amount" = "Quantos cartões deseja ativar?";
+"parking_popup_no_cards_available" = "Você não possui cartões.";
+"parking_popup_no_cards_available_error" = "Erro ao obter cartões.";
+"parking_popup_touch_to_buy" = "Toque ao lado para comprar.";
+"parking_popup_available_one_card" = "Você possui 1 cartão disponível.";
+"parking_popup_available_cards" = "Você possui {amount} cartões.";
+"parking_error_type_not_selected" = "Selecione o tipo do veículo";
+"parking_error_plate" = "Preencha a placa corretamente";
+"parking_how_much_cards" = "Quantos cartões deseja usar?";
+"parking_parking_rule" = "Confirme a regra de estacionamento olhando a placa de sinalização da rua";
+"parking_expand" = "ver opções";
+"parking_one_card" = "1 cartão";
+"parking_two_cards" = "2 cartões";
+"parking_change" = "Alterar";
+"parking_rule_general" = "Geral";
+"parking_rule_truck" = "Caminhão";
+"parking_rule_special" = "Especial";
+"parking_rule_general_desc" = "A regra geral é utilizada quando a placa de sinalização não informa a regra de estacionamento";
+"parking_rule_truck_desc" = "Para caminhão ou ônibus, utilize 1 CAD para cada 30 minutos";
+"parking_rule_special_desc" = "Em áreas especiais verifique o tempo de validade do cartão na placa de sinalização";
+"parking_rule_confirm_activation" = "Deseja realmente ativar {amount} cartão(es) {type} por {time}?";
+"parking_rule_popup_title" = "Confirmação";
+"parking_confirm_title" = "Confirmar ativação";
+"parking_confirm_desc" = "Deseja realmente ativar {amount} cartão(es) {type} por {time}?";
+"parking_activation_success" = "Ativado com sucesso!";
+"parking_activation_success_desc" = "Ativado as {date} com validade de {time}. O tempo restante será exibido na sua lista de veiculos com base no tempo escolhido.";
+"parking_activation_failed" = "Falha ao ativar cartão!";
+"parking_activation_failed_desc" = "Isso pode acontecer devido a instabilidade no servidor ou na sua conexão. Por favor, tente novamente.";
+"parking_rule_no_content" = "Nenhum cartão encontrado ou você não possui cartões suficientes :(";
+
+//Login Needed
+
+"login_needed_title" = "We need to identify you to continue! Please login or register. :)";
+
+// Login Intro
+
+"login_intro_1" = "Recarregue seus cartões de transporte, seu celular e muito mais!";
+"login_intro_2" = "Pague utilizando cartão de crédito ou créditos QIWI";
+"login_intro_3" = "Seu credito cai na hora, é rapidinho :)";
+
+//settings
+
+"settings_notification_title" = "Show notifications when";
+"settings_notification_desc" = "Choose whether to be notified by the application when one of the following actions occurs";
+"settings_notification_order_status" = "There will be change in the order";

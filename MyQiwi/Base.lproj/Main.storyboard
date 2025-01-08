@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyQiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="qiwi_logo_with_text" translatesAutoresizingMaskIntoConstraints="NO" id="bKm-oJ-R78">
+                                <rect key="frame" x="136" y="289" width="102" height="144"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="K6R-7d-Zfn">
+                                <rect key="frame" x="177" y="543" width="20" height="7"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RA-Jb-0W3">
+                                <rect key="frame" x="164" y="610" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K6R-7d-Zfn" secondAttribute="trailing" constant="178" id="H9q-9i-kf8"/>
+                            <constraint firstItem="bKm-oJ-R78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="221" id="IFO-oe-ets"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKm-oJ-R78" secondAttribute="trailing" constant="115" id="Kc8-vn-3OG"/>
+                            <constraint firstItem="K6R-7d-Zfn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="Li1-Pb-0Rp"/>
+                            <constraint firstItem="8RA-Jb-0W3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="UsW-GO-ttr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bKm-oJ-R78" secondAttribute="bottom" constant="221" id="ZF0-ll-aFO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8RA-Jb-0W3" secondAttribute="trailing" constant="165" id="d79-K7-nIN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K6R-7d-Zfn" secondAttribute="bottom" constant="117" id="iY2-IN-kZY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8RA-Jb-0W3" secondAttribute="bottom" constant="27" id="r2n-0A-5HR"/>
+                            <constraint firstItem="K6R-7d-Zfn" firstAttribute="top" secondItem="bKm-oJ-R78" secondAttribute="bottom" constant="97" id="soA-UZ-bIj"/>
+                            <constraint firstItem="bKm-oJ-R78" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="tfK-xu-bXt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qiwi_logo_with_text" width="450" height="699"/>
+    </resources>
+</document>

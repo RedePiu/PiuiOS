@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressViewController" customModule="MyQiwi" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ns-vP-ua9">
+                    <rect key="frame" x="0.0" y="0.0" width="332" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxW-86-mDz">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_location" translatesAutoresizingMaskIntoConstraints="NO" id="80P-Wy-rT5">
+                                    <rect key="frame" x="5" y="10" width="40" height="40"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="80P-Wy-rT5" firstAttribute="leading" secondItem="fxW-86-mDz" secondAttribute="leading" constant="5" id="Efx-Fj-pSC"/>
+                                <constraint firstAttribute="width" constant="50" id="ICc-6Y-Nrf"/>
+                                <constraint firstItem="80P-Wy-rT5" firstAttribute="top" secondItem="fxW-86-mDz" secondAttribute="top" constant="10" id="eJ8-hG-1P4"/>
+                                <constraint firstAttribute="bottom" secondItem="80P-Wy-rT5" secondAttribute="bottom" constant="10" id="nFS-6U-TXU"/>
+                                <constraint firstAttribute="trailing" secondItem="80P-Wy-rT5" secondAttribute="trailing" constant="5" id="xEb-Gt-2ym"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8c-LT-w37">
+                            <rect key="frame" x="50" y="0.0" width="202" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R. Haddock Lobo (Al. Santos até Al. Jaú)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u19-q0-PMX">
+                                    <rect key="frame" x="5" y="10" width="187" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="u19-q0-PMX" firstAttribute="top" secondItem="B8c-LT-w37" secondAttribute="top" constant="10" id="0yX-W0-YKe"/>
+                                <constraint firstItem="u19-q0-PMX" firstAttribute="leading" secondItem="B8c-LT-w37" secondAttribute="leading" constant="5" id="BmT-bi-VA4"/>
+                                <constraint firstAttribute="bottom" secondItem="u19-q0-PMX" secondAttribute="bottom" constant="10" id="Ifz-8v-Rhb"/>
+                                <constraint firstAttribute="width" constant="202" id="NDs-AJ-bec"/>
+                                <constraint firstAttribute="trailing" secondItem="u19-q0-PMX" secondAttribute="trailing" constant="10" id="lmy-KE-kBg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qO-7V-uYX">
+                            <rect key="frame" x="252" y="0.0" width="80" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMPAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8W-LI-1AI">
+                                    <rect key="frame" x="10" y="10" width="60" height="40"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="95i-On-891"/>
+                                <constraint firstAttribute="trailing" secondItem="o8W-LI-1AI" secondAttribute="trailing" constant="10" id="9FC-cO-cN9"/>
+                                <constraint firstAttribute="bottom" secondItem="o8W-LI-1AI" secondAttribute="bottom" constant="10" id="ft3-be-g3U"/>
+                                <constraint firstItem="o8W-LI-1AI" firstAttribute="top" secondItem="2qO-7V-uYX" secondAttribute="top" constant="10" id="hI0-uB-nog"/>
+                                <constraint firstItem="o8W-LI-1AI" firstAttribute="leading" secondItem="2qO-7V-uYX" secondAttribute="leading" constant="10" id="hj2-GF-nRj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Ns-vP-ua9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rxf-Nf-q1K"/>
+                <constraint firstAttribute="bottom" secondItem="7Ns-vP-ua9" secondAttribute="bottom" id="fOD-9x-eFO"/>
+                <constraint firstItem="7Ns-vP-ua9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lp9-eO-kpz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_location" width="22" height="22"/>
+    </resources>
+</document>

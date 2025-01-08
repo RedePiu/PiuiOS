@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Need New View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginNeedNewViewController" customModule="MyQiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo_login" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZD-HI-3fP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDA-tY-STR">
+                                <rect key="frame" x="38" y="127" width="305" height="486"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="quadrado" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYx-Gc-dsW">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="486"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOU-Fe-EZc" customClass="BmoViewPager" customModule="BmoViewPager">
+                                        <rect key="frame" x="60" y="52" width="186" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfb-Yf-ydM">
+                                        <rect key="frame" x="40" y="334" width="225" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.011764705882352941" green="0.45882352941176469" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="ENTRAR">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zfE-7R-9DI" kind="show" id="I8P-Hj-8zS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMw-YN-hi4">
+                                        <rect key="frame" x="41" y="395" width="225" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.12549019607843137" green="0.31764705882352939" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="CRIAR CONTA">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="UA2-YD-ULt" kind="show" id="W34-8b-Fk8"/>
+                                        </connections>
+                                    </button>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0pb-WC-AC9">
+                                        <rect key="frame" x="96" y="272" width="115.66666666666669" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WYx-Gc-dsW" firstAttribute="top" secondItem="lDA-tY-STR" secondAttribute="top" id="AHY-VX-oQn"/>
+                                    <constraint firstItem="WYx-Gc-dsW" firstAttribute="leading" secondItem="lDA-tY-STR" secondAttribute="leading" id="FQG-QE-0Oz"/>
+                                    <constraint firstAttribute="bottom" secondItem="WYx-Gc-dsW" secondAttribute="bottom" id="Jf5-zZ-hb7"/>
+                                    <constraint firstAttribute="trailing" secondItem="WYx-Gc-dsW" secondAttribute="trailing" id="efa-O8-Eih"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo_piu_negativo_verde" translatesAutoresizingMaskIntoConstraints="NO" id="etl-nQ-0aE">
+                                <rect key="frame" x="114" y="-340" width="147" height="827"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="etl-nQ-0aE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-360" id="3D9-Fx-e9L"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lDA-tY-STR" secondAttribute="trailing" constant="32" id="5Av-iE-8Qg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lDA-tY-STR" secondAttribute="bottom" constant="54" id="6ch-Ew-a1w"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="etl-nQ-0aE" secondAttribute="trailing" constant="114" id="Bbn-wn-Tuw"/>
+                            <constraint firstItem="FZD-HI-3fP" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="E84-WD-NQE"/>
+                            <constraint firstItem="FZD-HI-3fP" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="EzW-6g-pQ7"/>
+                            <constraint firstItem="lDA-tY-STR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="38" id="PhV-Ka-xVT"/>
+                            <constraint firstItem="FZD-HI-3fP" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Zsw-10-LY3"/>
+                            <constraint firstItem="FZD-HI-3fP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dSk-no-R7S"/>
+                            <constraint firstItem="lDA-tY-STR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="107" id="lnW-Ye-IDU"/>
+                            <constraint firstItem="etl-nQ-0aE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="114" id="ubT-MP-9Q6"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="btnCreateAccount" destination="aMw-YN-hi4" id="MwL-ir-4r3"/>
+                        <outlet property="btnEnter" destination="Bfb-Yf-ydM" id="XtY-om-bdl"/>
+                        <outlet property="pageControl" destination="0pb-WC-AC9" id="Jk2-99-ysj"/>
+                        <outlet property="viewPager" destination="KOU-Fe-EZc" id="wmG-2i-gDH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="-50.824587706146929"/>
+        </scene>
+        <!--CreateAccount-->
+        <scene sceneID="LAK-Zz-biA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateAccount" id="UA2-YD-ULt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wzo-Sr-Y8D"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FgD-7t-s7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="-210"/>
+        </scene>
+        <!--LoginNew-->
+        <scene sceneID="9ML-0R-M8I">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginNew" id="zfE-7R-9DI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rKA-IH-SHA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzq-k8-yny" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fundo_login" width="1080" height="2100"/>
+        <image name="logo_piu_negativo_verde" width="1182" height="827"/>
+        <image name="quadrado" width="1008" height="1368"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

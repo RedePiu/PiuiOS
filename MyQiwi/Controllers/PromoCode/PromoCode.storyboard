@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8as-vC-9Ig">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="po3-P9-doN">
+            <objects>
+                <navigationController storyboardIdentifier="PromoCode" automaticallyAdjustsScrollViewInsets="NO" id="8as-vC-9Ig" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5B5-Rd-8Xh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="REE-Dm-DZO" kind="relationship" relationship="rootViewController" id="GAn-ev-eXO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOc-Yd-Kqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="-143.47826086956522"/>
+        </scene>
+        <!--Promo Code View Controller-->
+        <scene sceneID="75m-2f-eBM">
+            <objects>
+                <viewController storyboardIdentifier="PromoCodeViewController" id="REE-Dm-DZO" customClass="PromoCodeViewController" customModule="MyQiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NCu-YP-a2x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ien-ub-cHA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="787"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XO0-TE-j0y">
+                                        <rect key="frame" x="20" y="20" width="335" height="617"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUe-Xt-2GZ" customClass="UICardView" customModule="MyQiwi" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="406.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Syk-dU-n4N">
+                                                        <rect key="frame" x="20" y="20" width="295" height="366.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione um cupom para aplicar em sua compra!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oo-1G-bSy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="295" height="201.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eJb-7R-deb">
+                                                                <rect key="frame" x="0.0" y="221.5" width="295" height="85"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aG8-5q-Aya">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="25"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_coupon_on" translatesAutoresizingMaskIntoConstraints="NO" id="4yl-ka-6Dd">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="25" id="Vno-qT-106"/>
+                                                                                    <constraint firstAttribute="width" constant="25" id="fiF-ty-Wls"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Um por compra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBU-16-pzV">
+                                                                                <rect key="frame" x="35" y="0.0" width="260" height="25"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mqO-Zh-Aek">
+                                                                        <rect key="frame" x="0.0" y="30" width="295" height="25"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_coupon_green" translatesAutoresizingMaskIntoConstraints="NO" id="1ah-jy-bSz">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="25" id="9r7-Lf-vbr"/>
+                                                                                    <constraint firstAttribute="height" constant="25" id="XQW-uI-XIm"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Um ou mais por compra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQG-2s-lcx">
+                                                                                <rect key="frame" x="35" y="0.0" width="260" height="25"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EIz-au-SLu">
+                                                                        <rect key="frame" x="0.0" y="60" width="295" height="25"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_coupon_off" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-Ss-uk4">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="25" id="Hpx-9u-Pxd"/>
+                                                                                    <constraint firstAttribute="width" constant="25" id="Zac-ph-XaX"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não aplicável nesta compra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieJ-OL-rNP">
+                                                                                <rect key="frame" x="35" y="0.0" width="260" height="25"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkg-eu-ctZ">
+                                                                <rect key="frame" x="0.0" y="326.5" width="295" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="eYr-yJ-w1S"/>
+                                                                </constraints>
+                                                                <state key="normal" title="ADICIONAR NOVO CUPOM"/>
+                                                                <connections>
+                                                                    <action selector="onClickNewCoupon:" destination="REE-Dm-DZO" eventType="touchUpInside" id="62U-DB-mlo"/>
+                                                                </connections>
+                                                            </button>
+                                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lk-aE-wjN">
+                                                                <rect key="frame" x="0.0" y="366.5" width="295" height="120"/>
+                                                                <subviews>
+                                                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="W5g-G0-89H">
+                                                                        <rect key="frame" x="129" y="41.5" width="37" height="37"/>
+                                                                    </activityIndicatorView>
+                                                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_green_done" translatesAutoresizingMaskIntoConstraints="NO" id="D8G-iI-KNk">
+                                                                        <rect key="frame" x="132.5" y="45" width="30" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="30" id="god-Xm-NXW"/>
+                                                                            <constraint firstAttribute="height" constant="30" id="no1-C9-dND"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hgk-e0-0B6">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="120"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adicionar novo cupom promocional" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4C-p1-Lqf">
+                                                                                <rect key="frame" x="13.5" y="0.0" width="268" height="0.0"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupom inválido!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6G-L8-YAl">
+                                                                                <rect key="frame" x="83.5" y="10" width="128" height="0.0"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Código promocional" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grc-0A-jYH" customClass="MaterialField" customModule="MyQiwi" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="20" width="295" height="40"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="40" id="NaE-dz-m5F"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                                            </textField>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zwi-dT-iTt">
+                                                                                <rect key="frame" x="0.0" y="80" width="295" height="40"/>
+                                                                                <subviews>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvh-F9-Uhl">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="40"/>
+                                                                                        <state key="normal" title="Button"/>
+                                                                                        <connections>
+                                                                                            <action selector="onClickCancel:" destination="REE-Dm-DZO" eventType="touchUpInside" id="mdA-Xk-AGq"/>
+                                                                                        </connections>
+                                                                                    </button>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEx-NK-42E">
+                                                                                        <rect key="frame" x="151.5" y="0.0" width="143.5" height="40"/>
+                                                                                        <state key="normal" title="Button"/>
+                                                                                        <connections>
+                                                                                            <action selector="onClickSendCode:" destination="REE-Dm-DZO" eventType="touchUpInside" id="BdJ-eE-7RH"/>
+                                                                                        </connections>
+                                                                                    </button>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="tvh-F9-Uhl" firstAttribute="width" secondItem="zwi-dT-iTt" secondAttribute="width" multiplier="0.48" id="HpZ-vb-I51"/>
+                                                                                    <constraint firstAttribute="height" constant="40" id="kzv-ic-EDa"/>
+                                                                                </constraints>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstItem="zwi-dT-iTt" firstAttribute="leading" secondItem="hgk-e0-0B6" secondAttribute="leading" id="Ayr-nc-tQ8"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="grc-0A-jYH" secondAttribute="trailing" constant="0.01" id="drd-NA-LP0"/>
+                                                                            <constraint firstItem="grc-0A-jYH" firstAttribute="leading" secondItem="hgk-e0-0B6" secondAttribute="leading" constant="0.01" id="vKd-ib-BtO"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="D8G-iI-KNk" firstAttribute="centerY" secondItem="3lk-aE-wjN" secondAttribute="centerY" id="EVB-D0-6dm"/>
+                                                                    <constraint firstItem="W5g-G0-89H" firstAttribute="centerX" secondItem="3lk-aE-wjN" secondAttribute="centerX" id="VFD-iS-IjE"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="hgk-e0-0B6" secondAttribute="trailing" constant="0.01" id="c2g-hY-TFL"/>
+                                                                    <constraint firstItem="hgk-e0-0B6" firstAttribute="top" secondItem="3lk-aE-wjN" secondAttribute="top" constant="0.01" id="daN-lg-aHF"/>
+                                                                    <constraint firstItem="hgk-e0-0B6" firstAttribute="leading" secondItem="3lk-aE-wjN" secondAttribute="leading" constant="0.01" id="gpz-io-e9Y"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="hgk-e0-0B6" secondAttribute="bottom" constant="0.01" id="heF-cd-hRz"/>
+                                                                    <constraint firstItem="W5g-G0-89H" firstAttribute="centerY" secondItem="3lk-aE-wjN" secondAttribute="centerY" id="rw2-OQ-TFo"/>
+                                                                    <constraint firstItem="D8G-iI-KNk" firstAttribute="centerX" secondItem="3lk-aE-wjN" secondAttribute="centerX" id="yTe-6V-sIx"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Syk-dU-n4N" secondAttribute="trailing" constant="20" id="2fl-CM-yyR"/>
+                                                    <constraint firstItem="Syk-dU-n4N" firstAttribute="leading" secondItem="PUe-Xt-2GZ" secondAttribute="leading" constant="20" id="Ppn-id-JwA"/>
+                                                    <constraint firstItem="Syk-dU-n4N" firstAttribute="top" secondItem="PUe-Xt-2GZ" secondAttribute="top" constant="20" id="RPQ-Ai-Pef"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Syk-dU-n4N" secondAttribute="bottom" constant="20" id="gUp-W1-bJE"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupons disponíveis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWy-33-6hH">
+                                                <rect key="frame" x="0.0" y="426.5" width="335" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8In-2G-tvl">
+                                                <rect key="frame" x="0.0" y="467" width="335" height="150"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="8G6-Ol-BFI"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4zB-1l-5x2">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="stH-Ix-Jg9">
+                                                <rect key="frame" x="0.0" y="617" width="335" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_coupon_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Z6j-fa-QZy">
+                                                        <rect key="frame" x="127.5" y="0.0" width="80" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="isS-Fd-95u"/>
+                                                            <constraint firstAttribute="height" constant="80" id="kbe-GD-oi3"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não ha cupons disponíveis ;(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENV-RI-rAH">
+                                                        <rect key="frame" x="58.5" y="90" width="218.5" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhD-Yp-6bS">
+                                                        <rect key="frame" x="47.5" y="100" width="240" height="0.0"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="8In-2G-tvl" firstAttribute="top" secondItem="BWy-33-6hH" secondAttribute="bottom" constant="20" id="GWk-7c-K8t"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="XO0-TE-j0y" firstAttribute="top" secondItem="Ien-ub-cHA" secondAttribute="top" constant="20" id="Fip-MZ-8Gc"/>
+                                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="XO0-TE-j0y" secondAttribute="bottom" constant="10" id="RsM-RG-3nH"/>
+                                    <constraint firstItem="XO0-TE-j0y" firstAttribute="leading" secondItem="Ien-ub-cHA" secondAttribute="leading" constant="20" id="UtC-p7-Jna"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fEz-4N-S3E"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fEz-4N-S3E" firstAttribute="trailing" secondItem="XO0-TE-j0y" secondAttribute="trailing" constant="20" id="6Qc-Cn-Skp"/>
+                            <constraint firstItem="Ien-ub-cHA" firstAttribute="centerX" secondItem="NCu-YP-a2x" secondAttribute="centerX" id="CXD-jS-9B9"/>
+                            <constraint firstAttribute="bottom" secondItem="Ien-ub-cHA" secondAttribute="bottom" id="gyc-EE-aig"/>
+                            <constraint firstItem="Ien-ub-cHA" firstAttribute="width" secondItem="NCu-YP-a2x" secondAttribute="width" id="igU-S8-xV1"/>
+                            <constraint firstItem="Ien-ub-cHA" firstAttribute="top" secondItem="fEz-4N-S3E" secondAttribute="top" id="vn7-qd-rSb"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Kki-pe-sy5">
+                        <barButtonItem key="leftBarButtonItem" image="ic_arrow_back" id="a7E-Oj-iQe">
+                            <connections>
+                                <action selector="onClickBack:" destination="REE-Dm-DZO" id="YFd-So-Dhg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="900"/>
+                    <connections>
+                        <outlet property="btCancelNewCoupon" destination="tvh-F9-Uhl" id="FVb-qz-rfB"/>
+                        <outlet property="btNewCoupon" destination="hkg-eu-ctZ" id="sVI-5c-LUW"/>
+                        <outlet property="btSendCode" destination="vEx-NK-42E" id="84m-J1-Qid"/>
+                        <outlet property="collectionView" destination="8In-2G-tvl" id="Ub7-zb-Hk1"/>
+                        <outlet property="collectionViewHeight" destination="8G6-Ol-BFI" id="m6q-NK-eQA"/>
+                        <outlet property="imgSent" destination="D8G-iI-KNk" id="mhS-qM-fbd"/>
+                        <outlet property="lbAddCouponTitle" destination="V4C-p1-Lqf" id="Ia6-FP-cik"/>
+                        <outlet property="lbAvailableCouponsTitle" destination="BWy-33-6hH" id="1Vl-oX-rtR"/>
+                        <outlet property="lbEmptyTitle" destination="ENV-RI-rAH" id="OcC-ty-N3h"/>
+                        <outlet property="lbInvalidCoupon" destination="p6G-L8-YAl" id="SjD-Xb-QnO"/>
+                        <outlet property="lbLabelAcumulative" destination="qQG-2s-lcx" id="MnP-af-shD"/>
+                        <outlet property="lbLabelIndividual" destination="pBU-16-pzV" id="55G-AX-4fa"/>
+                        <outlet property="lbLabelUnactive" destination="ieJ-OL-rNP" id="Y8K-Rz-SC8"/>
+                        <outlet property="lbSelectCouponTitle" destination="9oo-1G-bSy" id="cEJ-Qb-1G2"/>
+                        <outlet property="scrollView" destination="Ien-ub-cHA" id="RIA-nS-WGq"/>
+                        <outlet property="txtCode" destination="grc-0A-jYH" id="b8i-0u-QlF"/>
+                        <outlet property="viewEmpty" destination="stH-Ix-Jg9" id="qFV-Qj-3pm"/>
+                        <outlet property="viewInputCoupon" destination="hgk-e0-0B6" id="EkH-HU-NFx"/>
+                        <outlet property="viewLoadingCoupon" destination="W5g-G0-89H" id="JrB-f8-YiB"/>
+                        <outlet property="viewNewCoupon" destination="3lk-aE-wjN" id="23f-n3-JNf"/>
+                        <segue destination="9bv-nA-xLy" kind="show" identifier="CHECKOUT" id="3Et-Qe-7hF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lW5-px-32r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="-144"/>
+        </scene>
+        <!--Checkout-->
+        <scene sceneID="mrj-Hx-0Vb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Checkout" referencedIdentifier="Checkout" id="9bv-nA-xLy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HqR-oF-V1Q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZvD-OQ-A9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692" y="-144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_arrow_back" width="26" height="26"/>
+        <image name="ic_coupon_green" width="512" height="512"/>
+        <image name="ic_coupon_off" width="512" height="512"/>
+        <image name="ic_coupon_on" width="256" height="256"/>
+        <image name="ic_coupon_yellow" width="512" height="512"/>
+        <image name="ic_green_done" width="42.666667938232422" height="42.666667938232422"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

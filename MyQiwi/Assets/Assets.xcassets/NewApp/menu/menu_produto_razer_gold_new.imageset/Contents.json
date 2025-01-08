@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "menu_produto_razer_gold_new.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rEw-F4-6UL">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeNew-->
+        <scene sceneID="YEb-Sb-PqD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeNew" id="nbE-QW-HAg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="XAE-2S-bd8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z08-yG-v7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="-500"/>
+        </scene>
+        <!--Orders-->
+        <scene sceneID="zlk-eS-bMY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Orders" id="KLn-1q-avn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uJ5-rv-5wh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aek-aW-hoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="-407"/>
+        </scene>
+        <!--AccountQiwi-->
+        <scene sceneID="hel-xm-b2p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AccountQiwi" id="TGX-st-0bZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="EJx-3u-KsE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zz1-St-hNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="-307"/>
+        </scene>
+        <!--Attendance-->
+        <scene sceneID="tak-2R-f8f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Attendance" id="Dmm-np-vcZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="PZS-eL-mi3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAe-fM-YS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="-228"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="CUw-EI-VN9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="More" id="6Qc-OQ-Occ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dUG-XX-aNh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JsS-Ka-ZdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="-108"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="b3Y-lz-aAF">
+            <objects>
+                <tabBarController storyboardIdentifier="Main" wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="fullScreen" id="fEM-T1-sUw" customClass="MainViewController" customModule="MyQiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hxg-4a-DB6"/>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" itemPositioning="fill" id="Y2b-P6-czx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="tintColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nbE-QW-HAg" kind="relationship" relationship="viewControllers" id="3rj-YW-DSt"/>
+                        <segue destination="KLn-1q-avn" kind="relationship" relationship="viewControllers" id="OI0-le-G7P"/>
+                        <segue destination="TGX-st-0bZ" kind="relationship" relationship="viewControllers" id="gW0-B0-4Rb"/>
+                        <segue destination="Dmm-np-vcZ" kind="relationship" relationship="viewControllers" id="7wF-AF-uDJ"/>
+                        <segue destination="6Qc-OQ-Occ" kind="relationship" relationship="viewControllers" id="LzN-pj-Aua"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIB-37-Auv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-630" y="-212"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="y89-x6-Q4Q">
+            <objects>
+                <viewController id="rEw-F4-6UL" customClass="SplashViewController" customModule="MyQiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VR4-2n-BOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9lc-EZ-efv">
+                                <rect key="frame" x="169" y="494" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versão 1.0.0 [iOS]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cw-qr-gHj">
+                                <rect key="frame" x="120" y="604" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.56662888600000005" green="0.56662888600000005" blue="0.56662888600000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piu_with_qiwi_lateral" translatesAutoresizingMaskIntoConstraints="NO" id="73D-Be-E8T">
+                                <rect key="frame" x="94.5" y="245" width="186" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="73D-Be-E8T" secondAttribute="height" multiplier="61:58" id="49o-4x-gaY"/>
+                                    <constraint firstAttribute="width" constant="186" id="EWV-sr-djO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u1E-h9-eFM"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="73D-Be-E8T" firstAttribute="centerY" secondItem="VR4-2n-BOJ" secondAttribute="centerY" id="UQF-ub-zXy"/>
+                            <constraint firstItem="u1E-h9-eFM" firstAttribute="bottom" secondItem="5Cw-qr-gHj" secondAttribute="bottom" constant="42" id="Uof-RI-H7T"/>
+                            <constraint firstItem="9lc-EZ-efv" firstAttribute="centerX" secondItem="5Cw-qr-gHj" secondAttribute="centerX" id="Xq9-uA-XPw"/>
+                            <constraint firstItem="9lc-EZ-efv" firstAttribute="centerX" secondItem="73D-Be-E8T" secondAttribute="centerX" id="dri-im-ewf"/>
+                            <constraint firstItem="73D-Be-E8T" firstAttribute="centerX" secondItem="VR4-2n-BOJ" secondAttribute="centerX" id="mIN-Kt-z3z"/>
+                            <constraint firstItem="9lc-EZ-efv" firstAttribute="top" secondItem="73D-Be-E8T" secondAttribute="bottom" constant="72" id="t6J-5P-RGq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblVersion" destination="5Cw-qr-gHj" id="ymx-eM-gZw"/>
+                        <segue destination="fEM-T1-sUw" kind="presentation" identifier="HOME_TAB" modalPresentationStyle="fullScreen" id="iGx-R0-epX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Hn-Un-IoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1745" y="-213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="piu_with_qiwi_lateral" width="640" height="447"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

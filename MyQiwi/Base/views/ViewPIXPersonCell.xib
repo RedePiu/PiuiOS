@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ah7-z2-Sbw" customClass="ViewPIXPersonCell" customModule="MyQiwi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="554" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vqq-YC-83e">
+                <rect key="frame" x="0.0" y="0.0" width="554" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jaL-ID-Gxp">
+                        <rect key="frame" x="20" y="25" width="374" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-sm-Dn5">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vp-uA-LcD">
+                                <rect key="frame" x="0.0" y="21.5" width="374" height="28.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Diy-lR-WPR"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhF-tm-Rb3">
+                        <rect key="frame" x="414" y="30" width="120" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2Uy-O6-pD7"/>
+                            <constraint firstAttribute="width" constant="120" id="egH-cD-mFK"/>
+                        </constraints>
+                        <state key="normal" title="selecionar"/>
+                        <connections>
+                            <action selector="onClickSelect:" destination="Ah7-z2-Sbw" eventType="touchUpInside" id="kx0-Hm-38d"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="jaL-ID-Gxp" firstAttribute="leading" secondItem="Vqq-YC-83e" secondAttribute="leading" constant="20" id="AAT-k8-Tux"/>
+                    <constraint firstItem="UhF-tm-Rb3" firstAttribute="centerY" secondItem="Vqq-YC-83e" secondAttribute="centerY" id="W6s-DG-BXS"/>
+                    <constraint firstAttribute="trailing" secondItem="UhF-tm-Rb3" secondAttribute="trailing" constant="20" id="XQa-2j-gU4"/>
+                    <constraint firstItem="jaL-ID-Gxp" firstAttribute="centerY" secondItem="Vqq-YC-83e" secondAttribute="centerY" id="rUX-GT-u3A"/>
+                    <constraint firstItem="UhF-tm-Rb3" firstAttribute="leading" secondItem="jaL-ID-Gxp" secondAttribute="trailing" constant="20" id="rfO-aI-DNU"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="554" height="100"/>
+            <connections>
+                <outlet property="btnSelect" destination="UhF-tm-Rb3" id="4qJ-3N-SxS"/>
+                <outlet property="lbCPF" destination="7vp-uA-LcD" id="fX2-eM-xEo"/>
+                <outlet property="lbName" destination="NWd-sm-Dn5" id="Zwi-Zv-cP6"/>
+            </connections>
+            <point key="canvasLocation" x="294.20289855072468" y="81.696428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
