@@ -1,0 +1,6 @@
+framework module Pods_MyQiwi {
+  umbrella header "Pods-MyQiwi-umbrella.h"
+
+  export *
+  module * { export * }
+}
