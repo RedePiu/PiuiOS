@@ -332,6 +332,7 @@
 		AFCB5CEE2BF6D281001D95FB /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB5CED2BF6D281001D95FB /* MainButton.swift */; };
 		AFCB5CF12BFBA123001D95FB /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB5CF02BFBA123001D95FB /* NoticeView.swift */; };
 		AFCB5CF42BFBA3F8001D95FB /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB5CF32BFBA3F8001D95FB /* NoticeViewController.swift */; };
+		AFCD853B2D2F2F5A00C78EA5 /* Sequence_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCD853A2D2F2F5A00C78EA5 /* Sequence_Extensions.swift */; };
 		AFE702992C19D7FB00B1D76E /* ImagePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE702982C19D7FB00B1D76E /* ImagePickerHelper.swift */; };
 		BB036246225D2CE900C829F9 /* NewOrdersPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB036245225D2CE900C829F9 /* NewOrdersPageViewController.swift */; };
 		BB047F102240076A004C5DF6 /* MonthYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB047F0F2240076A004C5DF6 /* MonthYearPickerView.swift */; };
@@ -1195,6 +1196,7 @@
 		AFCB5CED2BF6D281001D95FB /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		AFCB5CF02BFBA123001D95FB /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		AFCB5CF32BFBA3F8001D95FB /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		AFCD853A2D2F2F5A00C78EA5 /* Sequence_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence_Extensions.swift; sourceTree = "<group>"; };
 		AFE702982C19D7FB00B1D76E /* ImagePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerHelper.swift; sourceTree = "<group>"; };
 		BB036245225D2CE900C829F9 /* NewOrdersPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrdersPageViewController.swift; sourceTree = "<group>"; };
 		BB047F0F2240076A004C5DF6 /* MonthYearPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthYearPickerView.swift; sourceTree = "<group>"; };
@@ -2666,6 +2668,7 @@
 				AFB486722C01176B0012B438 /* NSLayoutConstraint_Extensions.swift */,
 				AFB486732C01176B0012B438 /* UIStackView_Extensions.swift */,
 				AFABCB852C07FCD6000B89FD /* String_Extensions.swift */,
+				AFCD853A2D2F2F5A00C78EA5 /* Sequence_Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -3828,6 +3831,7 @@
 				5E4B29F921498C9F007181F2 /* ForgotQiwiPasswordRequest.swift in Sources */,
 				9F57D1F024B81450004BB3BD /* DrTerapiaConsultValuesBody.swift in Sources */,
 				BB2983C121BAFFAA006DB1AD /* DateFormatterQiwi.swift in Sources */,
+				AFCD853B2D2F2F5A00C78EA5 /* Sequence_Extensions.swift in Sources */,
 				9F56899B2434F7380090C0B8 /* InternationalPhoneProRechargeViewController.swift in Sources */,
 				5E4B29FB21498CFA007181F2 /* GetOrderBody.swift in Sources */,
 				5EC1C75D218A6F2700A667A5 /* SendDocsIntroViewController.swift in Sources */,
@@ -4542,7 +4546,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = K33H289HC4;
-				EXCLUDED_ARCHS = "armv7s armv7";
+				EXCLUDED_ARCHS = "armv7s armv7 arm64";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -4627,7 +4631,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = K33H289HC4;
-				EXCLUDED_ARCHS = "armv7s armv7";
+				EXCLUDED_ARCHS = "armv7s armv7 arm64";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

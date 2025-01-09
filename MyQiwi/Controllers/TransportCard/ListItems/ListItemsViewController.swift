@@ -26,7 +26,7 @@ final class ListItemsViewController: BaseViewController<ListItemsView> {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        setupNavigationBar()
+        setupNavigationBar(with: "solicitar_cartao_nav_title".localized)
     }
     
     deinit {
@@ -38,12 +38,16 @@ final class ListItemsViewController: BaseViewController<ListItemsView> {
 // MARK: - Private Functions
 private extension ListItemsViewController {
     func getDataFromViewModel() {
+        baseView.activityIndicator.isHidden = false
+        
         viewModel.getAllCardType(idEmissor: idEmissor) { typeCard in
             self.typeCard = typeCard
         }
         
-        viewModel.getAllForms(idEmissor: idEmissor, cpf: Constants.cpfTaxa) { (forms, campos) in
+        viewModel.getAllForms(idEmissor: idEmissor, cpf: Constants.cpfTaxa) { [weak self] (forms, campos) in
+            guard let self else { return }
             self.createItemCell(from: forms, campos: campos, typeCard: self.typeCard)
+            self.baseView.activityIndicator.isHidden = true
         }
     }
     
@@ -53,16 +57,24 @@ private extension ListItemsViewController {
         typeCard: [MenuCardTypeResponse]
     ) {
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self,
+                  let list = response.unique(from: response).last else {
+                return
+            }
             
-            for (i, item) in response.unique().enumerated() {
+            var forms = [GetFormsResponse]()
+            forms.append(list)
+            
+            for (i, item) in forms.enumerated() {
                 let cellItem = SelectableItem()
-                guard let type = typeCard.filter({ $0.Id_Tipo_Formulario_Carga == item.Id_Tipo_Carga }).first else { return }
-                cellItem.itemTitle.text = "\(type.Nome) \(item.Via)a - \(item.Status)"
-                cellItem.itemDescription.text = "\(item.Motivo)"
-                
-                print("@! >>> cell_item ", item)
-                
+
+                guard let type = typeCard.filter({ $0.Id_Tipo_Formulario_Carga == item.Id_Tipo_Carga }).first else {
+                    return
+                }
+                cellItem.itemTitle.text = "\(type.Nome) - \(item.Via)a via"
+                cellItem.itemDescription.text = "\(item.Status)"
+                cellItem.itemComment.text = "\(item.Motivo)"
+        
                 switch item.Id_Tipo_Carga {
                 case 1:
                     self.navTitle = "transport_students_toolbar".localized
@@ -72,7 +84,7 @@ private extension ListItemsViewController {
                     break
                 }
                 
-                cellItem.actionButton.didTap = { [weak self] in
+                cellItem.didTap = { [weak self] in
                     guard let self else { return }
                     let indexPath = campos.index(i, offsetBy: 0)
                     
@@ -107,16 +119,15 @@ private extension ListItemsViewController {
                         break
                     }
                 }
+                
                 baseView.stackView.addArrangedSubview(cellItem)
-                baseView.stackView.subviews.forEach { $0.height(min: 40) }
+                cellItem.translatesAutoresizingMaskIntoConstraints = false
+                cellItem.leadingAndTrailing(to: baseView.stackView, padding: 24)
+                cellItem.height(min: cellItem.mainContainer.frameHeight + 70)
+                baseView.stackView.arrangedSubviews.forEach {
+                    $0.top(to: $0.bottomAnchor, padding: 20)
+                }
             }
         }
-    }
-}
-
-extension Sequence where Element: Hashable {
-    func unique() -> [Element] {
-        var set = Set<Element>()
-        return filter { set.insert($0).inserted }
     }
 }

@@ -67,6 +67,12 @@ extension BaseViewController {
         sender.present(viewController, animated: true, completion: completion)
     }
     
+    public func dismissLoading() {
+        if LoadingViewController().isBeingPresented {
+            dismiss(animated: true)
+        }
+    }
+    
     func showErrorThatDismissPage(message: String = "error_some_error_occourred".localized) {
         Util.showAlertDefaultOK(self, message: message, titleOK: "Voltar", completionOK: {
             self.dismiss(animated: true, completion: nil)

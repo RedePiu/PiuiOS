@@ -131,6 +131,9 @@ extension UIBaseViewController {
     
     func pushSegueViewController(withIdentifier: String, name: String) {
         let vc = UIStoryboard(name: name, bundle: nil).instantiateViewController(withIdentifier: withIdentifier)
+        vc.hidesBottomBarWhenPushed = true
+//        vc.navigationController?.isNavigationBarHidden = false
+        vc.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

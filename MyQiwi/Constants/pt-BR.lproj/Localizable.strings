@@ -1768,3 +1768,6 @@ Milhares de crianças e adolescentes estão lutando contra o câncer neste exato
 
 "transport_card_btn_emit_card_title" = "emitir cartão";
 "transport_card_btn_verify_situation_title" = "verificar situação cadastral";
+
+// Fluxo Novo Cartão Transporte
+"solicitar_cartao_nav_title" = "Solicitação de Cartão";

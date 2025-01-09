@@ -9,13 +9,9 @@ public extension UIView {
     // MARK: Public variables
     
     @IBInspectable var cornerRadius: CGFloat {
-        
         get {
-            
             return layer.cornerRadius
-        }
-        set {
-            
+        } set {
             layer.cornerRadius = newValue
             layer.masksToBounds = newValue > 0
         }
@@ -402,7 +398,6 @@ public extension UIView {
                          padding: CGFloat = 0.0,
                          type: ComplexAnchor? = nil,
                          priority: UILayoutPriority = .required) -> NSLayoutConstraint {
-        
         let constraint: NSLayoutConstraint
         if let type = type {
             switch type {
@@ -425,7 +420,6 @@ public extension UIView {
     @discardableResult
     func centerX(to: UIView, padding: CGFloat? = 0,
                  priority: UILayoutPriority = .required) -> NSLayoutConstraint {
-        
         let constraint: NSLayoutConstraint
         constraint = centerXAnchor.constraint(equalTo: to.centerXAnchor,
                                               constant: padding ?? 0)
@@ -437,7 +431,6 @@ public extension UIView {
     @discardableResult
     func centerY(to: UIView, padding: CGFloat? = nil,
                  priority: UILayoutPriority = .required) -> NSLayoutConstraint {
-        
         let constraint: NSLayoutConstraint
         constraint = centerYAnchor.constraint(equalTo: to.centerYAnchor,
                                               constant: padding ?? 0)
@@ -447,12 +440,10 @@ public extension UIView {
     }
     
     func sized(with width: CGFloat, height: CGFloat) {
-        
         sized(with: CGSize(width: width, height: height))
     }
     
     func sized(with size: CGSize) {
-        
         if size.height != 0 {
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
@@ -464,7 +455,6 @@ public extension UIView {
     
     @discardableResult
     func height(size: CGFloat, priority: UILayoutPriority = .required) -> NSLayoutConstraint {
-        
         let constraint: NSLayoutConstraint
         constraint = heightAnchor.constraint(equalToConstant: size)
         constraint.priority = priority
@@ -474,7 +464,6 @@ public extension UIView {
     
     @discardableResult
     func height(min: CGFloat, priority: UILayoutPriority = .required) -> NSLayoutConstraint {
-        
         let constraint: NSLayoutConstraint
         constraint = heightAnchor.constraint(greaterThanOrEqualToConstant: min)
         constraint.priority = priority
@@ -484,7 +473,6 @@ public extension UIView {
     
     @discardableResult
     func width(size: CGFloat, priority: UILayoutPriority = .required) -> NSLayoutConstraint {
-        
         let constraint: NSLayoutConstraint
         constraint = widthAnchor.constraint(equalToConstant: size)
         constraint.priority = priority
@@ -494,7 +482,6 @@ public extension UIView {
     
     @discardableResult
     func width(min: CGFloat, priority: UILayoutPriority = .required) -> NSLayoutConstraint {
-        
         let constraint: NSLayoutConstraint
         constraint = widthAnchor.constraint(greaterThanOrEqualToConstant: min)
         constraint.priority = priority
@@ -503,12 +490,10 @@ public extension UIView {
     }
     
     func anchors(equalTo view: UIView) {
-        
         self.applyAnchors(ofType: [.top, .bottom, .leading, .trailing], to: view)
     }
     
     func center(to view: UIView) {
-        
         self.applyAnchors(ofType: [.centerX, .centerY], to: view)
     }
     
@@ -531,7 +516,6 @@ public extension UIView {
     }
     
     func value(of axis: axisYPosition, relatedTo reference: UIView) -> CGFloat {
-        
         switch axis {
         case .maxY:
             return reference.convert(self.frame, from: self.superview).maxY
@@ -544,4 +528,15 @@ public extension UIView {
 public enum axisYPosition {
     case maxY
     case minY
+}
+
+extension UIView {
+    func mainBoxShadow(to view: UIView) {
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 8
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.06
+        view.layer.shadowOffset = CGSize(width: 0, height: 3)
+        view.layer.shadowRadius = 6
+    }
 }

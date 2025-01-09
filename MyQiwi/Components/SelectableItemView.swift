@@ -3,30 +3,42 @@ import UIKit
 final class SelectableItem: UIView {
     
     public var didTap: (() -> Void)?
+    private lazy var gestureRecognizer: UITapGestureRecognizer = {
+        $0.addTarget(self, action: #selector(actionButtonTap))
+        return $0
+    }(UITapGestureRecognizer())
     
     // MARK: - UI
-    private let mainStack: UIStackView = {
-        $0.spacing = 12
-        $0.distribution = .fillProportionally
+    private(set) var mainContainer: UIView = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.backgroundColor = .white
         return $0
-    }(UIStackView())
+    }(UIView())
+        
     
     private let textStack: UIStackView = {
-        $0.spacing = 12
         $0.axis = .vertical
-        $0.distribution = .fillProportionally
+        $0.spacing = 2
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
     }(UIStackView())
     
     private(set) var itemTitle: UILabel = {
-        $0.font = FontCustom.helveticaBold.font(14)
+        $0.font = FontCustom.helveticaBold.font(12)
+        $0.textColor = .gray
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
     }(UILabel())
     
     private(set) var itemDescription: UILabel = {
-        $0.font = FontCustom.helveticaRegular.font(14)
+        $0.font = FontCustom.helveticaBold.font(16)
+        $0.numberOfLines = .zero
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(UILabel())
+    
+    private(set) var itemComment: UILabel = {
+        $0.font = FontCustom.helveticaRegular.font(12)
         $0.numberOfLines = .zero
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
@@ -42,6 +54,9 @@ final class SelectableItem: UIView {
         super.init(frame: .zero)
         initalize()
         installConstraints()
+        
+        mainContainer.addGestureRecognizer(gestureRecognizer)
+        mainContainer.isUserInteractionEnabled = true
     }
     
     required init?(coder: NSCoder) {
@@ -55,26 +70,22 @@ final class SelectableItem: UIView {
 
 private extension SelectableItem {
     func initalize() {
-        addSubview(mainStack, constraints: true)
-        mainStack.addArrangedSubviews(views: [
-            textStack, actionButton
-        ])
+        addSubview(mainContainer, constraints: true)
+        mainContainer.addSubview(textStack, constraints: true)
+        
         textStack.addArrangedSubviews(views: [
-            itemTitle, itemDescription
+            itemTitle, itemDescription, itemComment
         ])
+        
+        mainBoxShadow(to: mainContainer)
     }
     
     func installConstraints() {
-        mainStack.leadingAndTrailing(to: self)
+        mainContainer.leadingAndTrailing(to: self)
         
-        itemTitle.leading(to: textStack.leadingAnchor)
-        itemTitle.trailing(to: actionButton.leadingAnchor)
-        
-        itemDescription.leading(to: textStack.leadingAnchor)
-        itemDescription.trailing(to: actionButton.leadingAnchor)
-        
-        actionButton.centerY(to: mainStack)
-        actionButton.width(size: 90)
+        textStack.top(to: mainContainer.topAnchor, padding: 12)
+        textStack.bottom(to: mainContainer.bottomAnchor, padding: 12)
+        textStack.leadingAndTrailing(to: mainContainer, padding: 12)
     }
     
     @objc func actionButtonTap() {

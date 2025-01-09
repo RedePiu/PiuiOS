@@ -3,42 +3,30 @@ import UIKit
 final class ListItemsView: UIView {
     
     // MARK: - UI
-    private(set) var loadingView: LoadingView = {
-        $0.activityIndicator.startAnimating()
-        return $0
-    }(LoadingView())
+    private let mainContainer = UIView()
+    private(set) var viewTitle = ContentViewTitle(title: "Escolha o formulário")
     
-    private let mainContainer: UIView = {
-        $0.backgroundColor = .white
-        $0.layer.cornerRadius = 8
-        $0.layer.shadowColor = UIColor.black.cgColor
-        $0.layer.shadowOpacity = 0.2
-        $0.layer.shadowOffset = CGSize(width: 0, height: 4)
-        $0.layer.shadowRadius = 7
+    private(set) var activityIndicator = {
+        $0.hidesWhenStopped = true
+        $0.startAnimating()
         return $0
-    }(UIView())
-    
-    private(set) var viewTitle = ContentViewTitle(title: "Solicitação de Cartão")
-    
-    private(set) var chooseTitle: UILabel = {
-        $0.text = "Escolha o formulário"
-        $0.font = .boldSystemFont(ofSize: 14)
-        return $0
-    }(UILabel())
+    }(UIActivityIndicatorView())
     
     private let scrollView = {
         $0.showsVerticalScrollIndicator = false
+        $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
     }(UIScrollView())
     
     private(set) var stackView: UIStackView = {
         $0.axis = .vertical
-        $0.spacing = 30
+        $0.distribution = .fill
+        $0.spacing = 16
+        $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
     }(UIStackView())
     
     private(set) var cellView = SelectableItem()
-        
     
     // MARK: - Init
     override init(frame: CGRect) {
@@ -59,27 +47,26 @@ private extension ListItemsView {
         addSubview(viewTitle, constraints: true)
         addSubview(mainContainer, constraints: true)
         
-        mainContainer.addSubview(chooseTitle, constraints: true)
         mainContainer.addSubview(scrollView, constraints: true)
+        mainContainer.addSubview(activityIndicator, constraints: true)
         
         scrollView.addSubview(stackView, constraints: true)
     }
     
     func installConstraints() {
-        viewTitle.top(to: topAnchor, padding: 16)
-        viewTitle.leadingAndTrailing(to: self, padding: 16)
+        viewTitle.top(to: topAnchor, padding: 24)
+        viewTitle.leadingAndTrailing(to: self, padding: 24)
         
-        mainContainer.top(to: viewTitle.bottomAnchor, padding: 30)
+        activityIndicator.center(to: mainContainer)
+        
+        mainContainer.top(to: viewTitle.bottomAnchor, padding: 16)
         mainContainer.bottom(to: safeAreaLayoutGuide.bottomAnchor, padding: 16)
         mainContainer.leadingAndTrailing(to: self, padding: 16)
         
-        chooseTitle.top(to: mainContainer.topAnchor, padding: 16)
-        chooseTitle.leadingAndTrailing(to: mainContainer, padding: 16)
-        
-        scrollView.top(to: chooseTitle.bottomAnchor, padding: 20)
+        scrollView.top(to: mainContainer.topAnchor, padding: 16)
         scrollView.bottom(to: mainContainer.bottomAnchor, padding: 16)
-        scrollView.leadingAndTrailing(to: mainContainer, padding: 16)
-        
-        stackView.anchors(equalTo: scrollView)
+        scrollView.leadingAndTrailing(to: mainContainer)
+    
+        stackView.leadingAndTrailing(to: self)
     }
 }

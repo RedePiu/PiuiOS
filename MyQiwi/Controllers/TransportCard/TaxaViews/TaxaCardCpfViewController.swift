@@ -64,13 +64,11 @@ private extension TaxaCardCpfViewController {
         Util.showLoading(self)
         
         if Constants.fl_verifica_form {
-            print("@! >>> Produto_ProData ", produtoProdata.id_emissor)
             taxaCardRN.getFormsResponses(
                 idEmissor: produtoProdata.id_emissor,
                 cpf: txtCPF.text!.removeAllOtherCaracters()
             )
         } else {
-            print("@! >>> Produto_ProData ", produtoProdata.id_emissor)
             self.taxaCardRN.getCardResponses(
                 idEmissor: produtoProdata.id_emissor,
                 cpf: txtCPF.text!.removeAllOtherCaracters()
@@ -100,7 +98,6 @@ extension TaxaCardCpfViewController: BaseDelegate {
                             message: "user_cpf_consult_list_status_error_description".localized
                         )
                     } else {
-                        self.newTimer.invalidate()
                         pushViewController(ListItemsFactory().start(with: taxaCardRN))
                     }
                 }
@@ -134,25 +131,5 @@ extension TaxaCardCpfViewController: SetupUI {
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
-    }
-    
-    private func setupTimer() {
-        newTimer = Timer.scheduledTimer(
-            timeInterval: 1,
-            target: self,
-            selector: #selector(triggerTimer),
-            userInfo: nil,
-            repeats: true
-        )
-    }
-    
-    @objc private func triggerTimer() {
-        self.taxaCardRN.getLayoutFormResponses(
-            idEmissor: self.produtoProdata.id_emissor,
-            id_tipo_formulario_carga: Constants.idTipoCarga,
-            via: Constants.viaCarga,
-            fl_dependente: false
-        )
-        print("@! >>> Tentando resgatar Forms... \n Tentativa: \(retrial)")
     }
 }

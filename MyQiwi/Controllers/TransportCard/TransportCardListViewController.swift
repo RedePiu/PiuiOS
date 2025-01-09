@@ -139,7 +139,6 @@ extension TransportCardListViewController : BaseDelegate {
                 self.dismiss(animated: true, completion: nil)
 
                 if !result {
-//                    Util.showAlertDefaultOK(self, message: "transport_save_error".localized)
                     Util.showAlertDefaultOK(self, message: "transport_save_error".localized, titleOK: "OK", completionOK: {
                             self.updateOrderAndContinue()
                         })
@@ -165,9 +164,7 @@ extension TransportCardListViewController {
         if keyPath == #keyPath(UITableView.contentSize) {
             if let _ = object as? UITableView {
                 if let size = change?[NSKeyValueChangeKey.newKey] as? CGSize {
-                    
                     self.heightTable.constant = size.height + 20
-//                    self.heightTable.constant = size.height + 0
 
                     UIView.animate(withDuration: 0.3) {
                         self.view.layoutIfNeeded()
@@ -241,7 +238,7 @@ extension TransportCardListViewController {
     
     @IBAction func btnVerificaClick(_ sender: Any) {
         Constants.fl_verifica_form = true
-        self.performSegue(withIdentifier: Constants.Segues.TAXA_HOME, sender: nil)
+        pushSegueViewController(withIdentifier: "SelectPersonView", name: "TaxaCard")
     }
 
     @IBAction func onClickSendForm(_ sender: Any) {

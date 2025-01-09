@@ -119,9 +119,15 @@ class BaseRN {
     //updateJsonWithHeader must be called with generateJsonBody
     //A data object will be returned to send to the server
     func updateJsonWithHeader(jsonBody: String, seq: Int = BaseRN.GENERATE_SEQUENCE, generateSignture: Bool = true) -> Data {
+        
+        var seqArray = [Int]()
+        seqArray.append(seq)
+        let sorted = Set(seqArray).sorted()
+        
         let bodyHeader = BodyHeader()
         bodyHeader.terminalId = BaseRN.getTerminalId()
-        bodyHeader.seq = (seq != BaseRN.GENERATE_SEQUENCE ? seq : getNextSequencial())
+        //bodyHeader.seq = (seq != BaseRN.GENERATE_SEQUENCE ? seq : getNextSequencial())
+        bodyHeader.seq = (seq != BaseRN.GENERATE_SEQUENCE ? sorted.last ?? 0 : getNextSequencial())
         bodyHeader.f = ""
         
         if generateSignture {
