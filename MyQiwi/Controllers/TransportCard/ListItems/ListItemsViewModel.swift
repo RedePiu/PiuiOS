@@ -6,9 +6,9 @@ final class ListItemsViewModel {
     weak var controller: ListItemsViewController?
     private let service: TransportCardService
     
-    var forms = [GetFormsResponse]()
-    var typeCard = [MenuCardTypeResponse]()
-    var campoForm = [CampoFormResponse]()
+    private(set) var forms = [GetFormsResponse]()
+    private(set) var typeCard = [MenuCardTypeResponse]()
+    private(set) var campoForm = [CampoFormResponse]()
     
     // MARK: - Init
     init(service: TransportCardService) {

@@ -61,7 +61,6 @@ class TaxaCardRN : BaseRN {
      *
      */
     func getAllCardTypes() -> [MenuCardTypeResponse] {
-        
         return TipoCargaTaxaDAO().getAll();
     }
     

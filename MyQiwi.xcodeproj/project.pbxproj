@@ -322,6 +322,7 @@
 		AFB486752C01176C0012B438 /* NSLayoutConstraint_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB486722C01176B0012B438 /* NSLayoutConstraint_Extensions.swift */; };
 		AFB486762C01176C0012B438 /* UIStackView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB486732C01176B0012B438 /* UIStackView_Extensions.swift */; };
 		AFB486782C012ABA0012B438 /* UploadFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB486772C012ABA0012B438 /* UploadFileCell.swift */; };
+		AFC313672D30218400C6FA32 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC313662D30218400C6FA32 /* IconTextButton.swift */; };
 		AFC31F422BFFFCED00B97CDF /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC31F412BFFFCED00B97CDF /* ObjectMapper.framework */; };
 		AFCB5CE12BF68593001D95FB /* CPFConsultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB5CE02BF68593001D95FB /* CPFConsultViewController.swift */; };
 		AFCB5CE32BF685D4001D95FB /* CPFConsultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB5CE22BF685D4001D95FB /* CPFConsultView.swift */; };
@@ -1186,6 +1187,7 @@
 		AFB486722C01176B0012B438 /* NSLayoutConstraint_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint_Extensions.swift; sourceTree = "<group>"; };
 		AFB486732C01176B0012B438 /* UIStackView_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView_Extensions.swift; sourceTree = "<group>"; };
 		AFB486772C012ABA0012B438 /* UploadFileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileCell.swift; sourceTree = "<group>"; };
+		AFC313662D30218400C6FA32 /* IconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextButton.swift; sourceTree = "<group>"; };
 		AFC31F412BFFFCED00B97CDF /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCB5CE02BF68593001D95FB /* CPFConsultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFConsultViewController.swift; sourceTree = "<group>"; };
 		AFCB5CE22BF685D4001D95FB /* CPFConsultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFConsultView.swift; sourceTree = "<group>"; };
@@ -2698,6 +2700,7 @@
 				AFB486772C012ABA0012B438 /* UploadFileCell.swift */,
 				AF85F5922C07625000F3F4B2 /* TitledDescriptionRow.swift */,
 				AF6758052C2B2ABD006864DE /* CardInfoGeneric.swift */,
+				AFC313662D30218400C6FA32 /* IconTextButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -4308,6 +4311,7 @@
 				BBABE626211A1DF70047C658 /* PaymentType.swift in Sources */,
 				BBD4F9CA20F52CE1002B83A2 /* OrderCell.swift in Sources */,
 				C539C17F2231B2CC0003F0E0 /* ExtractDataViewController.swift in Sources */,
+				AFC313672D30218400C6FA32 /* IconTextButton.swift in Sources */,
 				BBDA161521F0CC30003841CB /* CreditQiwiTransferRN.swift in Sources */,
 				A57E6A10215128BF00290C62 /* MenuItemDAO.swift in Sources */,
 				BBF65A6823C6133D00C82435 /* DividaListBody.swift in Sources */,

@@ -74,9 +74,13 @@ private extension CPFConsultViewController {
                 } else {
                     Constants.cpfTaxa = self.baseView.cpfInputView.text!.removeAllOtherCaracters()
                     
+                    guard let taxaCard = self.taxaCardRN else {
+                        return
+                    }
+                    
                     DispatchQueue.main.async {
                         self.showLoading(self) {
-                            self.pushViewController(ListItemsFactory().start(with: self.baseRN))
+                            self.pushViewController(ListItemsFactory().start(with: taxaCard))
                         }
                     }
                 }

@@ -1,6 +1,6 @@
 import UIKit
 
-final class SelectableItem: UIView {
+final class SelectableItem: UITableViewCell {
     
     public var didTap: (() -> Void)?
     private lazy var gestureRecognizer: UITapGestureRecognizer = {
@@ -14,7 +14,6 @@ final class SelectableItem: UIView {
         $0.backgroundColor = .white
         return $0
     }(UIView())
-        
     
     private let textStack: UIStackView = {
         $0.axis = .vertical
@@ -50,14 +49,28 @@ final class SelectableItem: UIView {
     )
     
     // MARK: - Init
-    override init(frame: CGRect) {
-        super.init(frame: .zero)
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: "cell")
         initalize()
         installConstraints()
         
         mainContainer.addGestureRecognizer(gestureRecognizer)
         mainContainer.isUserInteractionEnabled = true
     }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
+    
+//    override init(frame: CGRect) {
+//        super.init(frame: .zero)
+//        initalize()
+//        installConstraints()
+//        
+//        mainContainer.addGestureRecognizer(gestureRecognizer)
+//        mainContainer.isUserInteractionEnabled = true
+//    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -81,7 +94,8 @@ private extension SelectableItem {
     }
     
     func installConstraints() {
-        mainContainer.leadingAndTrailing(to: self)
+        height(size: mainContainer.frame.height)
+        mainContainer.leadingAndTrailing(to: self, padding: 8)
         
         textStack.top(to: mainContainer.topAnchor, padding: 12)
         textStack.bottom(to: mainContainer.bottomAnchor, padding: 12)

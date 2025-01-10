@@ -12,19 +12,13 @@ final class ListItemsView: UIView {
         return $0
     }(UIActivityIndicatorView())
     
-    private let scrollView = {
-        $0.showsVerticalScrollIndicator = false
+    private(set) var tableView: UITableView = {
+        $0.separatorStyle = .none
+        $0.backgroundColor = .clear
+        $0.isHidden = true
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
-    }(UIScrollView())
-    
-    private(set) var stackView: UIStackView = {
-        $0.axis = .vertical
-        $0.distribution = .fill
-        $0.spacing = 16
-        $0.translatesAutoresizingMaskIntoConstraints = false
-        return $0
-    }(UIStackView())
+    }(UITableView())
     
     private(set) var cellView = SelectableItem()
     
@@ -47,10 +41,8 @@ private extension ListItemsView {
         addSubview(viewTitle, constraints: true)
         addSubview(mainContainer, constraints: true)
         
-        mainContainer.addSubview(scrollView, constraints: true)
         mainContainer.addSubview(activityIndicator, constraints: true)
-        
-        scrollView.addSubview(stackView, constraints: true)
+        mainContainer.addSubview(tableView, constraints: true)
     }
     
     func installConstraints() {
@@ -63,10 +55,8 @@ private extension ListItemsView {
         mainContainer.bottom(to: safeAreaLayoutGuide.bottomAnchor, padding: 16)
         mainContainer.leadingAndTrailing(to: self, padding: 16)
         
-        scrollView.top(to: mainContainer.topAnchor, padding: 16)
-        scrollView.bottom(to: mainContainer.bottomAnchor, padding: 16)
-        scrollView.leadingAndTrailing(to: mainContainer)
-    
-        stackView.leadingAndTrailing(to: self)
+        tableView.top(to: mainContainer.topAnchor)
+        tableView.bottom(to: mainContainer.bottomAnchor)
+        tableView.leadingAndTrailing(to: mainContainer)
     }
 }
